@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-pimmz-project-4-5f7buq1lcc.us2.codeanyapp.com',
-                 'pimmz-project-4.herokuapp.com', 'localhost']
+                 'pimmz-project-4-9cc2ab59cc64.herokuapp.com', 'localhost']
 
 
 # Application definition
