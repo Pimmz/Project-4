@@ -29,7 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-pimmz-project-4-5f7buq1lcc.us2.codeanyapp.com', 'pimmz-project-4.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-pimmz-project-4-5f7buq1lcc.us2.codeanyapp.com',
+                 'pimmz-project-4.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -61,7 +62,7 @@ ROOT_URLCONF = 'codestar.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
