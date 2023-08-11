@@ -130,12 +130,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_STORAGE = 'cloundinary_storage.storage.StaticHashedCloundianryStorage'
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudianryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'STATIC')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/MEDIA/'
-DEFAULT_FILE_STORAGE = 'cloundinary_storage.storage.MediaCloundinaryStorage'
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
