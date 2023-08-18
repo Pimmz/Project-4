@@ -23,16 +23,16 @@
 <body class="d-flex flex-column h-100 main-bg">
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: grey;">
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><strong>Fox Terrier Lovers Blog</strong></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><h3><b>Fox Terrier Lovers Blog</b></h3></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-8 mb-lg-0 fs-5">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
@@ -95,13 +95,21 @@
     </main>
 
 
-    <footer class="footer mt-auto py-3 light" style="background-color: grey;">
-        <p class="m-0 text-center text-white">Made by Steve Mayes</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i>
-        </p>
+    <footer class="footer mt-auto py-3 fs-5 text-light bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="m-0 text-center">Fox Terrier Lovers Society<br>Ware, Hertfordhsire<br>SG120AN</p>
+                </div>
+                <div class="col-md-6">
+                    <p class="m-0 text-center">Follow us: <br><i class="fab fa-facebook-square ms-3"></i>               
+                        <i class="fab fa-twitter-square ms-3"></i>
+                        <i class="fab fa-instagram-square ms-3"></i>
+                        <i class="fab fa-youtube-square ms-3"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <script>
         setTimeout(function() {
