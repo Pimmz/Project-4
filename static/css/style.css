@@ -112,6 +112,11 @@ body {
     color: #fff;
 }
 
+.btn-1 {
+    background-color: grey;
+    color: white;
+}
+
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
@@ -142,3 +147,8 @@ body {
     border: none;
 }
 
+
+#signup-form a{
+    color: white;
+    text-decoration: none;
+}

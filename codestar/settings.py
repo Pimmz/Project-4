@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
@@ -36,6 +38,9 @@ INSTALLED_APPS = [
     'crispy_forms',
     'blog',
 ]
+
+#local
+'user'
 
 SITE_ID = 1
 

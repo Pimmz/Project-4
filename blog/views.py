@@ -77,3 +77,16 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+class PostComment(View):
+
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+
+        if post.comment.filter(id=request.user.id).exists():
+            post.comment.remove(request.user)
+        else:
+            post.comment.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
