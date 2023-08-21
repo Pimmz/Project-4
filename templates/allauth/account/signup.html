@@ -2,6 +2,7 @@
 
 {% load account socialaccount %}
 {% load i18n %}
+{% providers_media_js %}
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
@@ -24,10 +25,12 @@
                     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
                 <button class="btn btn-signup right" type="submit">{% trans "Sign Up" %}</button>
-                <button class="btn btn-1" type="submit"><a href="#">Google login</a></button>
-                <button class="btn btn-1" type="submit"><a href="#">Facebook login</a></button>
             </form>
         </div>
+    </div>
+    <div class="row" id="signup-form">
+        <button class="btn btn-1" type="submit"><a href="{% provider_login_url "google" %}">Google login</a></button>
+        <button class="btn btn-1" type="submit"><a href="{% provider_login_url "facebook" method="oauth2" %}">Facebook login</a></button>
     </div>
 </div>
 
