@@ -29,8 +29,10 @@
         </div>
     </div>
     <div class="row" id="signup-form">
-        <button class="btn btn-1" type="submit"><a href="{% provider_login_url "google" %}">Google login</a></button>
-        <button class="btn btn-1" type="submit"><a href="{% provider_login_url "facebook" method="oauth2" %}">Facebook login</a></button>
+        <div class="col-md-8 mt-3 offset-md-2">
+            <a class="btn btn-1" href="{% provider_login_url "google" %}">Google login</a>
+            <a class="btn btn-1" href="{% provider_login_url "facebook" method="oauth2" %}">Facebook login</a>
+        </div>
     </div>
 </div>
 
