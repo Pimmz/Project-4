@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from django.views.generic import TemplateView
 
 
 class PostList(generic.ListView):
@@ -66,6 +67,7 @@ class PostDetail(View):
             },
         )
 
+
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
@@ -90,3 +92,6 @@ class PostComment(View):
             post.comment.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+class AdoptionView(TemplateView):
+    template_name = "adoption.html"
