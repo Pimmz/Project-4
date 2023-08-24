@@ -9,7 +9,7 @@ from django.views.generic import TemplateView
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
-    template_name = "index.html"
+    template_name = "blog.html"
     paginate_by = 6
 
 
@@ -95,3 +95,6 @@ class PostComment(View):
 
 class AdoptionView(TemplateView):
     template_name = "adoption.html"
+
+class HomeView(TemplateView):
+    template_name = "index.html"
