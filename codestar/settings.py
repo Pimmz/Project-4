@@ -39,7 +39,7 @@ INSTALLED_APPS = [
 ]
 
 # local
-'user'
+#'user'
 
 
 LOGIN_REDIRECT_URL = '/'
