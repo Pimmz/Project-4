@@ -66,7 +66,8 @@ class PostDetail(View):
                 "liked": liked
             },
         )
-
+class AboutView(TemplateView):
+    template_name = "about.html"
 
 class PostLike(View):
 
@@ -80,6 +81,8 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+class HomeView(TemplateView):
+    template_name = "index.html"
 
 class PostComment(View):
 
@@ -96,5 +99,3 @@ class PostComment(View):
 class AdoptionView(TemplateView):
     template_name = "adoption.html"
 
-class HomeView(TemplateView):
-    template_name = "index.html"

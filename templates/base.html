@@ -4,7 +4,7 @@
 <html class="h-100">
 
 <head>
-    <title>Fox Terrier Lovers Blog</title>
+    <title>Fox Terrier Owners Club</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'index' %}">
-                <h3><b>Fox Terrier Lovers Blog</b></h3>
+                <h3><b>Fox Terrier Owners Club</b></h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -34,6 +34,9 @@
                 <ul class="navbar-nav me-auto mb-8 mb-lg-0 fs-5">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -87,7 +90,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <p class="m-0 text-center">
-                        Fox Terrier Lovers Society<br />Ware, Hertfordhsire<br />SG120AN
+                        Fox Terrier Owners Club<br />Ware, Hertfordhsire<br />SG120AN
                     </p>
                 </div>
                 <div class="col-md-6">
