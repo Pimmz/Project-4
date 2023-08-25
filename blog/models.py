@@ -5,6 +5,17 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+class Adoption(models.Model):
+
+	name = models.CharField(max_length=100)
+	slug = models.SlugField(max_length=100,unique=True)
+	email = models.EmailField(max_length=100)
+	content = models.TextField()
+	created_on = models.DateTimeField(auto_now_add=True)
+    
+def _str_(self):
+    return self.title
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
