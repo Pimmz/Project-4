@@ -10,7 +10,7 @@ class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "blog.html"
-    paginate_by = 4
+    paginate_by = 6
 
 
 class PostDetail(View):
@@ -108,7 +108,7 @@ class AdoptionView(TemplateView):
     def post(self, request, *args, **kwargs):
         adoption_form = AdoptionForm(request.POST)
         if adoption_form.is_valid():
-            pass
+            return HttpResponseRedirect('/adoption/')
         else:
             context = self.get_context_data()
             context['adoption_form'] = adoption_form

@@ -11,31 +11,36 @@ class CommentForm(forms.ModelForm):
         fields = ('body',)
 
 
-class AdoptionForm(forms.Form):
-    why_Fox = forms.CharField(
-        label="Why would you like to adopt a Fox Terrier?",
-        max_length=80,
-        required=True,
-    )
-        
-    like_website = forms.TypedChoiceField(
-        label="Do you want to adopt a fox terrier?",
-        choices=((1, "Yes"), (0, "No")),
+class AdoptionForm(forms.Form):    
+    fox_terrier_choice  = forms.TypedChoiceField(
+        label="Which Fox terrier do you want to adopt?",
+        choices=((1, "Wired"), (0, "Smooth")),
         widget=forms.RadioSelect,
         initial='1',
         coerce=int,
         required=True,
     )
-
+    male_female = forms.TypedChoiceField(
+        label="Would prefer a Male or Female?",
+        choices=((1, "Male"), (0, "Female")),
+        widget=forms.RadioSelect,
+        initial='1',
+        coerce=int,
+        required=True,
+    )
+    What_age = forms.CharField(
+        label="What age Fox Terrier, are you looking for?",
+        required=False,
+    )
+    why_Fox = forms.CharField(
+        label="Why would you like to adopt a Fox Terrier?",
+        max_length=80,
+        required=True,
+    )
     dog_experience = forms.CharField(
         label="What experience with dogs do you have?",
         max_length=80,
         required=True,
-    )
-
-    favorite_number = forms.IntegerField(
-        label="Favorite number",
-        required=False,
     )
 
     notes = forms.CharField(
@@ -44,33 +49,38 @@ class AdoptionForm(forms.Form):
     )
 
 class RehomeForm(forms.Form):
-    why_Fox = forms.CharField(
-        label="Why Fox Terrier?",
-        max_length=80,
-        required=True,
-    )
-        
-    like_website = forms.TypedChoiceField(
-        label="Do you want to adopt a fox terrier?",
-        choices=((1, "Yes"), (0, "No")),
+    fox_terrier_choice  = forms.TypedChoiceField(
+        label="Which Fox terrier do you want to rehome?",
+        choices=((1, "Wired"), (0, "Smooth")),
         widget=forms.RadioSelect,
         initial='1',
         coerce=int,
         required=True,
     )
+    male_female = forms.TypedChoiceField(
+        label="Is the Fox Terrier you wish to rehome Male or Female?",
+        choices=((1, "Male"), (0, "Female")),
+        widget=forms.RadioSelect,
+        initial='1',
+        coerce=int,
+        required=True,
+    )
+    dog_age = forms.IntegerField(
+        label="What age is the Fox Terrier you wish to rehome?",
+        required=False,
+    )
 
-    dog_experience = forms.CharField(
-        label="What experience with dogs do you have?",
+    rehome_reason = forms.CharField(
+        label="Why do you want to rehome them?",
         max_length=80,
         required=True,
     )
 
-    favorite_number = forms.IntegerField(
-        label="Favorite number",
-        required=False,
-    )
-
     notes = forms.CharField(
         label="Additional notes or feedback",
+        required=False,
+    )   
+    image_upload = forms.ImageField(
+        label="Upload a picture of your Fox Terrier",
         required=False,
     )   

@@ -3,13 +3,13 @@
 <div class="container-fluid">
     <div class="row">
 
-        <div class="col-12 mt-3 left">
+        <div class="col-12 mt-5 left">
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
+                        <div class="card-body" style="width: 75%;">
+                            <div class="image-container" >
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/dtqjcm9e6/image/upload/v1692087667/Screenshot_20230815_081948_Facebook_twsgyu.jpg" />
@@ -38,7 +38,7 @@
 
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:4 %}
+                {% if forloop.counter|divisibleby:3 %}
             </div>
             <div class="row">{% endif %} {% endfor %}</div>
         </div>

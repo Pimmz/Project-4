@@ -2,15 +2,15 @@
 {% load crispy_forms_tags %}
 
 <div class="container">
-    <h1 class="page-title">Adoption Page</h1>
-    <hr class="adoption">
-    <br>
-    
-    <form method="post" class="m" enctype="multipart/form-data">
-        {{ adoption_form|crispy }}
-        {% csrf_token %}
-        <button type="submit" class="btn btn-outline-dark">Submit</button>
-        <a class="btn btn-outline-dark- m-2" href="% url 'adoption' %">Cancel</a>
-    </form>
+        <h1 class="page-title text-center">Adoption Page</h1>
+        <hr class="adoption">
+        <br>
+        
+        <form method="post" class="m" enctype="multipart/form-data">
+            {{ adoption_form|crispy }}
+            {% csrf_token %}
+            <button type="submit" class="btn btn-outline-dark">Submit</button>
+            <a class="btn btn-outline-dark- m-2" href="% url 'adoption' %">Cancel</a>
+        </form>
 </div>
 {%endblock%}
