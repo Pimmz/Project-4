@@ -13,10 +13,20 @@ class Adoption(models.Model):
 	content = models.TextField()
 	created_on = models.DateTimeField(auto_now_add=True)
     
-def _str_(self):
+def __str__(self):
     return self.title
 
+class Rehome(models.Model):
 
+	name = models.CharField(max_length=100)
+	slug = models.SlugField(max_length=100,unique=True)
+	email = models.EmailField(max_length=100)
+	content = models.TextField()
+	created_on = models.DateTimeField(auto_now_add=True)
+    
+def __str__(self):
+    return self.title
+    
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment, Adoption
+from .models import Post, Comment, Adoption, Rehome
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -26,6 +26,16 @@ class PostAdmin(SummernoteModelAdmin):
             queryset.update(approved=True)
 
     @admin.register(Adoption)
-    class AdoptionAdmin(admin.ModelAdmin):
-        pass
+    class AdoptionAdmin(SummernoteModelAdmin):
+
+        list_display = ('name', 'slug', 'email', 'created_on')
+        prepopulated_fields = {'slug': ('name',)}
+        summernote_fields = ('content')
+        
+    @admin.register(Rehome)
+    class RehomeAdmin(SummernoteModelAdmin):
+
+        list_display = ('name', 'slug', 'email', 'created_on')
+        prepopulated_fields = {'slug': ('name',)}
+        summernote_fields = ('content')
     
