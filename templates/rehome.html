@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 
 <div class="container">
-    <h1 class="page-title">Rehoming Page</h1>
+    <h1 class="page-title text-center">Rehoming Page</h1>
     <hr class="rehome">
     <br>
 
@@ -15,8 +15,8 @@
     <form method="post" class="m" enctype="multipart/form-data">
         {{ rehome_form|crispy }}
         {% csrf_token %}
-        <button type="submit" class="btn btn-outline-dark">Submit</button>
-        <a class="btn btn-outline-dark- m-2" href="% url 'rehome' %">Cancel</a>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+        <a class="btn btn-outline-secondary m-2" href="% url 'rehome' %">Cancel</a>
     </form>
 </div>
 <script>

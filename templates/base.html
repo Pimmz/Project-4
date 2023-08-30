@@ -5,10 +5,10 @@
 
 <head>
     <title>Fox Terrier Owners Club</title>
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
-   
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,7 +24,8 @@
         style="background-image: linear-gradient(to right bottom, #ffeace, #d0bea5, #a3937e, #776b59, #4f4537);">
         <div class="container-fluid">
             <div class="logo">
-                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmlnOWx5MnZ1bmZzNTE1bW1ocjl3NjZtNmZvZXo3Nm1peHNidmRsZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/FP3UIHzd5U5g8k7szQ/giphy.gif" alt="logo" width="20%" height="20%">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmlnOWx5MnZ1bmZzNTE1bW1ocjl3NjZtNmZvZXo3Nm1peHNidmRsZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/FP3UIHzd5U5g8k7szQ/giphy.gif"
+                    alt="logo" style="max-width: 110px; height: 20%;">
             </div>
             <a class="navbar-brand" href="{% url 'index' %}">
                 <h3 class="fox1"><b>Fox Terrier Owners Club</b></h3>
@@ -35,7 +36,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-8 mb-lg-0 fs-5">
+                <ul class="navbar-nav ms-auto mb-8 mb-lg-0 fs-5">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
                     </li>
@@ -86,7 +87,7 @@
     </div>
 
     <main class="flex-shrink-0 main-bg">
-        {% block content %} {% endblock content %} 
+        {% block content %} {% endblock content %}
     </main>
 
     <footer class="footer mt-auto py-3 fs-5 text-light bg-secondary"

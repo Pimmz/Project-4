@@ -15,8 +15,8 @@
     <form method="post" class="m" enctype="multipart/form-data">
         {{ adoption_form|crispy }}
         {% csrf_token %}
-        <button type="submit" class="btn btn-outline-dark">Submit</button>
-        <a class="btn btn-outline-dark- m-2" href="% url 'adoption' %">Cancel</a>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+        <a class="btn btn-outline-secondary- m-2" href="% url 'adoption' %">Cancel</a>
     </form>
 </div>
 <script>

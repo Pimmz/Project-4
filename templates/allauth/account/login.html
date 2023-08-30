@@ -10,13 +10,16 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-2">
+            <div class="hello">
+                <img src="https://media.giphy.com/media/YjfENaIDJyNk5amFJf/giphy.gif" alt="hello" style="max-width: 90px;">
+            </div> 
             <h3>{% trans "Sign In" %}</h3>
-
-            <p>{% blocktrans %}Welcome back to the Fox Terrier blog. To leave a comment or like a post, then please
+            
+            <p class="signin">{% blocktrans %}Welcome back to the Fox Terrier blog. please
                 login. If you have not created an account yet, then please
                 <a class="link" href="{{ sign_up }}">sign up</a>.{% endblocktrans %}
-            </p>
-
+            </p>  
+            
         </div>
     </div>
     <div class="row">
