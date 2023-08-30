@@ -108,7 +108,10 @@ class AdoptionView(TemplateView):
     def post(self, request, *args, **kwargs):
         adoption_form = AdoptionForm(request.POST)
         if adoption_form.is_valid():
-            return HttpResponseRedirect('/adoption/')
+            context = self.get_context_data()
+            context['adoption_form'] = adoption_form
+            context['success_message'] = "Adoption form submitted successfully!"
+            return self.render_to_response(context)
         else:
             context = self.get_context_data()
             context['adoption_form'] = adoption_form
@@ -125,7 +128,11 @@ class RehomeView(TemplateView):
     def post(self, request, *args, **kwargs):
         rehome_form = RehomeForm(request.POST)
         if rehome_form.is_valid():
-            pass
+            context = self.get_context_data()
+            context['rehome_form'] = rehome_form
+            context['success_message'] = "Rehome form submitted successfully!"
+            return self.render_to_response(context)
+
         else:
             context = self.get_context_data()
             context['rehome_form'] = rehome_form

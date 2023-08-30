@@ -6,6 +6,12 @@
     <hr class="rehome">
     <br>
 
+    {% if success_message %}
+    <div id="msg" class="alert alert-success" role="alert">
+        {{ success_message }}
+    </div>
+    {% endif %}
+    
     <form method="post" class="m" enctype="multipart/form-data">
         {{ rehome_form|crispy }}
         {% csrf_token %}
@@ -13,4 +19,11 @@
         <a class="btn btn-outline-dark- m-2" href="% url 'rehome' %">Cancel</a>
     </form>
 </div>
+<script>
+    setTimeout(function () {
+        let messages = document.getElementById("msg");
+        let alert = new bootstrap.Alert(messages);
+        alert.close();
+    }, 3000);
+</script>
 {%endblock%}
