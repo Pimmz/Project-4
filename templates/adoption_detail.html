@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+
+all to be changed to fit my adoption page
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">
+                    Fox Terrier Type
+                </h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{ adoption.terrier_type }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">Sex</h5>
+                <div class="card-body">
+                    <div class="card-text">{{ adoption.sex }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">
+                    Fox Terrier Age
+                </h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{ adoption.age }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">Why you want a Fox Terrier</h5>
+                <div class="card-body">
+                    <div class="card-text">{{ adoption.why }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">
+                    Your Experince with dogs
+                </h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">{{ adoption.experience }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">Any additional notes</h5>
+                <div class="card-body">
+                    <div class="card-text">{{ adoption.notes }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

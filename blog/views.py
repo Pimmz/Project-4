@@ -120,6 +120,15 @@ class AdoptionView(TemplateView):
             context['adoption_form'] = adoption_form
             return self.render_to_response(context)
 
+class AdoptionRead(View):
+    def get(self, request, slug):
+        queryset - adoption.objects.all()
+        adoption = get_object_or_404(queryset, slug=slug)
+        comments = recipe.comments.order_by('created_on')
+        bookmarked = False
+        if
+
+        
 class RehomeView(TemplateView):
     template_name = "rehome.html"
 
