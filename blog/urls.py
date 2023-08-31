@@ -6,6 +6,7 @@ urlpatterns = [
     # path('accounts/', include('allauth.urls')),
     path('posts', views.PostList.as_view(), name='blog'),
     path("adoption/", views.AdoptionView.as_view(), name='adoption'),
+    path("adoption/<int:pk>/", views.AdoptionDetailView.as_view(), name='adoption_detail'),
     path("about/", views.AboutView.as_view(), name='about'),
     path("rehome/", views.RehomeView.as_view(), name='rehome'),
     path('comment/<slug:slug>', views.PostComment.as_view(), name='post_comment'),

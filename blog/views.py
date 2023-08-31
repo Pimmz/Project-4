@@ -1,10 +1,39 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
+from .models import Adoption
 from .forms import CommentForm, AdoptionForm, RehomeForm
 from django.views.generic import TemplateView
 
+
+class AdoptionView(TemplateView):
+    template_name = "adoption.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['adoption_form'] = AdoptionForm()
+        return context
+    
+    def post(self, request, *args, **kwargs):
+        adoption_form = AdoptionForm(request.POST)
+        if adoption_form.is_valid():
+            adoption = adoption_form.save(commit=False)
+            adoption.author = request.user
+            adoption.save()
+            return redirect(reverse('adoption_detail', args=[adoption.id]))
+          
+        context = self.get_context_data()
+        context['adoption_form'] = adoption_form
+        return self.render_to_response(context)
+
+class AdoptionDetailView(TemplateView):
+    template_name = "adoption_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['adoption'] = get_object_or_404(Adoption, pk=self.kwargs['pk'])
+        return context
 
 class PostList(generic.ListView):
     model = Post
@@ -97,36 +126,6 @@ class PostComment(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
-class AdoptionView(TemplateView):
-    template_name = "adoption.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['adoption_form'] = AdoptionForm()
-        return context
-    
-    def post(self, request, *args, **kwargs):
-        adoption_form = AdoptionForm(request.POST)
-        if adoption_form.is_valid():
-            adoption = adoption_form.save(commit=False)
-            adoption.author = request.user
-            adoption.save()
-            context = self.get_context_data()
-            context['adoption_form'] = adoption_form
-            context['success_message'] = "Adoption form submitted successfully!"
-            return self.render_to_response(context)
-        else:
-            context = self.get_context_data()
-            context['adoption_form'] = adoption_form
-            return self.render_to_response(context)
-
-class AdoptionRead(View):
-    def get(self, request, slug):
-        queryset - adoption.objects.all()
-        adoption = get_object_or_404(queryset, slug=slug)
-        comments = recipe.comments.order_by('created_on')
-        bookmarked = False
-        if
 
         
 class RehomeView(TemplateView):
