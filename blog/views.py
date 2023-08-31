@@ -108,6 +108,9 @@ class AdoptionView(TemplateView):
     def post(self, request, *args, **kwargs):
         adoption_form = AdoptionForm(request.POST)
         if adoption_form.is_valid():
+            adoption = adoption_form.save(commit=False)
+            adoption.author = request.user
+            adoption.save()
             context = self.get_context_data()
             context['adoption_form'] = adoption_form
             context['success_message'] = "Adoption form submitted successfully!"
