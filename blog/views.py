@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
-from .models import Adoption
+from .models import Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm
 from django.views.generic import TemplateView
 
@@ -60,7 +60,7 @@ class RehomeDetailView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['rehome'] = get_object_or_404(Adoption, pk=self.kwargs['pk'])
+        context['rehome'] = get_object_or_404(Rehome, pk=self.kwargs['pk'])
         return context
 
 class PostList(generic.ListView):
