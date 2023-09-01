@@ -5,8 +5,8 @@
 
 
 <div class="container">
-    <h1 class="page-title text-center">Your Rehome Information</h1>
-    <hr class="rehome">
+    <h1 class="page-title text-center">Your Rehoming Information</h1>
+    <hr class="adoption">
     <br>
 
     <div class="row">
@@ -44,7 +44,7 @@
         </div>
         <div class="col-md-6">
             <div class="card mb-3">
-                <h5 class="card-header">Why you want a Fox Terrier</h5>
+                <h5 class="card-header">Why you want to rehome your Fox Terrier</h5>
                 <div class="card-body">
                     <div class="card-text">{{ rehome.why }}</div>
                 </div>
@@ -57,10 +57,10 @@
         <div class="col-md-6">
             <div class="card mb-3">
                 <h5 class="card-header">
-                    Your Experince 
+                    What are they like around other dogs?
                 </h5>
                 <div class="card-body">
-                    <div class="card-text">{{ rehome.experience }}</div>
+                    <div class="card-text">{{ rehome.behaviour }}</div>
                 </div>
             </div>
         </div>
@@ -69,6 +69,28 @@
                 <h5 class="card-header">Any additional notes</h5>
                 <div class="card-body">
                     <div class="card-text">{{ rehome.notes }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">
+                    Name
+                </h5>
+                <div class="card-body">
+                    <div class="card-text">{{ rehome.name }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <h5 class="card-header">Email</h5>
+                <div class="card-body">
+                    <div class="card-text">{{ rehome.email }}</div>
                 </div>
             </div>
         </div>

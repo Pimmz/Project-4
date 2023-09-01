@@ -35,6 +35,34 @@ class AdoptionDetailView(TemplateView):
         context['adoption'] = get_object_or_404(Adoption, pk=self.kwargs['pk'])
         return context
 
+class RehomeView(TemplateView):
+    template_name = "rehome.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['rehome_form'] = RehomeForm()
+        return context
+    
+    def post(self, request, *args, **kwargs):
+        rehome_form = RehomeForm(request.POST)
+        if rehome_form.is_valid():
+            rehome = rehome_form.save(commit=False)
+            rehome.author = request.user
+            rehome.save()
+            return redirect(reverse('rehome_detail', args=[rehome.id]))
+            
+        context = self.get_context_data()
+        context['rehome_form'] = rehome_form
+        return self.render_to_response(context)
+
+class RehomeDetailView(TemplateView):
+    template_name = "rehome_detail.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['rehome'] = get_object_or_404(Adoption, pk=self.kwargs['pk'])
+        return context
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
@@ -125,26 +153,3 @@ class PostComment(View):
             post.comment.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-        
-class RehomeView(TemplateView):
-    template_name = "rehome.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['rehome_form'] = RehomeForm()
-        return context
-    
-    def post(self, request, *args, **kwargs):
-        rehome_form = RehomeForm(request.POST)
-        if rehome_form.is_valid():
-            context = self.get_context_data()
-            context['rehome_form'] = rehome_form
-            context['success_message'] = "Rehome form submitted successfully!"
-            return self.render_to_response(context)
-
-        else:
-            context = self.get_context_data()
-            context['rehome_form'] = rehome_form
-            return self.render_to_response(context)

@@ -32,8 +32,6 @@ class AdoptionAdmin(SummernoteModelAdmin):
    
 @admin.register(Rehome)
 class RehomeAdmin(SummernoteModelAdmin):
-
-    list_display = ('name', 'slug', 'email', 'created_on')
-    prepopulated_fields = {'slug': ('name',)}
-    summernote_fields = ('content')
+    list_display = ('author', 'created_on')
+    
     
