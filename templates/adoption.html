@@ -3,6 +3,7 @@
 
 <div class="container">
     <h1 class="page-title text-center">Adoption Page</h1>
+    <h4 class="text-center">Can you offer a Fox Terrier that didnt have the best start to their life, a place to live?, where they will be loved and cherished as all dogs should. We'd love to here from you. Just fill in the from and we'll be in touch.</h4>
     <hr class="adoption">
     <br>
 
@@ -16,7 +17,7 @@
         {{ adoption_form|crispy }}
         {% csrf_token %}
         <button type="submit" class="btn btn-outline-secondary">Submit</button>
-        <a class="btn btn-outline-secondary- m-2" href="% url 'adoption' %">Cancel</a>
+        <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
     </form>
 </div>
 <script>

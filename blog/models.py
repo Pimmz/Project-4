@@ -2,15 +2,19 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+W = "Wired"
+S = "Smooth"
+M = "Male"
+F = "Female"
 
 STATUS = ((0, "Draft"), (1, "Published"))
-TERRIER_TYPE = [("W", "Wired"), ("S", "Smooth")]
-SEX_TYPE = [("M", "Male"), ("F", "Female")]
+TERRIER_TYPE = [(W, "Wired"), (S, "Smooth")]
+SEX_TYPE = [(M, "Male"), (F, "Female")]
 
 class Adoption(models.Model):
     terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE, verbose_name="Which Fox terrier do you want to adopt?")
     sex = models.CharField(max_length=10, choices=SEX_TYPE, verbose_name="would prefer a Male or Female?")
-    age = models.IntegerField(verbose_name="What age Fox Terrier, are you looking for?", default=0)
+    age = models.CharField(max_length=200,verbose_name="What age Fox Terrier, are you looking for?", default=0)
     why = models.CharField(max_length=200, verbose_name="Why would you like to adopt a Fox Terrier?")
     experience = models.CharField(max_length=200, verbose_name="What experience with dogs do you have?")
     notes = models.CharField(max_length=200, verbose_name="Additional notes or feedback")
@@ -32,7 +36,7 @@ class Rehome(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
         
     def __str__(self):
-        return self.title
+        return self.name
     
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
