@@ -73,6 +73,14 @@ class RehomeDetailView(TemplateView):
         context['rehome'] = get_object_or_404(Rehome, pk=self.kwargs['pk'])
         return context
 
+class RehomeUpdateView(UpdateView):
+    model = Rehome
+    form_class = RehomeForm
+    template_name = "update_rehome.html"
+    
+    def get_success_url(self):
+        return reverse('rehome_detail', kwargs={'pk': self.object.pk})
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")

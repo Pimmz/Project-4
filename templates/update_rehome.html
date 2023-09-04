@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<div class="container">
+    <h1 class="page-title text-center">Update Rehome Page</h1>
+    <hr class="rehome">
+    <br>
+
+    {% if success_message %}
+    <div id="msg" class="alert alert-success" role="alert">
+        {{ success_message }}
+    </div>
+
+    {% endif %}
+    <form method="post" action="" class="m" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <button type="submit">Update</button>
+    </form>
+</div>
+<script>
+    setTimeout(function () {
+        let messages = document.getElementById("msg");
+        let alert = new bootstrap.Alert(messages);
+        alert.close();
+    }, 4000);
+</script>
+
+
+{%endblock%}
