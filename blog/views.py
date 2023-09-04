@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .models import Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, UpdateView, DetailView
 
 
 class AdoptionView(TemplateView):
@@ -27,13 +27,23 @@ class AdoptionView(TemplateView):
         context['adoption_form'] = adoption_form
         return self.render_to_response(context)
 
-class AdoptionDetailView(TemplateView):
+class AdoptionDetailView(DetailView):
+    model = Adoption
     template_name = "adoption_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['adoption'] = get_object_or_404(Adoption, pk=self.kwargs['pk'])
         return context
+
+class AdoptionUpdateView(UpdateView):
+    model = Adoption
+    form_class = AdoptionForm
+    template_name = "update_adoption.html"
+    
+    def get_success_url(self):
+        return reverse('adoption_detail', kwargs={'pk': self.object.pk})
+
 
 class RehomeView(TemplateView):
     template_name = "rehome.html"

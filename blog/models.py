@@ -18,8 +18,8 @@ class Adoption(models.Model):
     why = models.CharField(max_length=200, verbose_name="Why would you like to adopt a Fox Terrier?")
     experience = models.CharField(max_length=200, verbose_name="What experience with dogs do you have?")
     notes = models.CharField(max_length=200, verbose_name="Additional notes or feedback")
-    name = models.CharField(max_length=100, verbose_name="Your Name?", default='example: Dave Smith')
-    email = models.EmailField(max_length=100, verbose_name="Your Email Address", default='example@example.com')
+    name = models.CharField(max_length=100, verbose_name="Your Name?", null=True, blank=True)
+    email = models.EmailField(max_length=100, verbose_name="Your Email Address", null=True, blank=True)
     
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="adoption_author" ,default=1
