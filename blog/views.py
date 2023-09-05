@@ -1,10 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
-from .models import Adoption, Rehome
+from django.urls import reverse_lazy
+from .models import Post, Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm
-from django.views.generic import TemplateView, UpdateView, DetailView
+from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
 
 
 class AdoptionView(TemplateView):
@@ -44,6 +44,16 @@ class AdoptionUpdateView(UpdateView):
     def get_success_url(self):
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
+class DeleteAdoptionView(DeleteView):
+    model = Rehome
+    template_name = "delete_adoption.html"
+    success_url = reverse_lazy('adoption')
+    
+    def post(self, request, *args, **kwargs):
+        adoption = self.get_object()
+        adoption.delete()
+        return redirect(self.success_url)
+
 
 class RehomeView(TemplateView):
     template_name = "rehome.html"
@@ -80,6 +90,17 @@ class RehomeUpdateView(UpdateView):
     
     def get_success_url(self):
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
+
+class DeleteRehomeView(DeleteView):
+    model = Rehome
+    template_name = "delete_rehome.html"
+    success_url = reverse_lazy('rehome')
+    
+    def post(self, request, *args, **kwargs):
+        rehome = self.get_object()
+        rehome.delete()
+        return redirect(self.success_url)
+
 
 class PostList(generic.ListView):
     model = Post

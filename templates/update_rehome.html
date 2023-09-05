@@ -8,11 +8,6 @@
     <hr class="rehome">
     <br>
 
-    {% if success_message %}
-    <div id="msg" class="alert alert-success" role="alert">
-        {{ success_message }}
-    </div>
-
     {% endif %}
     <form method="post" action="" class="m" enctype="multipart/form-data">
         {% csrf_token %}
@@ -21,13 +16,7 @@
         <a class="btn btn-outline-secondary" href="{% url 'index' %}">Cancel</a>
     </form>
 </div>
-<script>
-    setTimeout(function () {
-        let messages = document.getElementById("msg");
-        let alert = new bootstrap.Alert(messages);
-        alert.close();
-    }, 4000);
-</script>
+
 
 
 {%endblock%}

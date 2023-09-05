@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+
+<div class="container">
+    <p class="page-title text-center mt-5">No rehoming details</p>
+    <hr class="rehome">
+    <br>
+    <h2 class="text-center mt-3">You dont have any rehoming details at the moment</h2>
+    <div class="row justify-content-center">
+        <a class="btn btn-outline-dark m-4" href="{%  url 'update_rehome' pk=rehome.id %}">Cancel</a>
+    </div>
+</div>
+
+{%endblock%}

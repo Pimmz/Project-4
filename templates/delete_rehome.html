@@ -5,18 +5,18 @@
 
 
 <div class="container">
-    <p class="page-title text-center mt-5">Delete Adoption Form</p>
+    <p class="page-title text-center mt-5">Delete Rehoming</p>
     <hr class="rehome">
     <br>
-    <h2 class="text-center mt-3">Are you sure you want to delete your Adoption request ?</h2>
+    <h2 class="text-center mt-3">Are you sure you want to delete your rehoming request ?</h2>
     <div class="row justify-content-center">
         <div class="col-11 col-md-6 col-lg-4 mt-4">
            
-            <form method="POST" class="text-center" action="{% url 'delete_adoption' pk=adoption.pk %}">
+            <form method="POST" class="text-center" action="{% url 'delete_rehome' pk=rehome.pk %}">
                 {%  csrf_token  %}
                 <div>
                     <button class="btn btn-danger m-4" type="submit">Delete</button>
-                    <a class="btn btn-outline-dark m-4" href="{%  url 'update_adoption' pk=adoption.id %}">Cancel</a>
+                    <a class="btn btn-outline-dark m-4" href="{%  url 'update_rehome' pk=rehome.id %}">Cancel</a>
                 </div>
             </form>
             
