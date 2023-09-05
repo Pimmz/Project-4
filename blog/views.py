@@ -45,7 +45,7 @@ class AdoptionUpdateView(UpdateView):
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
 class DeleteAdoptionView(DeleteView):
-    model = Rehome
+    model = Adoption
     template_name = "delete_adoption.html"
     success_url = reverse_lazy('adoption')
     
