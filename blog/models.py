@@ -27,7 +27,7 @@ class Adoption(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.author.username
+        return str(self.pk)
         
 W = "Wired"
 S = "Smooth"
@@ -54,8 +54,9 @@ class Rehome(models.Model):
 
     created_on = models.DateTimeField(auto_now_add=True)
 
+    
     def __str__(self):
-        return self.author.username
+        return str(self.pk)
     
     
 class Post(models.Model):

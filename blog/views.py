@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse_lazy
 from .models import Post, Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm
@@ -33,8 +33,19 @@ class AdoptionDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['adoption'] = get_object_or_404(Adoption, pk=self.kwargs['pk'])
+        pk = self.kwargs.get('pk')
+        adoption = get_object_or_404(Adoption, pk=pk)
+        context['adoption'] = adoption
         return context
+    
+    def get(self, request, *args, **kwargs):
+        try:
+            pk = self.kwargs.get('pk') 
+            return super().get(request, *args, **kwargs)
+
+        except Http404:
+            return render(request, 'no_adoption.html')
+        
 
 class AdoptionUpdateView(UpdateView):
     model = Adoption
@@ -75,13 +86,25 @@ class RehomeView(TemplateView):
         context['rehome_form'] = rehome_form
         return self.render_to_response(context)
 
+
 class RehomeDetailView(TemplateView):
+    model = Rehome
     template_name = "rehome_detail.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['rehome'] = get_object_or_404(Rehome, pk=self.kwargs['pk'])
+        pk = self.kwargs.get('pk')
+        rehome = get_object_or_404(Rehome, pk=pk)
+        context['rehome'] = rehome
         return context
+    
+    def get(self, request, *args, **kwargs):
+        try:
+            pk = self.kwargs.get('pk') 
+            return super().get(request, *args, **kwargs)
+
+        except Http404:
+            return render(request, 'no_rehome.html')
 
 class RehomeUpdateView(UpdateView):
     model = Rehome
