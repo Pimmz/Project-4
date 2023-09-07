@@ -1,9 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
-from django.http import HttpResponseRedirect, Http404
+from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
 from django.urls import reverse_lazy
 from .models import Post, Adoption, Rehome
-from .forms import CommentForm, AdoptionForm, RehomeForm
+from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm
 from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
 
 
@@ -131,6 +131,23 @@ class PostList(generic.ListView):
     template_name = "blog.html"
     paginate_by = 3
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)   
+        context['post_create_form'] = PostCreateForm()
+        return context
+
+    def post(self, request, *args, **kwargs):
+        post_create_form = PostCreateForm(request.POST)
+        if post_create_form.is_valid():
+            post = post_create_form.save(commit=False)
+            post.author = request.user
+            post.save()
+            return redirect('post_detail', slug=post.slug)
+        else:
+            context = self.get_context_data()
+            context['post_create_form'] = post_create_form
+            return self.render_to_response(context)
+
 
 class PostDetail(View):
 
@@ -185,6 +202,13 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+        def dispatch(self, request, *args, **kwargs):
+            try:
+                return super().dispatch(request, *args, **kwargs)
+            except Post.DoesNotExist:
+                return HttpResponseServerError("Post not found.")
+
+
 class AboutView(TemplateView):
     template_name = "about.html"
 
