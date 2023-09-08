@@ -3,7 +3,7 @@
 
 <div class="container">
     <h1 class="page-title text-center">RehomePage</h1>
-    <h4 class="text-center">Can you offer a Fox Terrier that didnt have the best start to their life, a place to live?, where they will be loved and cherished as all dogs should. We'd love to here from you. Just fill in the from and we'll be in touch.</h4>
+    <h4 class="text-center">Life can be very challenging especially, with a fox terrier. If your thinking of rehoming your fox terrier please get in touch. We'd love to here from you. Just fill in the from and we'll be in touch.</h4>
     <hr class="rehome">
     <br>
 
@@ -20,11 +20,13 @@
         <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
     </form>
 </div>
-<script>
-    setTimeout(function () {
-        let messages = document.getElementById("msg");
-        let alert = new bootstrap.Alert(messages);
-        alert.close();
-    }, 4000);
-</script>
+<div class="container">
+    {%  if messages %}
+        <div class="alert alert-success" role="alert">
+            {%  for messages in messages %}
+                {{ message }}
+            {% endfor %}  
+        </div>
+    {%  endif %}
+</div>
 {%endblock%}

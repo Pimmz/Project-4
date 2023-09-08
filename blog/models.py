@@ -13,12 +13,12 @@ TERRIER_TYPE = [(W, "Wired"), (S, "Smooth")]
 SEX_TYPE = [(M, "Male"), (F, "Female")]
 
 class Adoption(models.Model):
-    terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE, verbose_name="Which Fox terrier do you want to adopt?")
-    sex = models.CharField(max_length=10, choices=SEX_TYPE, verbose_name="would prefer a Male or Female?")
-    age = models.CharField(max_length=200,verbose_name="What age Fox Terrier, are you looking for?", default=0)
-    why = models.CharField(max_length=200, verbose_name="Why would you like to adopt a Fox Terrier?")
-    experience = models.CharField(max_length=200, verbose_name="What experience with dogs do you have?")
-    notes = models.CharField(max_length=200, verbose_name="Additional notes or feedback")
+    terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE, verbose_name="Which Fox terrier do you want to adopt?", null=True, blank=True)
+    sex = models.CharField(max_length=10, choices=SEX_TYPE, verbose_name="would prefer a Male or Female?", null=True, blank=True)
+    age = models.CharField(max_length=200,verbose_name="What age Fox Terrier, are you looking for?", null=True, blank=True)
+    why = models.CharField(max_length=200, verbose_name="Why would you like to adopt a Fox Terrier?", null=True, blank=True)
+    experience = models.CharField(max_length=200, verbose_name="What experience with dogs do you have?", null=True, blank=True)
+    notes = models.CharField(max_length=200, verbose_name="Additional notes or feedback", null=True, blank=True)
     name = models.CharField(max_length=100, verbose_name="Your Name?", null=True, blank=True)
     email = models.EmailField(max_length=100, verbose_name="Your Email Address", null=True, blank=True)
     

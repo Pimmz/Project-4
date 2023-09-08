@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
 from django.urls import reverse_lazy
+from django.contrib import messages
 from .models import Post, Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm
 from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
@@ -21,6 +22,7 @@ class AdoptionView(TemplateView):
             adoption = adoption_form.save(commit=False)
             adoption.author = request.user
             adoption.save()
+            messages.success(self.request, 'Your adoption request has been posted successfully')
             return redirect(reverse('adoption_detail', args=[adoption.id]))
           
         context = self.get_context_data()
@@ -39,6 +41,7 @@ class AdoptionDetailView(DetailView):
         return context
     
     def get(self, request, *args, **kwargs):
+        
         try:
             pk = self.kwargs.get('pk') 
             return super().get(request, *args, **kwargs)
@@ -53,6 +56,7 @@ class AdoptionUpdateView(UpdateView):
     template_name = "update_adoption.html"
     
     def get_success_url(self):
+        messages.success(self.request, 'Your update has been successful')
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
 class DeleteAdoptionView(DeleteView):
@@ -63,6 +67,7 @@ class DeleteAdoptionView(DeleteView):
     def post(self, request, *args, **kwargs):
         adoption = self.get_object()
         adoption.delete()
+        messages.success(self.request, 'Your deletion has been successful')
         return redirect(self.success_url)
 
 
@@ -80,6 +85,7 @@ class RehomeView(TemplateView):
             rehome = rehome_form.save(commit=False)
             rehome.author = request.user
             rehome.save()
+            messages.success(self.request, 'Your rehoming request has been posted successfully')
             return redirect(reverse('rehome_detail', args=[rehome.id]))
             
         context = self.get_context_data()
@@ -112,6 +118,7 @@ class RehomeUpdateView(UpdateView):
     template_name = "update_rehome.html"
     
     def get_success_url(self):
+        messages.success(self.request, 'Your update has been successful')
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
 
 class DeleteRehomeView(DeleteView):
@@ -122,6 +129,7 @@ class DeleteRehomeView(DeleteView):
     def post(self, request, *args, **kwargs):
         rehome = self.get_object()
         rehome.delete()
+        messages.success(self.request, 'Your deletion has been successful')
         return redirect(self.success_url)
 
 
@@ -142,7 +150,10 @@ class PostList(generic.ListView):
             post = post_create_form.save(commit=False)
             post.author = request.user
             post.save()
-            return redirect('post_detail', slug=post.slug)
+
+            messages.success(request, 'Your post is awaiting approval')
+
+            return redirect('blog.html', slug=post.slug)
         else:
             context = self.get_context_data()
             context['post_create_form'] = post_create_form
@@ -173,7 +184,7 @@ class PostDetail(View):
 
     def post(self, request, slug, *args, **kwargs):
 
-        queryset = Post.objects.filter(status=1)
+        queryset = Post.objects.filter(status=1) 
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
         liked = False

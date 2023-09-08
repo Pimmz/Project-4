@@ -1,10 +1,12 @@
 from . import views
 from django.urls import path, include
+from django.contrib import admin
 
 urlpatterns = [
     path("", views.HomeView.as_view(), name='index'),
     # path('accounts/', include('allauth.urls')),
     path('posts', views.PostList.as_view(), name='blog'),
+    path('blog.html', views.PostList.as_view(), name='blog'),
     path("adoption/", views.AdoptionView.as_view(), name='adoption'),
     path("rehome/", views.RehomeView.as_view(), name='rehome'),
     path("adoption/<int:pk>/", views.AdoptionDetailView.as_view(), name='adoption_detail'),
