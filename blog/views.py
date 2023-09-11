@@ -22,7 +22,7 @@ class AdoptionView(TemplateView):
             adoption = adoption_form.save(commit=False)
             adoption.author = request.user
             adoption.save()
-            messages.success(self.request, 'Your adoption request has been posted successfully')
+            messages.success(self.request, 'Your adoption request has been posted successfully. You will be contacted shortly.')
             return redirect(reverse('adoption_detail', args=[adoption.id]))
           
         context = self.get_context_data()
@@ -56,7 +56,7 @@ class AdoptionUpdateView(UpdateView):
     template_name = "update_adoption.html"
     
     def get_success_url(self):
-        messages.success(self.request, 'Your update has been successful')
+        messages.success(self.request, 'Your update has been successfull')
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
 class DeleteAdoptionView(DeleteView):
@@ -67,7 +67,7 @@ class DeleteAdoptionView(DeleteView):
     def post(self, request, *args, **kwargs):
         adoption = self.get_object()
         adoption.delete()
-        messages.success(self.request, 'Your deletion has been successful')
+        messages.success(self.request, 'Your deletion has been successfull')
         return redirect(self.success_url)
 
 
@@ -85,7 +85,7 @@ class RehomeView(TemplateView):
             rehome = rehome_form.save(commit=False)
             rehome.author = request.user
             rehome.save()
-            messages.success(self.request, 'Your rehoming request has been posted successfully')
+            messages.success(self.request, 'Your rehoming request has been posted successfully. You will be contacted shortly.')
             return redirect(reverse('rehome_detail', args=[rehome.id]))
             
         context = self.get_context_data()
