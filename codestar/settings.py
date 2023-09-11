@@ -12,7 +12,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 
-DEBUG = False
+DEBUG = True
+
 
 ALLOWED_HOSTS = ['8000-pimmz-project-4-haoafg4g7k.us2.codeanyapp.com', '8001-pimmz-project-4-haoafg4g7k.us2.codeanyapp.com',
                  'pimmz-project-4-9cc2ab59cc64.herokuapp.com', 'localhost']

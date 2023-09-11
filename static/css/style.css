@@ -14,13 +14,11 @@ body {
     font-size: 25px;
 }
 
-.fox, .page-title {
+.fox, .page-title, .title1 {
     font-size: 45px;
 }
 
-.title {
-    font-size: 45px;
-}
+
 
 .col-sm, .nav-item, .card-title{
     font-size: 30px;
@@ -188,13 +186,13 @@ body {
     font-size: 45px;
 }
 @media (max-width: 566px) {
-    .fox1, .fox, .page-title {
+    .fox1, .fox, .page-title, .title1 {
         font-size: 35px; 
       
     }
 }
 @media (max-width: 474px) {
-    .fox1, .fox, .page-title, .nav-link {
+    .fox1, .fox, .page-title, .nav-link, .title1 {
         font-size: 30px; 
       
     }
