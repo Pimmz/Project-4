@@ -1,6 +1,47 @@
 {% extends "base.html" %} {% block content %}
 {% load crispy_forms_tags %}
 
+<div class="row">
+    <div class="card-body">
+        <form method="post" action="" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-4 m-3 fs-5">
+                    <div class="form-group m-4 ">
+                        <label for="{{ post_create_form.title.id_for_label }}">Title:</label>
+                        {{ post_create_form.title}}
+                    </div>
+                    <div class="form-group">
+                        <label for="{{ post_create_form.content.id_for_label }}">Content:</label>
+                        {{ post_create_form.content}}
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-12-secondary">
+                            <h3 class="mt-5 fs-1"><u>Welcome to the chat room</u></h3>
+                            <li class="fs-3">Come and share your pictures of your Fox Terrier</li>
+                            <li class="fs-3">Look at all the pictures the other members have posted</li>
+                            <li class="fs-3">Comment or like or both! on other members pictures, Just click the title
+                            </li>
+                            <li class="fs-3">But most importantly take part and enjoy yourself</li>
+                            <div class="form-group fs-5 mt-5">
+                                <label for="{{ post_create_form.featured_image.id_for_label }}">Image Upload</label>
+                                {{ post_create_form.featured_image}}
+                            </div>
+                        </div>
+                        <div class="col-12 mt-3 fs-3">
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-outline-secondary ">Add Your Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-5 left">
@@ -28,6 +69,12 @@
                             <p class="card-text text-muted h6">
                                 {{ post.created_on}} <i class="far fa-heart"></i> {{ post.number_of_likes }}
                             </p>
+                            {% if request.user == post.author %}
+                                <form method="post" action="{% url 'delete_post' pk=post.pk %"} style="display:inline;">
+                                {% csrf_token%}
+                                <button type="submit" class="btn btn-outline-secondary">Delete</button>
+                                </form>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -36,48 +83,15 @@
             <div class="row">{% endif %} {% endfor %}</div>
         </div>
     </div>
-    <div class="row">
-        <div class="card-body">
-            <form method="post" action="" enctype="multipart/form-data">
-                {% csrf_token %}
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="form-group m-4">
-                            <label for="{{ post_create_form.title.id_for_label }}">Title:</label>
-                            {{ post_create_form.title}}
-                        </div>
-                        <div class="form-group">
-                            <label for="{{ post_create_form.content.id_for_label }}">Content:</label>
-                            {{ post_create_form.content}}
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <label for="{{ post_create_form.featured_image.id_for_label }}"></label>
-                                    {{ post_create_form.featured_image}}
-                                </div>
-                            </div>
-                            <div class="col-12 mt-4">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-outline-secondary ">Add Your Post</button>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>             
-                </div>
-            </form>
-        </div>   
-    </div>                  
+
     <div class="container">
-        {%  if messages %}
-            <div class="alert alert-success" role="alert">
-                {%  for messages in messages %}
-                    {{ message }}
-                {% endfor %}  
-            </div>
-        {%  endif %}
+        {% if messages %}
+        <div class="alert alert-success" role="alert">
+            {% for messages in messages %}
+            {{ message }}
+            {% endfor %}
+        </div>
+        {% endif %}
     </div>
 
     <div class="col-12 d-flex justify-content-end">
