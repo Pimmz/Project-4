@@ -1,10 +1,11 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from . import views
 from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
     path("", views.HomeView.as_view(), name='index'),
-    # path('accounts/', include('allauth.urls')),
     path('posts', views.PostList.as_view(), name='blog'),
     path('blog.html', views.PostList.as_view(), name='blog'),
     path("adoption/", views.AdoptionView.as_view(), name='adoption'),
@@ -21,3 +22,6 @@ urlpatterns = [
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
       
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

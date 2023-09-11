@@ -21,5 +21,8 @@ class RehomeForm(forms.ModelForm):
 class PostCreateForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'content']
+        fields = ['title', 'content', 'featured_image']
+        widget = {
+            'content' : forms.Textarea(attrs={'cols': 80, 'rows': 20}),
+        }
 

@@ -145,7 +145,7 @@ class PostList(generic.ListView):
         return context
 
     def post(self, request, *args, **kwargs):
-        post_create_form = PostCreateForm(request.POST)
+        post_create_form = PostCreateForm(request.POST, request.FILES)
         if post_create_form.is_valid():
             post = post_create_form.save(commit=False)
             post.author = request.user
