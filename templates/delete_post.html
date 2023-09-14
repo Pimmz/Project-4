@@ -16,12 +16,12 @@
                 {%  csrf_token  %}
                 <div>
                     <button class="btn btn-danger m-4" type="submit">Delete</button>
-    
+                    <a class="btn btn-outline-secondary m-2" href="{% url 'blog' %}">Cancel</a>  
                 </div>
             </form>
             
         </div>
-    </div>
+    </div> 
 </div>
 <div class="container">
     {%  if messages %}

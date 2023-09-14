@@ -1,38 +1,19 @@
-{% extends 'base.html' %} {% block content %}
-{% load crispy_forms_tags %}
+{% extends 'base.html' %} 
 
-<div class="row">
-    <div class="card-body">
-        <form method="post" action="" enctype="multipart/form-data">
+{% block content %}
+
+{%  load crispy_forms_tags %}
+
+<div class="container">
+    <h1 class="page-title text-center">Update Post Page</h1>
+    <hr class="post">
+    <br>
+    <div class="text-center">
+        <form method="post" action="" class="m" enctype="multipart/form-data">
             {% csrf_token %}
-            <div class="row">
-                <div class="col-lg-4 m-3 fs-5">
-                    <div class="form-group m-4 ">
-                        <label for="{{ post_create_form.title.id_for_label }}">Title:</label>
-                        {{ post_create_form.title}}
-                    </div>
-                    <div class="form-group">
-                        <label for="{{ post_create_form.content.id_for_label }}">Content:</label>
-                        {{ post_create_form.content}}
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-12-secondary">
-                            <div class="form-group fs-5 mt-5">
-                                <label for="{{ post_create_form.featured_image.id_for_label }}">Image Upload</label>
-                                {{ post_create_form.featured_image}}
-                            </div>
-                        </div>
-                        <div class="col-12 mt-3 fs-3">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-outline-secondary ">Update Your Post</button> 
-                                <a class="btn btn-outline-secondary m-2" href="{% url 'blog' %}">Cancel</a> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-outline-secondary">Submit</button>
+            <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
         </form>
     </div>
 </div>

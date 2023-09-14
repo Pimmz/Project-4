@@ -4,7 +4,7 @@ from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
 from django.urls import reverse_lazy
 from django.contrib import messages
 from .models import Post, Adoption, Rehome
-from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm
+from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm, PostUpdateForm
 from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
 
 
@@ -160,7 +160,6 @@ class PostList(generic.ListView):
             context['post_create_form'] = post_create_form
 
             return self.render_to_response(context)
-        
 
 class PostDetail(View):
 
@@ -243,12 +242,12 @@ class DeletePostView(DeleteView):
 
 class UpdatePostView(UpdateView):
     model = Post
-    form_class = PostCreateForm
+    form_class = PostUpdateForm
     template_name = "update_post.html"
-    
+
     def get_success_url(self):
         messages.success(self.request, 'Your update has been successful')
-        return redirect('blog')
+        return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
 class AboutView(TemplateView):
     template_name = "about.html"

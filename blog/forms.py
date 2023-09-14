@@ -26,3 +26,8 @@ class PostCreateForm(forms.ModelForm):
             'content' : forms.Textarea(attrs={'cols': 80, 'rows': 20}),
         }
 
+class PostUpdateForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ['title', 'content', 'featured_image']
+

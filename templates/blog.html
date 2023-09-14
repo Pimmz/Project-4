@@ -72,8 +72,8 @@
                             {% csrf_token%}
                             <a class="btn btn-outline-secondary m-2"
                                 href="{% url 'delete_post' pk=post.pk %}">Delete</a>
-                                <a class="btn btn-outline-secondary m-2"
-                                href="{% url 'update_post' pk=post.pk %}">Update your post</a>
+                            <a class="btn btn-outline-secondary m-2"
+                                href="{% url 'update_post' slug=post.slug %}">Update</a>
                             {% endif %}
                         </div>
                     </div>
