@@ -16,10 +16,12 @@
                 {%  csrf_token  %}
                 <div>
                     <button class="btn btn-danger m-4" type="submit">Delete</button>
-                    <a class="btn btn-outline-dark m-4" href="{%  url 'update_rehome' pk=rehome.id %}">Cancel</a>
+                    <a class="btn btn-outline-dark m-4" href="{% url 'index' %}">Cancel</a>
                 </div>
             </form>
-            
+            <div class="text-center">
+                <img src="https://media.giphy.com/media/KSyBlMKqqmfwVvKd9s/giphy.gif" alt="bye" style="max-width: 150px;">
+            </div>
         </div>
     </div>
 </div>
