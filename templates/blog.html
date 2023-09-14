@@ -32,12 +32,11 @@
                         </div>
                         <div class="col-12 mt-3 fs-3">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-outline-secondary ">Add Your Post</button>
+                                <button type="submit" class="btn btn-outline-secondary ">Add Your Post</button>   
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </form>
     </div>
@@ -73,6 +72,8 @@
                             {% csrf_token%}
                             <a class="btn btn-outline-secondary m-2"
                                 href="{% url 'delete_post' pk=post.pk %}">Delete</a>
+                                <a class="btn btn-outline-secondary m-2"
+                                href="{% url 'update_post' pk=post.pk %}">Update your post</a>
                             {% endif %}
                         </div>
                     </div>

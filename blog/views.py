@@ -241,6 +241,15 @@ class DeletePostView(DeleteView):
         except Post.DoesNotExist:
             return HttpResponseServerError("Post not found.")
 
+class UpdatePostView(UpdateView):
+    model = Post
+    form_class = PostCreateForm
+    template_name = "update_post.html"
+    
+    def get_success_url(self):
+        messages.success(self.request, 'Your update has been successful')
+        return redirect('blog')
+
 class AboutView(TemplateView):
     template_name = "about.html"
 
