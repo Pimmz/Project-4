@@ -135,13 +135,14 @@ class DeleteRehomeView(DeleteView):
 
 class PostList(generic.ListView):
     model = Post
-    queryset = Post.objects.filter(status=1).order_by("-created_on")
+    queryset = Post.objects.filter(status=1, approved=True).order_by("-created_on")
     template_name = "blog.html"
     paginate_by = 6
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)   
         context['post_create_form'] = PostCreateForm()
+        
         return context
 
     def post(self, request, *args, **kwargs):
@@ -153,20 +154,13 @@ class PostList(generic.ListView):
 
             messages.success(request, 'Your post is awaiting approval')
 
-            return redirect('blog.html', slug=post.slug)
+            return redirect('blog')
         else:
             context = self.get_context_data()
             context['post_create_form'] = post_create_form
-            return self.render_to_response(context)
-        if 'delete_post' in request.POST:
-            post_id = get_object_or_404(Post, pk=post_id)
-            if post.author ==request.user:
-                post.delete()
-                messages.success(request,'Your post has been deleted')
-            else:
-                messages.error(request, 'You do not have permission to delete this post')
-            return redirect('blog.html')
 
+            return self.render_to_response(context)
+        
 
 class PostDetail(View):
 
@@ -221,23 +215,31 @@ class PostDetail(View):
                 "liked": liked
             },
         )
-        def dispatch(self, request, *args, **kwargs):
-            try:
-                return super().dispatch(request, *args, **kwargs)
-            except Post.DoesNotExist:
-                return HttpResponseServerError("Post not found.")
+    def dispatch(self, request, *args, **kwargs):
+        try:
+            return super().dispatch(request, *args, **kwargs)
+        except Post.DoesNotExist:
+            return HttpResponseServerError("Post not found.")
 
 class DeletePostView(DeleteView):
     model = Post
     template_name = "delete_post.html"
     success_url = reverse_lazy('blog')
     
-    def post(self, request, pk, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         post = self.get_object()
-        post.delete()
-        messages.success(self.request, 'Your deletion has been successful')
+        if post.author == request.user:
+            post.delete()
+            messages.success(self.request, 'Your deletion has been successful')
+        else:
+            messages.error(request, 'You do not have permission to delete this post')
         return redirect(self.success_url)
-
+        
+    def dispatch(self, request, *args, **kwargs):
+        try:
+            return super().dispatch(request, *args, **kwargs)
+        except Post.DoesNotExist:
+            return HttpResponseServerError("Post not found.")
 
 class AboutView(TemplateView):
     template_name = "about.html"

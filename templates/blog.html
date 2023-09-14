@@ -70,15 +70,15 @@
                                 {{ post.created_on}} <i class="far fa-heart"></i> {{ post.number_of_likes }}
                             </p>
                             {% if request.user == post.author %}
-                                <form method="post" action="{% url 'delete_post' pk=post.pk %"} style="display:inline;">
-                                {% csrf_token%}
-                                <button type="submit" class="btn btn-outline-secondary">Delete</button>
-                                </form>
+                            {% csrf_token%}
+                            <a class="btn btn-outline-secondary m-2"
+                                href="{% url 'delete_post' pk=post.pk %}">Delete</a>
                             {% endif %}
                         </div>
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
+                
             </div>
             <div class="row">{% endif %} {% endfor %}</div>
         </div>
