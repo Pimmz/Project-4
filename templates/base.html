@@ -53,17 +53,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'blog' %}">Chat Room</a>
                     </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Your Stuff
+                            data-bs-toggle="dropdown" aria-expanded="false">Welcome, {{ user.username }}
                         </a>
+
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{% url 'adoption_detail' pk=29 %}">Adoption details</a></li>
+                            <li><a class="dropdown-item" href="{% url 'adoption_detail' pk=29 %}">Adoption details</a>
+                            </li>
                             <li><a class="dropdown-item" href="{% url 'rehome_detail' pk=26 %}">Rehome details</a></li>
                             <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
+
                         </ul>
                     </li>
+                    {% endif %}
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>

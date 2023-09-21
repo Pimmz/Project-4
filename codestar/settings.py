@@ -15,7 +15,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['8002-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com',
+                 '8002-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com']
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dtqjcm9e6',

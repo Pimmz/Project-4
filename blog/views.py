@@ -14,6 +14,7 @@ class AdoptionView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['adoption_form'] = AdoptionForm()
+        context['user'] = self.request.user
         return context
 
     def post(self, request, *args, **kwargs):
@@ -40,6 +41,7 @@ class AdoptionDetailView(DetailView):
         pk = self.kwargs.get('pk')
         adoption = get_object_or_404(Adoption, pk=pk)
         context['adoption'] = adoption
+        context['user'] = self.request.user
         return context
 
     def get(self, request, *args, **kwargs):
@@ -58,6 +60,8 @@ class AdoptionUpdateView(UpdateView):
     template_name = "update_adoption.html"
 
     def get_success_url(self):
+        context = {}
+        context['user'] = self.request.user
         messages.success(self.request, 'Your update has been successfull')
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
@@ -68,6 +72,8 @@ class DeleteAdoptionView(DeleteView):
     success_url = reverse_lazy('adoption')
 
     def post(self, request, *args, **kwargs):
+        context = {}
+        context['user'] = self.request.user
         adoption = self.get_object()
         adoption.delete()
         messages.success(self.request, 'Your deletion has been successfull')
@@ -80,6 +86,7 @@ class RehomeView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['rehome_form'] = RehomeForm()
+        context['user'] = self.request.user
         return context
 
     def post(self, request, *args, **kwargs):
@@ -103,6 +110,7 @@ class RehomeDetailView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
         pk = self.kwargs.get('pk')
         rehome = get_object_or_404(Rehome, pk=pk)
         context['rehome'] = rehome
@@ -123,6 +131,8 @@ class RehomeUpdateView(UpdateView):
     template_name = "update_rehome.html"
 
     def get_success_url(self):
+        context = {}
+        context['user'] = self.request.user
         messages.success(self.request, 'Your update has been successful')
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
 
@@ -133,6 +143,8 @@ class DeleteRehomeView(DeleteView):
     success_url = reverse_lazy('rehome')
 
     def post(self, request, *args, **kwargs):
+        context = {}
+        context['user'] = self.request.user
         rehome = self.get_object()
         rehome.delete()
         messages.success(self.request, 'Your deletion has been successful')
@@ -149,13 +161,8 @@ class PostList(generic.ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['post_create_form'] = PostCreateForm()
-
+        context['user'] = self.request.user
         return context
-
-    def post(self, request, *args, **kwargs):
-        self.object_list = self.get_queryset()
-        context = self.get_context_data()
-        return self.render_to_response(context)
 
     def post(self, request, *args, **kwargs):
         post_create_form = PostCreateForm(request.POST, request.FILES)
@@ -177,6 +184,8 @@ class PostList(generic.ListView):
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
+        context = {}
+        context['user'] = self.request.user
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -197,7 +206,7 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-
+        context['user'] = self.request.user
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -241,6 +250,7 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('blog')
 
     def post(self, request, *args, **kwargs):
+        context['user'] = self.request.user
         post = self.get_object()
         if post.author == request.user:
             post.delete()
@@ -263,6 +273,7 @@ class UpdatePostView(UpdateView):
     template_name = "update_post.html"
 
     def get_success_url(self):
+        context['user'] = self.request.user
         messages.success(self.request, 'Your update has been successful')
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
@@ -270,12 +281,18 @@ class UpdatePostView(UpdateView):
 class AboutView(TemplateView):
     template_name = "about.html"
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        return context
+
 
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
+        context = {}
+        context['user'] = self.request.user
         post = get_object_or_404(Post, slug=slug)
-
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
         else:
@@ -286,12 +303,18 @@ class PostLike(View):
 
 class HomeView(TemplateView):
     template_name = "index.html"
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['user'] = self.request.user
+        return context
 
 
 class PostComment(View):
 
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
+        context['user'] = self.request.user
 
         if post.comment.filter(id=request.user.id).exists():
             post.comment.remove(request.user)
