@@ -15,19 +15,21 @@ class AdoptionView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['adoption_form'] = AdoptionForm()
         return context
-    
+
     def post(self, request, *args, **kwargs):
         adoption_form = AdoptionForm(request.POST)
         if adoption_form.is_valid():
             adoption = adoption_form.save(commit=False)
             adoption.author = request.user
             adoption.save()
-            messages.success(self.request, 'Your adoption request has been posted successfully. You will be contacted shortly.')
+            messages.success(
+                self.request, 'Your adoption request has been posted successfully. You will be contacted shortly.')
             return redirect(reverse('adoption_detail', args=[adoption.id]))
-          
+
         context = self.get_context_data()
         context['adoption_form'] = adoption_form
         return self.render_to_response(context)
+
 
 class AdoptionDetailView(DetailView):
     model = Adoption
@@ -39,31 +41,32 @@ class AdoptionDetailView(DetailView):
         adoption = get_object_or_404(Adoption, pk=pk)
         context['adoption'] = adoption
         return context
-    
+
     def get(self, request, *args, **kwargs):
-        
+
         try:
-            pk = self.kwargs.get('pk') 
+            pk = self.kwargs.get('pk')
             return super().get(request, *args, **kwargs)
 
         except Http404:
             return render(request, 'no_adoption.html')
-        
+
 
 class AdoptionUpdateView(UpdateView):
     model = Adoption
     form_class = AdoptionForm
     template_name = "update_adoption.html"
-    
+
     def get_success_url(self):
         messages.success(self.request, 'Your update has been successfull')
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
+
 
 class DeleteAdoptionView(DeleteView):
     model = Adoption
     template_name = "delete_adoption.html"
     success_url = reverse_lazy('adoption')
-    
+
     def post(self, request, *args, **kwargs):
         adoption = self.get_object()
         adoption.delete()
@@ -78,16 +81,17 @@ class RehomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['rehome_form'] = RehomeForm()
         return context
-    
+
     def post(self, request, *args, **kwargs):
         rehome_form = RehomeForm(request.POST)
         if rehome_form.is_valid():
             rehome = rehome_form.save(commit=False)
             rehome.author = request.user
             rehome.save()
-            messages.success(self.request, 'Your rehoming request has been posted successfully. You will be contacted shortly.')
+            messages.success(
+                self.request, 'Your rehoming request has been posted successfully. You will be contacted shortly.')
             return redirect(reverse('rehome_detail', args=[rehome.id]))
-            
+
         context = self.get_context_data()
         context['rehome_form'] = rehome_form
         return self.render_to_response(context)
@@ -103,29 +107,31 @@ class RehomeDetailView(TemplateView):
         rehome = get_object_or_404(Rehome, pk=pk)
         context['rehome'] = rehome
         return context
-    
+
     def get(self, request, *args, **kwargs):
         try:
-            pk = self.kwargs.get('pk') 
+            pk = self.kwargs.get('pk')
             return super().get(request, *args, **kwargs)
 
         except Http404:
             return render(request, 'no_rehome.html')
 
+
 class RehomeUpdateView(UpdateView):
     model = Rehome
     form_class = RehomeForm
     template_name = "update_rehome.html"
-    
+
     def get_success_url(self):
         messages.success(self.request, 'Your update has been successful')
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
+
 
 class DeleteRehomeView(DeleteView):
     model = Rehome
     template_name = "delete_rehome.html"
     success_url = reverse_lazy('rehome')
-    
+
     def post(self, request, *args, **kwargs):
         rehome = self.get_object()
         rehome.delete()
@@ -135,15 +141,21 @@ class DeleteRehomeView(DeleteView):
 
 class PostList(generic.ListView):
     model = Post
-    queryset = Post.objects.filter(status=1, approved=True).order_by("-created_on")
+    queryset = Post.objects.filter(
+        status=1, approved=True).order_by("-created_on")
     template_name = "blog.html"
     paginate_by = 6
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)   
+        context = super().get_context_data(**kwargs)
         context['post_create_form'] = PostCreateForm()
-        
+
         return context
+
+    def post(self, request, *args, **kwargs):
+        self.object_list = self.get_queryset()
+        context = self.get_context_data()
+        return self.render_to_response(context)
 
     def post(self, request, *args, **kwargs):
         post_create_form = PostCreateForm(request.POST, request.FILES)
@@ -160,6 +172,7 @@ class PostList(generic.ListView):
             context['post_create_form'] = post_create_form
 
             return self.render_to_response(context)
+
 
 class PostDetail(View):
 
@@ -185,7 +198,7 @@ class PostDetail(View):
 
     def post(self, request, slug, *args, **kwargs):
 
-        queryset = Post.objects.filter(status=1) 
+        queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
         liked = False
@@ -214,31 +227,35 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
     def dispatch(self, request, *args, **kwargs):
         try:
             return super().dispatch(request, *args, **kwargs)
         except Post.DoesNotExist:
             return HttpResponseServerError("Post not found.")
 
+
 class DeletePostView(DeleteView):
     model = Post
     template_name = "delete_post.html"
     success_url = reverse_lazy('blog')
-    
+
     def post(self, request, *args, **kwargs):
         post = self.get_object()
         if post.author == request.user:
             post.delete()
             messages.success(self.request, 'Your deletion has been successful')
         else:
-            messages.error(request, 'You do not have permission to delete this post')
+            messages.error(
+                request, 'You do not have permission to delete this post')
         return redirect(self.success_url)
-        
+
     def dispatch(self, request, *args, **kwargs):
         try:
             return super().dispatch(request, *args, **kwargs)
         except Post.DoesNotExist:
             return HttpResponseServerError("Post not found.")
+
 
 class UpdatePostView(UpdateView):
     model = Post
@@ -249,10 +266,11 @@ class UpdatePostView(UpdateView):
         messages.success(self.request, 'Your update has been successful')
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
+
 class AboutView(TemplateView):
     template_name = "about.html"
 
-    
+
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
@@ -265,8 +283,10 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+
 class HomeView(TemplateView):
     template_name = "index.html"
+
 
 class PostComment(View):
 
