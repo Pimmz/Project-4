@@ -15,9 +15,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['8000-pimmz-project-4-haoafg4g7k.us2.codeanyapp.com', '8001-pimmz-project-4-haoafg4g7k.us2.codeanyapp.com',
-                 'pimmz-project-4-9cc2ab59cc64.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com']
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dtqjcm9e6',
+    'API_SECRET': '275562865181971',
+    'API_KEY': 'rT1qUncLvzKm1PPtABSR_6xGg_U',
+}
 
 INSTALLED_APPS = [
     'django.contrib.admin',
