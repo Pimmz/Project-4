@@ -251,7 +251,6 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('blog')
 
     def post(self, request, *args, **kwargs):
-        context['user'] = self.request.user
         post = self.get_object()
         if post.author == request.user:
             post.delete()
@@ -274,7 +273,6 @@ class UpdatePostView(UpdateView):
     template_name = "update_post.html"
 
     def get_success_url(self):
-        context['user'] = self.request.user
         messages.success(self.request, 'Your update has been successful')
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
