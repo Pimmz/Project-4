@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
 from django.urls import reverse_lazy
 from django.contrib import messages
+from .tasks import long_running_task
 from .models import Post, Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm, PostUpdateForm
 from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
@@ -23,6 +24,7 @@ class AdoptionView(TemplateView):
             adoption = adoption_form.save(commit=False)
             adoption.author = request.user
             adoption.save()
+
             messages.success(
                 self.request, 'Your adoption request has been posted successfully. You will be contacted shortly.')
             return redirect(reverse('adoption_detail', args=[adoption.id]))
@@ -303,7 +305,7 @@ class PostLike(View):
 
 class HomeView(TemplateView):
     template_name = "index.html"
-    
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
