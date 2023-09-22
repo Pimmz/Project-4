@@ -3,7 +3,6 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
 from django.urls import reverse_lazy
 from django.contrib import messages
-from .tasks import long_running_task
 from .models import Post, Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm, PostUpdateForm
 from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
