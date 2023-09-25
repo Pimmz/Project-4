@@ -1,15 +1,11 @@
 # Fox Terrier Owners Club
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
 The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone that would like to adopt one or even rehome a Fox Terrier. The app is designed towards users who love fox terriers, would just like to know abit more about them or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the life style you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has a amazing life.
 
-Here a link to my project - Fox Terrier Owners Club
+Here a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/)
 
 <https://ui.dev/amiresponsive?url=https://pimmz-project-4-9cc2ab59cc64.herokuapp.com>
 
-
-![screenshot](documentation/mockup.png)
 
 ## UX
 When I started the design of the Fox Terrier Owners Club I wanted to ensure the site was Useful, Useable and Valuable so that it makes the user experience informative and enjoyable. To do this I looked at the five key fundamentals;
@@ -28,111 +24,65 @@ Then I sat down and roughly sketched out onto paper what the screens would look 
 
 ![screenshot](documentation/readme_images/design.jpg)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Colour Scheme
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+The colour scheme of the site is mainly creams and browns. The colours chosen were chosen to specifically to match a Fox Terriers coat or near to it.
 
-Explain your colours and the colour scheme.
+Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/readme_images/colorspace.png)
 
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a link and screenshot for your colour scheme using "coolors".
-<https://coolors.co/generate>
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
-
-![screenshot](documentation/coolors.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
+A link to the colors used - [colorspace colors](<https://mycolor.space/gradient?ori=to+right+bottom&hex=%23FFEACE&hex2=%234F4537&sub=1>)
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+I looked for fonts on Google Fonts, to help me decide as it gave a better visual aid for me to see how they all looked in their different weights. After many hours trying the fonts out on my game, I decided to use Bubblegum Sans all the way through to ensure a good balance, with a consistent look and feel. As a backup, I used sans-serif as it has a great look and then my third choice was serif as a fallback in case the other two weren't available.
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
+- [bubblegum sans](https://fonts.google.com/specimen/Bubblegum+Sans?query=bubble) was used for all the text and headers.
 
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
+- [Sans serif](https://fonts.google.com/knowledge/glossary/sans_serif) was used for the back up font.
 
-Example:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### User Stories
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
+#### EPIC | User Profile
 
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- As a Site User I can register an account so that I can add/edit/delete my adoption plus rehoming request and comment on the posts of other people's post.
+- As a Site User, I can log in or log out of my account so that I can keep my account secure.
+- As a Site User I can see my login status so that I know if I'm logged in or out.
 
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+#### EPIC | User Navigation
 
-## User Stories
+- As a Site User I can immediately understand the purpose of the site so that I can decide if it meets my needs.
+- As a Site User, I can intuitively navigate around the site so that I can find content and understand where I am on the site.
+- As a Site User, I can view a paginated list of posts so that I can easily select a post to view.
+- As a Site User, I can click on a post so that I can read it, and view comments left by users.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+#### EPIC | Post Management
 
-In this section, list all of your user stories for the project.
+- As a Site User, I can input my favourite image with text onto the app through an easy to use interface so that I can share them with other users.
+- As a Site User, I can edit and delete posts that I have created so that I can easily make changes without having to start over.
+- As a Site User I can view my posts so that I can see and manage all my own posts, but not be able to change other peoples.
+- As a Site User I can view my posts so I can find them easily in the one location.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-### New Site Users
 
-- As a Site User, I can view a list of posts, so that I can select one to read.
-- As a Site User, I can click on a post, so that I can read the full text.
-- As a Site User, I can view the number of likes on each post, so that I can see which is the most popular or viral.
-- As a Site User, I can view comments on an individual post so that I can read the conversation.
-- As a Site User, I can register an account, so that I can comment and like.
-- As a Site User, I can leave comments on a post, so that I can be involved in the conversation.
-- As a Site User, I can like or unlike a post, so that I can interact with the content.
 
-### Returning Site Users
+#### EPIC | Recipe Interaction
 
-- As a returning site user, I can view comments on an individual post so that I can read the conversation.
-- As a returning site user, I can leave comments on a post, so that I can be involved in the conversation.
-- As a returning site user, I can like or unlike a post, so that I can interact with the content.
-- As a returning site user, I can click on a post, so that I can read the full text.
-- As a returning site user, I can view a list of posts, so that I can select one to read.
+- As a Site User, I can save other user's recipes to my bookmarks so that I can find them easily at a later date.
+- As a Site User, I can comment on other people's recipes so I can give my feedback.
+- As a Site User, I can edit and delete comments that I have created so that I can easily make changes if I have made a mistake.
 
-### Site Admin
+#### EPIC | Mealplan Management
 
-- As a Site Admin, I can view the number of likes on each post, so that I can see which is the most popular or viral.
-- As a Site Admin, I can view comments on an individual post, so that I can read the conversation.
-- As a Site Admin, I can create, read, update and delete posts, so that I can manage my blog content.
-- As a Site Admin, I can create draft posts, so that I can finish writing the content later.
-- As a Site Admin, I can approve or disapprove comments, so that I can filter out objectionable comments.
+- As a Site User, I can add/delete recipes to my meal planner for a particular day of the week so that I can create a meal plan for the week ahead.
+- As a Site User, I can view my meal plan for the week when I log into my account so that I can plan for the week ahead.
+
+#### EPIC | Site Administration
+
+- As a Site Administrator, I can create, read, update and delete recipes, comments and meal plan items so that I can manage the app content.
+
 
 ## Wireframes
 

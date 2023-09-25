@@ -2,10 +2,11 @@ body {
     background-color: #f9fafc;
     font-weight: 300;
     font-family: 'Bubblegum Sans', cursive;
+    sans-serif;
     color: rgb(110, 109, 109);
 
 }
-    
+
 
 .card-img-top {
     max-height: 300px;
@@ -15,24 +16,31 @@ body {
     font-size: 25px;
 }
 
-.fox, .page-title, .title1 {
+.fox,
+.page-title,
+.title1 {
     font-size: 45px;
 }
 
 
 
-.col-sm, .nav-item, .card-title{
+.col-sm,
+.nav-item,
+.card-title {
     font-size: 30px;
 
 }
 
-.m-0, .m, .btn{
+.m-0,
+.m,
+.btn {
     font-size: 20px;
 }
 
 .card-text {
     font-size: 20px;
 }
+
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -178,7 +186,7 @@ body {
 }
 
 
-#signup-form a{
+#signup-form a {
     color: white;
     text-decoration: none;
 }
@@ -186,21 +194,33 @@ body {
 .fox1 {
     font-size: 45px;
 }
+
 @media (max-width: 566px) {
-    .fox1, .fox, .page-title, .title1 {
-        font-size: 35px; 
-      
+
+    .fox1,
+    .fox,
+    .page-title,
+    .title1 {
+        font-size: 35px;
+
     }
 }
+
 @media (max-width: 474px) {
-    .fox1, .fox, .page-title, .nav-link, .title1 {
-        font-size: 30px; 
-      
+
+    .fox1,
+    .fox,
+    .page-title,
+    .nav-link,
+    .title1 {
+        font-size: 30px;
+
     }
 }
+
 @media (max-width: 474px) {
     .nav-link {
-        font-size: 25px; 
-      
+        font-size: 25px;
+
     }
 }
