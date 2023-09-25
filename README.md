@@ -4,25 +4,29 @@
 
 The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone that would like to adopt one or even rehome a Fox Terrier. The app is designed towards users who love fox terriers, would just like to know abit more about them or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the life style you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has a amazing life.
 
-Here a link to my project 
+Here a link to my project - Fox Terrier Owners Club
 
 <https://ui.dev/amiresponsive?url=https://pimmz-project-4-9cc2ab59cc64.herokuapp.com>
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
 
 ![screenshot](documentation/mockup.png)
 
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-<https://pandao.github.io/editor.md/en.html>
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ## UX
+When I started the design of the Fox Terrier Owners Club I wanted to ensure the site was Useful, Useable and Valuable so that it makes the user experience informative and enjoyable. To do this I looked at the five key fundamentals;
+
+Strategy - So the user can discover, Learn, enjoy, interact and get assistance with all things to do with Fox Terriers. 
+
+Scope - Based on the information from the strategy, the features included emotive images and giphs to show the nature of Fox Terriers. A about section that goes through the basic characters of both types of Fox Terrier and a more indepth look via wikipedia. The Post Room that enables the user to post a picture of there dog or comment on another persons. The adoption facility was set up becasue so many dogs unfortunatley dont get the start in life they deserve, so to have a loving family adopt one of those dogs is amazing. Plus if life has changed to a point where it is not possible to offer the life style you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has a amazing life.
+
+Structure - This was designed around the user. After speaking with a number of fox terrier owners, they wanted to know more about Fox Terriers. To be able to interact with other owners, to have the possibility to adopt a fox terrier and of course rehome one if life had unfortunatley changed for them so that they could no lomger look after one.
+
+Skeleton - As before this was designed around the user which was gained from information supplied by a number of Fox Terrier Owners. This dictated that it would be laid out simply. So that it can be used quickly and efficiently while delivering the most amount of information and receiving help depending on the users needs.
+
+Surface - I wanted the look of the Fox Terrier Owners Club to be informative, clear, and concise, with consistent typography and corresponding colours to help them stand out, to easily navigate with emotive pictures that helped to bring an element of fun which I believe we all need on a daily basis.
+
+Then I sat down and roughly sketched out onto paper what the screens would look like on a mobile, tablet and desktop, This then gave me the basis to start creating Famous Quote Matcher in Codeanywhere.
+
+![screenshot](documentation/readme_images/design.jpg)
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 

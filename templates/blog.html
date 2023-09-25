@@ -6,7 +6,7 @@
         <form method="post" action="" enctype="multipart/form-data">
             {% csrf_token %}
             <div class="row">
-                <div class="col-lg-4 m-3 fs-5">
+                <div class="col-lg-4 m-1 fs-5">
                     <div class="form-group m-4 ">
                         <label for="{{ post_create_form.title.id_for_label }}">Title:</label>
                         {{ post_create_form.title}}
@@ -15,25 +15,31 @@
                         <label for="{{ post_create_form.content.id_for_label }}">Content:</label>
                         {{ post_create_form.content}}
                     </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group fs-5 mt-1">
+                                <label for="{{ post_create_form.featured_image.id_for_label }}">Image Upload</label>
+                                {{ post_create_form.featured_image}}
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-12 mt-3 fs-3">
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-outline-secondary ">Add Your Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
                         <div class="col-12-secondary">
-                            <h3 class="mt-5 fs-1"><u>Welcome to the chat room</u></h3>
+                            <h3 class="mt-5 fs-1"><u>Welcome to the post room</u></h3>
                             <li class="fs-3">Come and share your pictures of your Fox Terrier</li>
                             <li class="fs-3">Look at all the pictures the other members have posted</li>
                             <li class="fs-3">Comment or like or both! on other members pictures, Just click the title
                             </li>
                             <li class="fs-3">But most importantly take part and enjoy yourself</li>
-                            <div class="form-group fs-5 mt-5">
-                                <label for="{{ post_create_form.featured_image.id_for_label }}">Image Upload</label>
-                                {{ post_create_form.featured_image}}
-                            </div>
-                        </div>
-                        <div class="col-12 mt-3 fs-3">
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-outline-secondary ">Add Your Post</button>   
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -79,7 +85,7 @@
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}
-                
+
             </div>
             <div class="row">{% endif %} {% endfor %}</div>
         </div>
