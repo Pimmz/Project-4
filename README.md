@@ -1,17 +1,11 @@
-# PROJECT 4
+# Fox Terrier Owners Club
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone that would like to adopt one or even rehome a Fox Terrier. The app is designed towards users who love fox terriers, would just like to know abit more about them or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the life style you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has a amazing life.
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
+Here a link to my project 
 
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
 <https://ui.dev/amiresponsive?url=https://pimmz-project-4-9cc2ab59cc64.herokuapp.com>
 
 Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
