@@ -56,33 +56,35 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 - As a Site User I can immediately understand the purpose of the site so that I can decide if it meets my needs.
 - As a Site User, I can intuitively navigate around the site so that I can find content and understand where I am on the site.
 - As a Site User, I can view a paginated list of posts so that I can easily select a post to view.
-- As a Site User, I can click on a post so that I can read it, and view comments left by users.
+- As a Site User, I can click on a post so that I can read the full text
+- As a Site User I can register an account so that I can comment, like, add a adoption and rehome request
+- As a Site User, I can view a list of posts so that I can select one to read
+
 
 #### EPIC | Post Management
 
-- As a Site User, I can input my favourite image with text onto the app through an easy to use interface so that I can share them with other users.
-- As a Site User, I can edit and delete posts that I have created so that I can easily make changes without having to start over.
+- As a Site User, I can update and delete posts that I have created so that I can easily make changes without having to start over.
+- As a Site User I can leave comments on a post so that I can be involved in the conversation
 - As a Site User I can view my posts so that I can see and manage all my own posts, but not be able to change other peoples.
 - As a Site User I can view my posts so I can find them easily in the one location.
+- As a Site user I can like or unlike a post so that I can interact with the content
 
 
+#### EPIC | Adoption Interaction
 
+- As a Site User, I can see my request so that I can find it easily at a later date.
+- As a Site User, I can update and delete adoption requests that I have created so that I can easily make changes if I have made a mistake.
 
-#### EPIC | Recipe Interaction
+#### EPIC | Rehome Interaction
 
-- As a Site User, I can save other user's recipes to my bookmarks so that I can find them easily at a later date.
-- As a Site User, I can comment on other people's recipes so I can give my feedback.
-- As a Site User, I can edit and delete comments that I have created so that I can easily make changes if I have made a mistake.
-
-#### EPIC | Mealplan Management
-
-- As a Site User, I can add/delete recipes to my meal planner for a particular day of the week so that I can create a meal plan for the week ahead.
-- As a Site User, I can view my meal plan for the week when I log into my account so that I can plan for the week ahead.
+- As a Site User, I can see my request so that I can find it easily at a later date.
+- As a Site User, I can update and delete rehome requests that I have created so that I can easily make changes if I have made a mistake.
 
 #### EPIC | Site Administration
 
-- As a Site Administrator, I can create, read, update and delete recipes, comments and meal plan items so that I can manage the app content.
-
+- As a Site Administrator, I can create, read, update and delete adoption, rehome requests, posts and comments so that I can manage the app content.
+- As a Site Administrator,I can view comments on an individual post so that I can read the conversation
+- As a Site Admin I can create draft posts so that I can finish writing the content later
 
 ## Wireframes
 
