@@ -46,6 +46,7 @@ INSTALLED_APPS = [
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+LOGIN_URL = 'account_signup'
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',

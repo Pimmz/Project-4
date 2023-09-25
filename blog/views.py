@@ -6,8 +6,11 @@ from django.contrib import messages
 from .models import Post, Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm, PostUpdateForm
 from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
+from django.contrib.auth.decorators import login_required
+from django.utils.decorators import method_decorator
 
 
+@method_decorator(login_required, name='dispatch')
 class AdoptionView(TemplateView):
     template_name = "adoption.html"
 
@@ -81,6 +84,7 @@ class DeleteAdoptionView(DeleteView):
         return redirect(self.success_url)
 
 
+@method_decorator(login_required, name='dispatch')
 class RehomeView(TemplateView):
     template_name = "rehome.html"
 
@@ -152,6 +156,7 @@ class DeleteRehomeView(DeleteView):
         return redirect(self.success_url)
 
 
+@method_decorator(login_required, name='dispatch')
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(
@@ -182,6 +187,7 @@ class PostList(generic.ListView):
             return self.render_to_response(context)
 
 
+@method_decorator(login_required, name='dispatch')
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -309,6 +315,7 @@ class HomeView(TemplateView):
         return context
 
 
+@method_decorator(login_required, name='dispatch')
 class PostComment(View):
 
     def post(self, request, slug, *args, **kwargs):
