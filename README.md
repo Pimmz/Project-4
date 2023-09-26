@@ -88,7 +88,40 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 ## Wireframes
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+<details>
+
+ <summary>Landing Page</summary>
+
+![Home Page](https://balsamiq.cloud/s8okrco/pak3r0q/r5FBF?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D)
+</details>
+
+<details>
+
+<summary>Browse Recipes</summary>
+
+![Browse Recipes](docs/wir)
+</details>
+
+<details>
+
+<summary>Add Recipe</summary>
+
+![Add Recipe](docs/wireframes/addrecipe_wireframe.png)
+</details>
+
+<details>
+
+<summary>My Recipes</summary>
+
+![My Recipes](docs/wireframes/myrecipes_wireframe.png)
+</details>
+
+<details>
+
+<summary>My Bookmarks</summary>
+
+![My Bookmarks](docs/wireframes/mybookmarks_wireframe.png)
+</details>
 
 In this section, display your wireframe screenshots using a Markdown `table`.
 
