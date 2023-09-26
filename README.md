@@ -143,31 +143,87 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 ### Existing Features
 
 - **Header**
-
-![Header](documentation/readme_images/header.png)
+  ![Header](documentation/readme_images/header.png)
 
   - A animated Fox Terrier logo was sourced from giphy.com to give the site a sense of fun, to help show the true nature of Fox terriers.
   - Title of the website to ensure users know exactly whre they are.
   - A simplfied menu of Home, About, Register and login available to everyone. This changes when the user registers or logs in.
 
-
 - **Navigation Bar**
-  
+  ![Navigation bar](documentation/readme_images/navbar.png)
+
   - The navigation bar is present at the top of every page and includes all links to the various other pages.
   - New menus open up when the user is logged in, to display Adoption, Rehome, Post Room, The signed in users name "Welcome Steve" which drops down to show the   
     adoption or rehome requests they have made. Plus it includes the logout facility.
 
-![Navigation bar](documentation/readme_images/navbar.png)
-
 - **Footer**
+  ![Footer](documentation/readme_images/footer.png)
 
-  - The location of the Fox terriers Owners club so users are aware, where its located in the world.
+  - The location of the Fox Terriers Owners club so users are aware, where its located in the world.
   - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
   - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
-![screenshot](documentation/readme_images/footer.png)
+- **Home Page**
+  ![Home Page](documentation/readme_images/homepage1.png)
 
+  - Decription of our website and what were about so users can decide if its for them.
+  - Fontawesome icons used to help draw the eye to the three key sections.
+  - Three key sections enlarged to show the additional added features of the website.
+  - Two images clearly showing the different types of Fox Terrier.  
+  
+- **About Page**
+  ![About Page](documentation/readme_images/aboutpage1.png)
 
+  - Clear title explaining the section
+  - Two images clearly showing the different types of Fox Terrier.
+  - A in depth look at the background of the two types of Fox Terriers.
+  - To provide even more of a detailed look into Fox Terriers, a wikipedia link is available if the user wants to know more.
+  
+- **Adoption Page**
+  ![Adoption Page](documentation/readme_images/adoptionpage.png)
+
+  - With a scary statistic that only 10% of dogs born will find a permanent home. Our aim is to find owners for our amazing dogs.
+  - Specific questions targeted to potiental adoptees to greater under more about them.
+  - Submit button to send the application form onwards
+  - Cancel button to redirect the user back to the home page if they have changed their mind.
+  - Confirmation message that the form has been succesfully submitted.
+  - ![Confirmation](documentation/readme_images/confirmation1.png)
+
+- **Rehome Page**
+  ![Rehome Page](documentation/readme_images/footer.png)
+
+  - With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
+  - Specific questions targeted to owners looking to rehome their Fox Terrier
+  - Submit button to send the application form onwards
+  - Cancel button to redirect the user back to the home page if they have changed their mind
+  - Confirmation message that the form has been succesfully submitted.
+  - ![Confirmation](documentation/readme_images/confirmation2.png)
+
+- **Post Room**
+  ![About Page](documentation/readme_images/postroom.png)
+
+  - Welcoming message and clear explaination as to what you can do.
+  - Area for user to post. With title, content and image upload facility.
+  - Button to submit the users post.
+  - Confirmation message that the post has been succesfully submitted.
+  - ![Confirmation](documentation/readme_images/confirmation.png)
+  - Posts go upto a total of six on the page and then automatically go the next page. Next button for the user to scroll through.
+  - ![Next Button](documentation/readme_images/next.png)
+  
+- **About Page**
+  ![About Page](documentation/readme_images/aboutpage1.png)
+
+  - Clear title explaining the section
+
+- **About Page**
+  ![About Page](documentation/readme_images/aboutpage1.png)
+
+  - Clear title explaining the section
+
+- **About Page**
+  ![About Page](documentation/readme_images/aboutpage1.png)
+
+  - Clear title explaining the section
 
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️

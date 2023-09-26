@@ -177,7 +177,7 @@ class PostList(generic.ListView):
             post.author = request.user
             post.save()
 
-            messages.success(request, 'Your post is awaiting approval')
+            messages.success(request, 'Your post was successful and awaiting approval')
 
             return redirect('blog')
         else:
