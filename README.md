@@ -144,11 +144,12 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 - **Header**
 
+![Header](documentation/readme_images/header.png)
+
   - A animated Fox Terrier logo was sourced from giphy.com to give the site a sense of fun, to help show the true nature of Fox terriers.
   - Title of the website to ensure users know exactly whre they are.
   - A simplfied menu of Home, About, Register and login available to everyone. This changes when the user registers or logs in.
 
-![Header](documentation/readme_images/header.png)
 
 - **Navigation Bar**
   
