@@ -42,6 +42,11 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 - [Sans serif](https://fonts.google.com/knowledge/glossary/sans_serif) was used for the back up font.
 
+## Icons
+
+To help with making Fox Terrier Owners club as user-friendly as possible I used icons from font awesome. This helped highlight specific areas to bring the user's attention to it.
+
+- [Font Awesome](https://fontawesome.com) icons were used in the title.
 
 ### User Stories
 
@@ -118,14 +123,14 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 <details>
 
-<summary>Signed in user name and details</summary>
+<summary>Signed in user adoption details</summary>
 
 ![Signed in user name and details](documentation/wireframes/adoptdetails.png)
 </details>
 
 <details>
 
-<summary>Signed in user name and details</summary>
+<summary>Signed in user rehome  details</summary>
 
 ![Signed in user name and details](documentation/wireframes/rehome.png)
 </details>
@@ -135,40 +140,34 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ## Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Existing Features
 
-- **Title for feature #1**
+- **Header**
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+  - A animated Fox Terrier logo was sourced from giphy.com to give the site a sense of fun, to help show the true nature of Fox terriers.
+  - Title of the website to ensure users know exactly whre they are.
+  - A simplfied menu of Home, About, Register and login available to everyone. This changes when the user registers or logs in.
 
-![screenshot](documentation/feature01.png)
+![Header](documentation/readme_images/header.png)
 
-- **Title for feature #2**
+- **Navigation Bar**
+  
+  - The navigation bar is present at the top of every page and includes all links to the various other pages.
+  - New menus open up when the user is logged in, to display Adoption, Rehome, Post Room, The signed in users name "Welcome Steve" which drops down to show the   
+    adoption or rehome requests they have made. Plus it includes the logout facility.
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+![Navigation bar](documentation/readme_images/navbar.png)
 
-![screenshot](documentation/feature02.png)
+- **Footer**
 
-- **Title for feature #3**
+  - The location of the Fox terriers Owners club so users are aware, where its located in the world.
+  - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
+  - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
-  - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+![screenshot](documentation/readme_images/footer.png)
 
-![screenshot](documentation/feature03.png)
+
+
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
