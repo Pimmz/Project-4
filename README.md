@@ -90,9 +90,9 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 <details>
 
- <summary>Landing Page</summary>
+ <summary>Home Page</summary>
 
-![Home Page](https://balsamiq.cloud/s8okrco/pak3r0q/r5FBF?f=N4IgUiBcCMA0IDkpxAYWfAMhkAhHAsjgFo4DSUA2gLoC%2BQA%3D)
+![Home Page](documentation/wireframes/homepage.png)
 </details>
 
 <details>
