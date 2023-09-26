@@ -1,8 +1,8 @@
 body {
     background-color: #f9fafc;
     font-weight: 300;
-    font-family: 'Bubblegum Sans', cursive;
-    sans-serif;
+    font-family: 'Bubblegum Sans', cursive,
+        sans-serif;
     color: rgb(110, 109, 109);
 
 }

@@ -97,70 +97,41 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 <details>
 
-<summary>Browse Recipes</summary>
+<summary>About Page</summary>
 
-![Browse Recipes](docs/wir)
+![About Page](documentation/wireframes/aboutpage.png)
 </details>
 
 <details>
 
-<summary>Add Recipe</summary>
+<summary>Adoption Form</summary>
 
-![Add Recipe](docs/wireframes/addrecipe_wireframe.png)
+![Adoption Form](documentation/wireframes/adoption.png)
 </details>
 
 <details>
 
-<summary>My Recipes</summary>
+<summary>Rehome Form</summary>
 
-![My Recipes](docs/wireframes/myrecipes_wireframe.png)
+![Rehome Form](documentation/wireframes/rehome.png)
 </details>
 
 <details>
 
-<summary>My Bookmarks</summary>
+<summary>Signed in user name and details</summary>
 
-![My Bookmarks](docs/wireframes/mybookmarks_wireframe.png)
+![Signed in user name and details](documentation/wireframes/adoptdetails.png)
 </details>
 
-In this section, display your wireframe screenshots using a Markdown `table`.
+<details>
 
-Instructions on how to do Markdown `tables` start on line #213 on this site: <https://pandao.github.io/editor.md/en.html>
+<summary>Signed in user name and details</summary>
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![Signed in user name and details](documentation/wireframes/rehome.png)
+</details>
 
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-### Home Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
-
-### About Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
-
-### Contact Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for any addition wireframe pages you have.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Features
 
