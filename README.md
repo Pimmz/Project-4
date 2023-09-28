@@ -188,6 +188,34 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   - Cancel button to redirect the user back to the home page if they have changed their mind.
   - Confirmation message that the form has been succesfully submitted.
   - ![Confirmation](documentation/readme_images/confirmation1.png)
+  - You are then taken to Adoption detail page
+
+ **Adoption Details Page**
+  ![Adoption Page](documentation/readme_images/adoptdetail.png)
+
+- Details of the form you have just filled in a presented on the screen so the user can ensure they are correct.
+- Update button to allow the user to change any of the information they have just put in.
+- Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
+- Cancel button to redirect the user back to the home page if they have changed their mind.
+
+ **Adoption Update Page**
+  ![Adoption Page](documentation/readme_images/adoptupdate.png)
+
+- The facility to update the specific questions targeted in the original adoption form
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back to the home page if they have changed their mind.
+- Confirmation message that the form has been succesfully submitted.
+- ![Confirmation](documentation/readme_images/updateconfirm.png)
+
+ **Adoption Delete Page**
+  ![Adoption Page](documentation/readme_images/updatedelete.png)
+
+- With a scary statistic that only 10% of dogs born will find a permanent home. Our aim is to find owners for our amazing dogs.
+- Specific questions targeted to potiental adoptees to greater under more about them.
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back to the home page if they have changed their mind.
+- Confirmation message that the form has been succesfully submitted.
+- ![Confirmation](documentation/readme_images/deleteconfirm.png)
 
 - **Rehome Page**
   ![Rehome Page](documentation/readme_images/footer.png)
