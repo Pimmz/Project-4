@@ -347,32 +347,16 @@ Other potential features include:
 ## Database Design
 
 - I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.
-- Django AllAuth was used for the user authentication system.
 - Below is an example of the model I used for my adoption page
 
-- class Adoption(models.Model):
-    terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE, verbose_name="Which Fox terrier do you want to adopt?", null=True, blank=True)
-    sex = models.CharField(max_length=10, choices=SEX_TYPE, verbose_name="would prefer a Male or Female?", null=True, blank=True)
-    age = models.CharField(max_length=200,verbose_name="What age Fox Terrier, are you looking for?", null=True, blank=True)
-    why = models.CharField(max_length=200, verbose_name="Why would you like to adopt a Fox Terrier?", null=True, blank=True)
-    experience = models.CharField(max_length=200, verbose_name="What experience with dogs do you have?", null=True, blank=True)
-    notes = models.CharField(max_length=200, verbose_name="Additional notes or feedback", null=True, blank=True)
-    name = models.CharField(max_length=100, verbose_name="Your Name?", null=True, blank=True)
-    email = models.EmailField(max_length=100, verbose_name="Your Email Address", null=True, blank=True)
-
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="adoption_author" ,default=1
-    )
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return str(self.pk)
+- ![Model](documentation/readme_images/model.png
 
 - Using Markdown formatting to represent an ERD table the adoption model above would look like this:
 
 - Table: **Adoption**
 
-    | **Field** | **Type**     | **Name**        | **Notes**                                 |
+    | Field | Type | Name | Notes |
+    | --- | --- | --- |
     |  PK       | ID           | Autofield       |                                           |
     |           | terrier_type | CharField(10)   | Which Fox terrier do you want to adopt?   |
     |           | sex          | CharField(10)   | would prefer a Male or Female?            |
@@ -386,11 +370,14 @@ Other potential features include:
     |           | created_on   | DateTimeField   | Created_on                                |
     
 
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+- To help organise the remaining models required 
+- [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-448%2C20%2C3328%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation/readme_images/erd.png)
 
-![screenshot](documentation/erd.png)
+
+
+
 ## Agile Development Process
 
 ### GitHub Projects
@@ -400,11 +387,6 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ![screenshot](documentation/gh-projects.png)
 
