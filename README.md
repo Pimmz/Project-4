@@ -311,14 +311,6 @@ Other potential features include:
 - Adding training techniques and videos from users to benefit the whole group.
 - Having a Illness diagnoses page so the user can put in the symptoms and its diagnosed with a link to a vet to confirm and assist with the issue.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-  - Any additional notes about this feature.
-- Title for future feature #2
-  - Any additional notes about this feature.
-- Title for future feature #3
-  - Any additional notes about this feature.
 
 ## Tools & Technologies Used
 
