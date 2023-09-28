@@ -356,18 +356,18 @@ Other potential features include:
 - Table: **Adoption**
 
  | Field | Type | Name | Notes |
- | --- | --- | --- |
+ | --- | --- | --- | --- |
  | PK | ID | Autofield | |
- || terrier_type | CharField(10) | Which Fox terrier do you want to adopt? |
- || sex | CharField(10)   | would prefer a Male or Female? |
- || age | CharField(200)  | What age Fox Terrier, are you looking for?|
- || why | CharField(200)  | Why would you like to adopt a Fox Terrier?|
- || experience | CharField(200)  | What experience with dogs do you have? |
- || notes | CharField(200)  | Additional notes or feedback? |
- || name | CharField(100)  | Your Name? |
- || email | EmailField      | Your Email? |
+ | | terrier_type | CharField(10) | Which Fox terrier do you want to adopt? |
+ | | sex | CharField(10) | would prefer a Male or Female? |
+ | | age | CharField(200) | What age Fox Terrier, are you looking for?|
+ | | why | CharField(200) | Why would you like to adopt a Fox Terrier?|
+ | | experience | CharField(200) | What experience with dogs do you have? |
+ | | notes | CharField(200) | Additional notes or feedback? |
+ | | name | CharField(100) | Your Name? |
+ | | email | EmailField | Your Email? |
  | FK | author | ForeignKey(User)| Author |
- || created_on | DateTimeField | Created_on |
+ | | created_on | DateTimeField | Created_on |
     
 
 - To help organise the remaining models required 
