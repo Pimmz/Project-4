@@ -177,7 +177,8 @@ class PostList(generic.ListView):
             post.author = request.user
             post.save()
 
-            messages.success(request, 'Your post was successful and awaiting approval')
+            messages.success(
+                request, 'Your post was successful and awaiting approval')
 
             return redirect('blog')
         else:
@@ -213,7 +214,6 @@ class PostDetail(View):
         )
 
     def post(self, request, slug, *args, **kwargs):
-        context['user'] = self.request.user
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')

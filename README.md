@@ -185,37 +185,37 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   - With a scary statistic that only 10% of dogs born will find a permanent home. Our aim is to find owners for our amazing dogs.
   - Specific questions targeted to potiental adoptees to greater under more about them.
   - Submit button to send the application form onwards
-  - Cancel button to redirect the user back to the home page if they have changed their mind.
+  - Cancel button to redirect the user back if they have changed their mind.
   - Confirmation message that the form has been succesfully submitted.
   ![Confirmation](documentation/readme_images/confirmation1.png)
   - You are then taken to Adoption detail page
 
- **Adoption Details Page**
-  ![Adoption Page](documentation/readme_images/adoptdetail.png)
+- **Adoption Details Page**
+  ![Adoption Details Page](documentation/readme_images/adoptdetail.png)
 
-- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
-- Update button to allow the user to change any of the information they have just put in.
-- Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
-- Cancel button to redirect the user back to the home page if they have changed their mind.
+  - Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
+  - Update button to allow the user to change any of the information they have just put in.
+  - Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
+  - Cancel button to redirect the user back if they have changed their mind.
 
- **Adoption Update Page**
-  ![Adoption Page](documentation/readme_images/adoptupdate.png)
+- **Adoption Update Page**
+  ![Adoption update Page](documentation/readme_images/adoptupdate.png)
 
-- The facility to update the specific questions targeted in the original adoption form
-- Submit button to send the application form onwards
-- Cancel button to redirect the user back to the home page if they have changed their mind.
-- Confirmation message that the form has been succesfully submitted.
-- ![Confirmation](documentation/readme_images/updateconfirm.png)
+  - The facility to update the specific questions targeted in the original adoption form
+  - Submit button to send the application form onwards
+  - Cancel button to redirect the user back if they have changed their mind.
+  - Confirmation message that the form has been succesfully submitted.
+  ![Confirmation](documentation/readme_images/updateconfirm.png)
 
- **Adoption Delete Page**
-  ![Adoption Page](documentation/readme_images/updatedelete.png)
+- **Adoption Delete Page**
+  ![Adoption delete Page](documentation/readme_images/updatedelete.png)
 
-- This page give the user the opportunity to change their mind and delete their request or cancel the deletion.
-- Bright red button to highlight the danger of the task
-- Emotive animated fox terrier from giphy.com to ensure they doing the right thing.
-- Cancel button to redirect the user back to the home page if they have changed their mind.
-- Confirmation message that the form has been succesfully submitted.
-- ![Confirmation](documentation/readme_images/deleteconfirm.png)
+  - This page give the user the opportunity to change their mind and delete their request.
+  - Bright red button to highlight the danger of the task
+  - Emotive animated fox terrier from giphy.com to ensure they doing the right thing.
+  - Cancel button to redirect the user back if they have changed their mind.
+  - Confirmation message that the form has been succesfully submitted.
+  ![Confirmation](documentation/readme_images/deleteconfirm.png)
 
 - **Rehome Page**
   ![Rehome Page](documentation/readme_images/rehomepage.png)
@@ -223,63 +223,80 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   - With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
   - Specific questions targeted to owners looking to rehome their Fox Terrier
   - Submit button to send the application form onwards
-  - Cancel button to redirect the user back to the home page if they have changed their mind
+  - Cancel button to redirect the user back if they have changed their mind
   - Confirmation message that the form has been succesfully submitted.
-  - ![Confirmation](documentation/readme_images/confirmation2.png)
+  ![Confirmation](documentation/readme_images/confirmation2.png)
 
 - **Rehome Details Page**
-  ![Adoption Page](documentation/readme_images/rehomedetail.png)
+  ![Rehome Details Page](documentation/readme_images/rehomedetail.png)
 
-- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
-- Update button to allow the user to change any of the information they have just put in.
-- Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
-- Cancel button to redirect the user back to the home page if they have changed their mind.
+  - Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
+  - Update button to allow the user to change any of the information they have just put in.
+  - Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
+  - Cancel button to redirect the user back if they have changed their mind.
   
 - **Rehome update Page**
-  ![Rehome Page](documentation/readme_images/updaterehome.png)
+  ![Rehome update Page](documentation/readme_images/updaterehome.png)
 
-  - With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
-  - Specific questions targeted to owners looking to rehome their Fox Terrier
+  - The facility to update the specific questions targeted in the original rehome form
   - Submit button to send the application form onwards
-  - Cancel button to redirect the user back to the home page if they have changed their mind
+  - Cancel button to redirect the user back if they have changed their mind.
   - Confirmation message that the form has been succesfully submitted.
-  - ![Confirmation](documentation/readme_images/updateconfirm.png)
+  ![Confirmation](documentation/readme_images/updateconfirm.png)
 
 - **Rehome deletion Page**
-  ![Rehome Page](documentation/readme_images/footer.png)
+  ![Rehome deletion Page](documentation/readme_images/deleterehome.png)
 
-  - With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
-  - Specific questions targeted to owners looking to rehome their Fox Terrier
-  - Submit button to send the application form onwards
-  - Cancel button to redirect the user back to the home page if they have changed their mind
+  - This page give the user the opportunity to change their mind and delete their request.
+  - Bright red button to highlight the danger of the task.
+  - Emotive animated fox terrier from giphy.com to ensure they doing the right thing.
+  - Cancel button to redirect the user back if they have changed their mind.
   - Confirmation message that the form has been succesfully submitted.
-  - ![Confirmation](documentation/readme_images/confirmation2.png)
+  ![Confirmation](documentation/readme_images/deleteconfirm.png)
 
 - **Post Room**
-  ![About Page](documentation/readme_images/postroom.png)
+  ![Post Room](documentation/readme_images/postroom.png)
 
   - Welcoming message and clear explaination as to what you can do.
   - Area for user to post. With title, content and image upload facility.
   - Button to submit the users post.
   - Confirmation message that the post has been succesfully submitted.
-  - ![Confirmation](documentation/readme_images/confirmation.png)
+  ![Confirmation](documentation/readme_images/confirmation.png)
   - Posts go upto a total of six on the page and then automatically go the next page. Next button for the user to scroll through.
-  - ![Next Button](documentation/readme_images/next.png)
+  ![Next Button](documentation/readme_images/next.png)
   
-- **About Page**
-  ![About Page](documentation/readme_images/aboutpage1.png)
+- **Post update Page**
+  ![Post update Page](documentation/readme_images/updatepost.png)
 
-  - Clear title explaining the section
+  - The facility to update the specific questions targeted in the original post form
+  - Submit button to send the application form onwards
+  - Cancel button to redirect the user back if they have changed their mind.
+  - Confirmation message that the form has been succesfully submitted.
+  ![Confirmation](documentation/readme_images/updateconfirm.png)
 
-- **About Page**
-  ![About Page](documentation/readme_images/aboutpage1.png)
+- **Post deletion Page**
+  ![Post deletion Page](documentation/readme_images/deletepost.png)
 
-  - Clear title explaining the section
+  - This page give the user the opportunity to change their mind and delete their request.
+  - Bright red button to highlight the danger of the task.
+  - Emotive animated fox terrier from giphy.com to ensure they doing the right thing.
+  - Cancel button to redirect the user back if they have changed their mind.
+  - Confirmation message that the form has been succesfully submitted.
+  ![Confirmation](documentation/readme_images/deleteconfirm.png)
 
-- **About Page**
-  ![About Page](documentation/readme_images/aboutpage1.png)
+- **Comment Room**
+  ![Comment Room](documentation/readme_images/comment.png)
 
-  - Clear title explaining the section
+  - Picture and title of the selected post the user wishes to comment on.
+  - The comment left by the user that posted.
+  - The signed in users name, the date and time they posted it.
+  - The options to like the post and unlike the post with a loveheart icon.
+  - The amount of comments added about the post.
+  - Comments left by other users including their name, the date and time they left it.
+  - Submit button to send the comment onwards to be approved
+  ![Confirmation](documentation/readme_images/commentconfirm.png)
+  - Security function to only be able to delete the users own posts and no others
+  ![User option](documentation/readme_images/useroption.png)
 
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
