@@ -349,7 +349,7 @@ Other potential features include:
 - I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.
 - Below is an example of the model I used for my adoption page
 
-- ![Model](documentation/readme_images/model.png
+- ![Model](documentation/readme_images/model.png)
 
 - Using Markdown formatting to represent an ERD table the adoption model above would look like this:
 
@@ -370,8 +370,7 @@ Other potential features include:
  | | created_on | DateTimeField | Created_on |
     
 
-- To help organise the remaining models required 
-- [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-448%2C20%2C3328%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
+- To help organise the remaining models required i used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-448%2C20%2C3328%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
 
 ![screenshot](documentation/readme_images/erd.png)
 
