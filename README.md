@@ -299,22 +299,17 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   ![User option](documentation/readme_images/useroption.png)
 
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### Future Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+- As a user I can receive confirmation that my adoption or rehome request as been successful via an email sent to me.
+- As a user I can search and filter posts so that I can target posts i wish to view instead of scrolling through posts.
+
+Other potential features include:
+
+- Adding training techniques and videos from users to benefit the whole group.
+- Having a Illness diagnoses page so the user can put in the symptoms and its diagnosed with a link to a vet to confirm and assist with the issue.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
