@@ -264,6 +264,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   ![Confirmation](documentation/readme_images/confirmation.png)
   - Posts go upto a total of six on the page and then automatically go the next page. Next button for the user to scroll through.
   ![Next Button](documentation/readme_images/next.png)
+  - Security function to only be able to delete the users own posts and no others
+  ![User option](documentation/readme_images/useroption.png)
   
 - **Post update Page**
   ![Post update Page](documentation/readme_images/updatepost.png)
@@ -295,10 +297,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   - Comments left by other users including their name, the date and time they left it.
   - Submit button to send the comment onwards to be approved
   ![Confirmation](documentation/readme_images/commentconfirm.png)
-  - Security function to only be able to delete the users own posts and no others
-  ![User option](documentation/readme_images/useroption.png)
-
-
+  
 ### Future Features
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
@@ -314,18 +313,8 @@ Other potential features include:
 
 ## Tools & Technologies Used
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
 - [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
@@ -333,80 +322,75 @@ Feel free to delete any unused items below as necessary.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
-- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [codeanywhere](https://app.codeanywhere.com/) used as a cloud-based IDE for development.
 - [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+- [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): authentication library used to create the user accounts
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+- [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [Font Awesome](https://fontawesome.com/) - Used for icons in information bar.
+- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [PEP8 Online](http://pep8online.com/) - used to validate all the Python code
+- [Jshint](https://jshint.com/) - used to validate javascript
+- [Coolors](https://coolors.co/) - Used to create colour palette.
+- [Favicon](https://favicon.io/) - Used to create the favicon.
+- [Lucidchart](https://lucid.app/documents#/dashboard) - used to create the database schema design
+- [Grammerly](https://app.grammarly.com/) - used to proof read the README.md
+- [Summernote](https://summernote.org/): A WYSIWYG editor to allow users to edit their posts
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms
 
 ## Database Design
 
-Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
-Understanding the relationships between different tables can save time later in the project.
+- I used principles of Object-Oriented Programming throughout this project and Django’s Class-Based Generic Views.
+- Django AllAuth was used for the user authentication system.
+- Below is an example of the model I used for my adoption page
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- class Adoption(models.Model):
+    terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE, verbose_name="Which Fox terrier do you want to adopt?", null=True, blank=True)
+    sex = models.CharField(max_length=10, choices=SEX_TYPE, verbose_name="would prefer a Male or Female?", null=True, blank=True)
+    age = models.CharField(max_length=200,verbose_name="What age Fox Terrier, are you looking for?", null=True, blank=True)
+    why = models.CharField(max_length=200, verbose_name="Why would you like to adopt a Fox Terrier?", null=True, blank=True)
+    experience = models.CharField(max_length=200, verbose_name="What experience with dogs do you have?", null=True, blank=True)
+    notes = models.CharField(max_length=200, verbose_name="Additional notes or feedback", null=True, blank=True)
+    name = models.CharField(max_length=100, verbose_name="Your Name?", null=True, blank=True)
+    email = models.EmailField(max_length=100, verbose_name="Your Email Address", null=True, blank=True)
 
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+    author = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="adoption_author" ,default=1
+    )
+    created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.name
-```
+        return str(self.pk)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- Using Markdown formatting to represent an ERD table the adoption model above would look like this:
 
-A couple recommendations for building free ERDs:
+- Table: **Adoption**
 
-- [Draw.io](https://draw.io)
+    | **Field** | **Type**     | **Name**        | **Notes**                                 |
+    |  PK       | ID           | Autofield       |                                           |
+    |           | terrier_type | CharField(10)   | Which Fox terrier do you want to adopt?   |
+    |           | sex          | CharField(10)   | would prefer a Male or Female?            |
+    |           | age          | CharField(200)  | What age Fox Terrier, are you looking for?|
+    |           | why          | CharField(200)  | Why would you like to adopt a Fox Terrier?|
+    |           | experience   | CharField(200)  | What experience with dogs do you have?    |
+    |           | notes        | CharField(200)  | Additional notes or feedback?             |
+    |           | name         | CharField(100)  | Your Name?                                |
+    |           | email        | EmailField      | Your Email?                               |
+    |  FK       | author       | ForeignKey(User)| Author                                    |
+    |           | created_on   | DateTimeField   | Created_on                                |
+    
+
 - [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ![screenshot](documentation/erd.png)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Using Markdown formatting to represent an example ERD table using the Product model above:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Table: **Product**
-
-    | **PK** | **id** (unique) | Type | Notes |
-    | --- | --- | --- | --- |
-    | **FK** | category | ForeignKey | FK to **Category** model |
-    | | sku | CharField | |
-    | | name | CharField | |
-    | | description | TextField | |
-    | | has_sizes | BooleanField | |
-    | | price | DecimalField | |
-    | | rating | DecimalField | |
-    | | image_url | URLField | |
-    | | image | ImageField | |
-
 ## Agile Development Process
 
 ### GitHub Projects
