@@ -16,7 +16,7 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = ['8000-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com',
-                 '8002-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com']
+                 '8002-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com', 'pimmz-project-4-9cc2ab59cc64.herokuapp.com']
 
 
 INSTALLED_APPS = [
