@@ -198,6 +198,12 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   - Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
   - Cancel button to redirect the user back if they have changed their mind.
 
+- **No Adoption Details Page**
+  ![No Adoption Details Page](documentation/readme_images/noadoptdetails.png)
+
+  - When there arent any rehoming requests a screen informs the user that there isnt any details at the moment.
+  - Cancel button to redirect the user back to home page.
+
 - **Adoption Update Page**
   ![Adoption update Page](documentation/readme_images/adoptupdate.png)
 
@@ -234,6 +240,12 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   - Update button to allow the user to change any of the information they have just put in.
   - Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
   - Cancel button to redirect the user back if they have changed their mind.
+  
+- **No Rehome Details Page**
+  ![No Rehome Details Page](documentation/readme_images/norehome.png)
+
+  - When there arent any rehoming requests a screen informs the user that there isnt any details at the moment.
+  - Cancel button to redirect the user back to home page.
   
 - **Rehome update Page**
   ![Rehome update Page](documentation/readme_images/updaterehome.png)
@@ -661,3 +673,6 @@ A few examples have been provided below to give you some ideas.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
 - I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
 - I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+
+
+- security error - The cloudinary API key was previously pushed to GitHub. The exposed key is no longer in use and has been replaced with a new key to prevent any security issues."
