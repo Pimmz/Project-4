@@ -580,8 +580,19 @@ When I first deployed the site there was a difference between the local and the 
 - [Googlefonts](https://fonts.google.com/)
 - [Giphy](https://giphy.com/)
 - [Django Docs](https://docs.djangoproject.com/en/4.0/)
+- [Heroku](https://dashboard.heroku.com/login)
+- [Balsamiq](https://balsamiq.com/)
+- [GitHub](https://github.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [PEP8 Online](http://pep8online.com/)
+- [Jshint](https://jshint.com/)
+- [Grammerly](https://app.grammarly.com/)
+- [Lucidchart](https://lucid.app/documents#/documents?folder_id=recent)
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 - [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - [Stack Overflow](https://stackoverflow.com/)
+- [Cloudinary](https://cloudinary.com/)
 - [Django Project](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
 - [Update View](https://pytutorial.com/django-updateview-example)
 - [Pagination](https://docs.djangoproject.com/en/2.2/topics/pagination/#using-paginator-in-a-view)
@@ -591,72 +602,46 @@ When I first deployed the site there was a difference between the local and the 
 
 ### Content
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
+| [W3Schools](https://www.w3schools.com/django/django_views.php) | entire site | To help with Django Views |
+| [W3Schools](https://www.w3schools.com/django/django_models.php) | entire site | To help with Django models |
+| [W3Schools](https://www.w3schools.com/django/django_urls.php) | entire site | To help with Django urls |
+| [W3Schools](https://www.w3schools.com/django/django_urls.php) | entire site | To help with Django urls |
+| [Djangoprojects](https://docs.djangoproject.com/en/4.2/ref/forms/) | entire site | To help with Django forms |
+| [Stackoverflow](https://stackoverflow.com/questions/31633259/django-how-to-use-decorator-in-class-based-view-methods) | None logged into pages | To stop users changing urls to access pages when not logged in|
 | [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
 | [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
+| [YouTube](<https://www.youtube.com/watch?v=-s7e_Fy6NRU>) | entire site | To help with CRUD |
+| [Code Institute - I think therefore I blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) | entire site | General advice for all of project |
+| [Code Institute - Hello Django](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/121ef050096f4546a1c74327a9113ea6/?child=first)| entire site | General advice for all of project |
 
 ### Media
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+All the images except for the ones listed below are from my own gallery so I have the right to use them in my project.
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Giphy](https://giphy.com/stickers/wft-wire-fox-terrier-foxie-cleo-FP3UIHzd5U5g8k7szQ) | a number of pages | image | giph to liven page up |
+| [Wikipedia](https://en.wikipedia.org/wiki/Fox_Terrier#/media/File:01_Wire_Fox_terrier.jpg) | Home page & Post page | image | Free image of Wired Haired Fox Terrier |
+| [Wikipedia](https://en.wikipedia.org/wiki/Fox_Terrier#/media/File:Two_Fox_Terriers.jpg) | Home page & Post page | image | Free image of Smooth Haired Fox Terrier |
+
 
 ### Acknowledgements
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, Antonio Rodriguez for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self-doubt and imposter syndrome.
+- I would like to thank my partner, Hilda, for believing in me and allowing me to make this transition into software development.
+- I would like to thank my family for believing in me and allowing me to make this transition into software development.
+- And of course the inspiration for this project Obi
+  ![screenshot](documentation/readme_images/openissue.png)
 
 
 - security error - The cloudinary API key was previously pushed to GitHub. The exposed key is no longer in use and has been replaced with a new key to prevent any security issues."
