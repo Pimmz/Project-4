@@ -387,8 +387,6 @@ Other potential features include:
 ![screenshot](documentation/readme_images/erd.png)
 
 
-
-
 ## Agile Development Process
 
 ### GitHub Projects
@@ -398,29 +396,22 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-
-![screenshot](documentation/gh-projects.png)
+![screenshot](documentation/readme_images/kanban.png)
 
 ### GitHub Issues
 
 [GitHub Issues](https://github.com/Pimmz/Project-4/issues) served as an another Agile tool.
 There, I used my own **User Story Template** to manage user stories.
 
-It also helped with milestone iterations on a weekly basis.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+It also helped with milestone iterations on a timely basis.
 
 - [Open Issues](https://github.com/Pimmz/Project-4/issues)
 
-    ![screenshot](documentation/gh-issues-open.png)
+    ![screenshot](documentation/readme_images/openissue.png)
 
 - [Closed Issues](https://github.com/Pimmz/Project-4/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/gh-issues-closed.png)
+    ![screenshot](documentation/readme_images/closed%20issues.png)
 
 ### MoSCoW Prioritization
 
@@ -429,7 +420,7 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 - **Must Have**: guaranteed to be delivered (*max 60% of stories*)
 - **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
+- **Nice to Have**: has small impact if left out (*20% of stories*)
 - **Won't Have**: not a priority for this iteration
 
 ## Testing
