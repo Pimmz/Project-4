@@ -429,16 +429,6 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT:**
-
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 The live deployed application can be found deployed on [Heroku](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com).
 
 ### ElephantSQL Database
@@ -580,21 +570,24 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+When I first deployed the site there was a difference between the local and the deployed site. The issue was the CSS wasnt coming through to the live site. Then I realised that I had commited with Debug set to true. Changing this over to false soon allowed the issue to be rectifyed
 
 ## Credits
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- [W3Schools](https://www.w3schools.com/)
+- [Giphy](https://giphy.com/)
+- [My Color Space](https://mycolor.space/)
+- [Googlefonts](https://fonts.google.com/)
+- [Giphy](https://giphy.com/)
+- [Django Docs](https://docs.djangoproject.com/en/4.0/)
+- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- [Stack Overflow](https://stackoverflow.com/)
+- [Django Project](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
+- [Update View](https://pytutorial.com/django-updateview-example)
+- [Pagination](https://docs.djangoproject.com/en/2.2/topics/pagination/#using-paginator-in-a-view)
+- [AutoSlugField](https://django-extensions.readthedocs.io/en/latest/field_extensions.html)
+- [Code Institute - I think therefore I blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/)
+- [Code Institute - Hello Django](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/121ef050096f4546a1c74327a9113ea6/?child=first)
 
 ### Content
 
