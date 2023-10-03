@@ -4,7 +4,7 @@ The Fox Terrier Owners Club site was designed to raise awareness of how amazing 
 
 Here a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/)
 
-<https://ui.dev/amiresponsive?url=https://pimmz-project-4-9cc2ab59cc64.herokuapp.com>
+(https://ui.dev/amiresponsive?url=https://pimmz-project-4-9cc2ab59cc64.herokuapp.com)
 
 
 ## UX
@@ -21,8 +21,13 @@ Skeleton - As before this was designed around the user which was gained from inf
 Surface - I wanted the look of the Fox Terrier Owners Club to be informative, clear, and concise, with consistent typography and corresponding colours to help them stand out, to easily navigate with emotive pictures that helped to bring an element of fun which I believe we all need on a daily basis.
 
 Then I sat down and roughly sketched out onto paper what the screens would look like on a mobile, tablet and desktop, This then gave me the basis to start creating Famous Quote Matcher in Codeanywhere.
+<details>
 
-![screenshot](documentation/readme_images/design.jpg)
+ <summary>Rough Sketch</summary>
+
+![Home Page](documentation/readme_images/design.jpg)
+</details>
+
 
 ### Colour Scheme
 
@@ -641,7 +646,7 @@ All the images except for the ones listed below are from my own gallery so I hav
 - I would like to thank my partner, Hilda, for believing in me and allowing me to make this transition into software development.
 - I would like to thank my family for believing in me and allowing me to make this transition into software development.
 - And of course the inspiration for this project Obi
-  ![screenshot](documentation/readme_images/openissue.png)
+  ![screenshot](documen)
 
 
 - security error - The cloudinary API key was previously pushed to GitHub. The exposed key is no longer in use and has been replaced with a new key to prevent any security issues."
