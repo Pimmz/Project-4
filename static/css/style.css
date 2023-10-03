@@ -11,6 +11,16 @@ body {
     max-height: 300px;
 }
 
+.navbar {
+    background-image: linear-gradient(to right bottom, #ffeace, #d0bea5, #a3937e, #776b59, #4f4537);
+}
+
+
+.card1,
+.card2 {
+    width: 75%;
+}
+
 .signin {
     font-size: 25px;
 }
