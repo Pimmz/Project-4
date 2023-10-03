@@ -36,6 +36,7 @@ class AdoptionView(TemplateView):
         return self.render_to_response(context)
 
 
+@method_decorator(login_required, name='dispatch')
 class AdoptionDetailView(DetailView):
     model = Adoption
     template_name = "adoption_detail.html"
@@ -58,6 +59,7 @@ class AdoptionDetailView(DetailView):
             return render(request, 'no_adoption.html')
 
 
+@method_decorator(login_required, name='dispatch')
 class AdoptionUpdateView(UpdateView):
     model = Adoption
     form_class = AdoptionForm
@@ -70,6 +72,7 @@ class AdoptionUpdateView(UpdateView):
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
 
+@method_decorator(login_required, name='dispatch')
 class DeleteAdoptionView(DeleteView):
     model = Adoption
     template_name = "delete_adoption.html"
@@ -109,6 +112,7 @@ class RehomeView(TemplateView):
         return self.render_to_response(context)
 
 
+@method_decorator(login_required, name='dispatch')
 class RehomeDetailView(TemplateView):
     model = Rehome
     template_name = "rehome_detail.html"
@@ -130,6 +134,7 @@ class RehomeDetailView(TemplateView):
             return render(request, 'no_rehome.html')
 
 
+@method_decorator(login_required, name='dispatch')
 class RehomeUpdateView(UpdateView):
     model = Rehome
     form_class = RehomeForm
@@ -142,6 +147,7 @@ class RehomeUpdateView(UpdateView):
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
 
 
+@method_decorator(login_required, name='dispatch')
 class DeleteRehomeView(DeleteView):
     model = Rehome
     template_name = "delete_rehome.html"
@@ -251,6 +257,7 @@ class PostDetail(View):
             return HttpResponseServerError("Post not found.")
 
 
+@method_decorator(login_required, name='dispatch')
 class DeletePostView(DeleteView):
     model = Post
     template_name = "delete_post.html"
@@ -273,6 +280,7 @@ class DeletePostView(DeleteView):
             return HttpResponseServerError("Post not found.")
 
 
+@method_decorator(login_required, name='dispatch')
 class UpdatePostView(UpdateView):
     model = Post
     form_class = PostUpdateForm
@@ -283,6 +291,7 @@ class UpdatePostView(UpdateView):
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
 
+@method_decorator(login_required, name='dispatch')
 class AboutView(TemplateView):
     template_name = "about.html"
 

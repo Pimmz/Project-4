@@ -6,8 +6,64 @@ Here a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9
 
 (https://ui.dev/amiresponsive?url=https://pimmz-project-4-9cc2ab59cc64.herokuapp.com)
 
+## Table of Contents
 
-## UX
+- [Fox Terrier Owners Club](#Fox-Terrier-Owners-Club)
+  - [User Experience (UX)](#user-experience-ux)
+    - [User Stories](#user-stories)
+    - [Design](#design)
+      - [Colour Scheme](#colour-scheme)
+      - [Typography](#typography)
+      - [Icons](#icons)
+      - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Header](#header)
+    - [Navigation](#navigation)
+    - [Footer](#footer)
+    - [Home Page](#home-page)
+    - [About Page](#about-page)
+    - [Adoption page](#adoption-page)
+    - [Adoption Detail Page](#adoption-detail-page)
+    - [No Adoption Detail Page](#no-adoption-details-page)
+    - [Adoption Update Page](#adoption-update-page)
+    - [Adoption Delete Page](#adoption-delete-page)
+    - [Rehome Page](#rehome-page)
+    - [Rehome Details Page](#rehome-details-page)
+    - [No Rehome Details Page](#no-rehome-details-page)
+    - [Rehome Update Page](#rehome-update-page)
+    - [Rehome Deletion Page](#rehome-deletion-page)
+    - [Post Room](#post-room)
+    - [Post Update Page](#post-update-page)
+    - [Post Deletion Page](#post-deletion-page)
+    - [Comment Room](#comment-room)
+    - [Future Features](#future-features)
+  - [Tools and Technologies Used](#tools-and-technologies-used)
+  - [Database Design](#database-design)
+  - [Agile Development Process](#agile-development-process)
+    - [Github Projects](#github-projects)
+    - [Github Issues](#github-issues)
+    - [MoSCoW Prioritization](#MoSCoW-Prioritization)
+  - [Security Features and Defensive Design](#security-features-and-defensive-design)
+    - [User Authentication](#user-authentication)
+    - [Form Validation](#form-validation)
+    - [Database Security](#database-security)
+    - [Custom error pages:](#custom-error-pages-)
+  - [Testing](#testing)
+  - [Deployment - Heroku](#deployment)
+    - [ElephantSQL Database](#elephantsql-database)
+    - [Cloudinary API](#cloudinary-api)
+    - [Heroku Deployment](#heroku-deployment)
+    - [Local Deployment](#local-deployment)
+    - [Cloning](#cloning)
+    - [Forking](#forking)
+  - [Local vs Deployment](#local-vs-deployment)
+  - [Credits](#credits)
+    - [Contents](#contents)
+    - [Media](#media)
+  - [Addition Information](#additional-information)
+  - [Acknowledgments](#acknowledgments)
+
+## User Experience (UX)
 When I started the design of the Fox Terrier Owners Club I wanted to ensure the site was Useful, Useable and Valuable so that it makes the user experience informative and enjoyable. To do this I looked at the five key fundamentals;
 
 Strategy - So the user can discover, Learn, enjoy, interact and get assistance with all things to do with Fox Terriers. 
@@ -28,6 +84,46 @@ Then I sat down and roughly sketched out onto paper what the screens would look 
 ![Home Page](documentation/readme_images/design.jpg)
 </details>
 
+### User Stories
+
+#### EPIC | User Profile
+
+- As a Site User I can register an account so that I can add/edit/delete my adoption plus rehoming request and comment on the posts of other people's post.
+- As a Site User, I can log in or log out of my account so that I can keep my account secure.
+- As a Site User I can see my login status so that I know if I'm logged in or out.
+
+#### EPIC | User Navigation
+
+- As a Site User I can immediately understand the purpose of the site so that I can decide if it meets my needs.
+- As a Site User, I can intuitively navigate around the site so that I can find content and understand where I am on the site.
+- As a Site User, I can view a paginated list of posts so that I can easily select a post to view.
+- As a Site User, I can click on a post so that I can read the full text
+- As a Site User I can register an account so that I can comment, like, add a adoption and rehome request
+- As a Site User, I can view a list of posts so that I can select one to read
+
+#### EPIC | Post Management
+
+- As a Site User, I can update and delete posts that I have created so that I can easily make changes without having to start over.
+- As a Site User I can leave comments on a post so that I can be involved in the conversation
+- As a Site User I can view my posts so that I can see and manage all my own posts, but not be able to change other peoples.
+- As a Site User I can view my posts so I can find them easily in the one location.
+- As a Site user I can like or unlike a post so that I can interact with the content
+
+#### EPIC | Adoption Interaction
+
+- As a Site User, I can see my request so that I can find it easily at a later date.
+- As a Site User, I can update and delete adoption requests that I have created so that I can easily make changes if I have made a mistake.
+
+#### EPIC | Rehome Interaction
+
+- As a Site User, I can see my request so that I can find it easily at a later date.
+- As a Site User, I can update and delete rehome requests that I have created so that I can easily make changes if I have made a mistake.
+
+#### EPIC | Site Administration
+
+- As a Site Administrator, I can create, read, update and delete adoption, rehome requests, posts and comments so that I can manage the app content.
+- As a Site Administrator,I can view comments on an individual post so that I can read the conversation
+- As a Site Admin I can create draft posts so that I can finish writing the content later
 
 ### Colour Scheme
 
@@ -53,48 +149,7 @@ To help with making Fox Terrier Owners club as user-friendly as possible I used 
 
 - [Font Awesome](https://fontawesome.com) icons were used in the title.
 
-### User Stories
 
-#### EPIC | User Profile
-
-- As a Site User I can register an account so that I can add/edit/delete my adoption plus rehoming request and comment on the posts of other people's post.
-- As a Site User, I can log in or log out of my account so that I can keep my account secure.
-- As a Site User I can see my login status so that I know if I'm logged in or out.
-
-#### EPIC | User Navigation
-
-- As a Site User I can immediately understand the purpose of the site so that I can decide if it meets my needs.
-- As a Site User, I can intuitively navigate around the site so that I can find content and understand where I am on the site.
-- As a Site User, I can view a paginated list of posts so that I can easily select a post to view.
-- As a Site User, I can click on a post so that I can read the full text
-- As a Site User I can register an account so that I can comment, like, add a adoption and rehome request
-- As a Site User, I can view a list of posts so that I can select one to read
-
-
-#### EPIC | Post Management
-
-- As a Site User, I can update and delete posts that I have created so that I can easily make changes without having to start over.
-- As a Site User I can leave comments on a post so that I can be involved in the conversation
-- As a Site User I can view my posts so that I can see and manage all my own posts, but not be able to change other peoples.
-- As a Site User I can view my posts so I can find them easily in the one location.
-- As a Site user I can like or unlike a post so that I can interact with the content
-
-
-#### EPIC | Adoption Interaction
-
-- As a Site User, I can see my request so that I can find it easily at a later date.
-- As a Site User, I can update and delete adoption requests that I have created so that I can easily make changes if I have made a mistake.
-
-#### EPIC | Rehome Interaction
-
-- As a Site User, I can see my request so that I can find it easily at a later date.
-- As a Site User, I can update and delete rehome requests that I have created so that I can easily make changes if I have made a mistake.
-
-#### EPIC | Site Administration
-
-- As a Site Administrator, I can create, read, update and delete adoption, rehome requests, posts and comments so that I can manage the app content.
-- As a Site Administrator,I can view comments on an individual post so that I can read the conversation
-- As a Site Admin I can create draft posts so that I can finish writing the content later
 
 ## Wireframes
 
@@ -427,6 +482,26 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
 - **Nice to Have**: has small impact if left out (*20% of stories*)
 - **Won't Have**: not a priority for this iteration
+
+## Security Features and Defensive Design
+
+### User Authentication
+
+- Django's @method_decorator is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the login page.
+- Django's conditional statement {% if user.is_authenticated %} was also used to ensure certain pages were only accessible to login users.
+
+### Form Validation
+
+- If incorrect or empty data is added to a form, the form won't submit and a warning will appear to the user informing them what field raised the error.
+
+### Database Security
+
+- The database url and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to     
+  Github.
+- ERROR The cloudinary API key was previously pushed to GitHub. This was due to my workspace being deleted unforseeably and then a miss communicated between a    
+  tutor and myself. The exposed key is no longer in use and has been replaced with a new key to prevent any security issues."
+- Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.
+
 
 ## Testing
 
