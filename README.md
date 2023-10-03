@@ -228,7 +228,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Three key sections enlarged to show the additional added features of the website.
 - Two images clearly showing the different types of Fox Terrier.
 - **About Page**
-![About Page](documentation/readme_images/aboutpage1.png)
+![About Page](documentation/readme_images/about.png)
 
 - Clear title explaining the section
 - Two images clearly showing the different types of Fox Terrier.
