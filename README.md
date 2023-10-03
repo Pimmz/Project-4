@@ -383,7 +383,7 @@ Other potential features include:
 - Having a Illness diagnoses page so the user can put in the symptoms and its diagnosed with a link to a vet to confirm and assist with the issue.
 
 
-## Tools & Technologies Used
+## Tools and Technologies Used
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
