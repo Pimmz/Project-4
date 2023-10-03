@@ -11,27 +11,27 @@
     <h2 class="text-center mt-3">Are you sure you want to delete your rehoming request ?</h2>
     <div class="row justify-content-center">
         <div class="col-11 col-md-6 col-lg-4 mt-4">
-           
+
             <form method="POST" class="text-center" action="{% url 'delete_rehome' pk=rehome.pk %}">
-                {%  csrf_token  %}
+                {% csrf_token %}
                 <div>
                     <button class="btn btn-danger m-4" type="submit">Delete</button>
                     <a class="btn btn-outline-dark m-4" href="{% url 'index' %}">Cancel</a>
                 </div>
             </form>
-            <div class="text-center">
-                <img src="https://media.giphy.com/media/KSyBlMKqqmfwVvKd9s/giphy.gif" alt="bye" style="max-width: 150px;">
+            <div class="gif text-center">
+                <img src="https://media.giphy.com/media/KSyBlMKqqmfwVvKd9s/giphy.gif" alt="bye">
             </div>
         </div>
     </div>
 </div>
 <div class="container">
-    {%  if messages %}
-        <div class="alert alert-success" role="alert">
-            {%  for messages in messages %}
-                {{ message }}
-            {% endfor %}  
-        </div>
-    {%  endif %}
+    {% if messages %}
+    <div class="alert alert-success" role="alert">
+        {% for messages in messages %}
+        {{ message }}
+        {% endfor %}
+    </div>
+    {% endif %}
 </div>
 {%endblock%}

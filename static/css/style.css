@@ -7,14 +7,41 @@ body {
 
 }
 
+.navbar,
+.footer {
+    background-image: linear-gradient(to right bottom, #ffeace, #d0bea5, #a3937e, #776b59, #4f4537);
+}
+
+.logo img {
+    max-width: 110px;
+    height: 20%;
+}
+
+.gif img {
+    max-width: 150px;
+}
+
 .card-img-top {
     max-height: 300px;
 }
 
-.navbar {
-    background-image: linear-gradient(to right bottom, #ffeace, #d0bea5, #a3937e, #776b59, #4f4537);
+.fab {
+    color: white;
 }
 
+.masthead-image img {
+    width: 75%;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 
 .card1,
 .card2 {

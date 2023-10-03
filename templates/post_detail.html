@@ -6,17 +6,18 @@
     <div class="container">
         <div class="row g-0">
             <div class="col-md-6 masthead-text">
-                
+
                 <h1 class="post-title">{{ post.title }}</h1>
-                
+
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
-                
+
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/dtqjcm9e6/image/upload/v1692087667/Screenshot_20230815_081948_Facebook_twsgyu.jpg" width="100%">
+                <img
+                    src="https://res.cloudinary.com/dtqjcm9e6/image/upload/v1692087667/Screenshot_20230815_081948_Facebook_twsgyu.jpg">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src=" {{ post.featured_image.url }}">
                 {% endif %}
             </div>
         </div>
@@ -27,7 +28,7 @@
     <div class="row">
         <div class="col card mb-4  mt-3 left  top">
             <div class="card-body">
-                
+
                 <p class="card-text ">
                     {{ post.content | safe }}
                 </p>
@@ -40,11 +41,13 @@
                                 {% csrf_token %}
                                 {% if liked %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="fas fa-heart"></i></button>
 
                                 {% else %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
+                                        class="far fa-heart"></i></button>
 
                                 {% endif %}
                             </form>
@@ -54,12 +57,12 @@
                             {% endif %}
                             <span class="text-secondary">{{ post.number_of_likes }}</span>
                         </strong>
-                        
+
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
-                            
+
                             {{ total_comments }}</strong>
                         {% endwith %}
                     </div>
@@ -76,21 +79,21 @@
         <div class="col-md-8 card mb-4  mt-3 ">
             <h3>Comments:</h3>
             <div class="card-body">
-                
+
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
-                        
+
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
-                           
+
                             {{ comment.created_on }}
                         </span> wrote:
                     </p>
-                    
+
                     {{ comment.body | linebreaks }}
                 </div>
-                
+
                 {% endfor %}
             </div>
         </div>
@@ -111,12 +114,14 @@
                     {{ comment_form | crispy }}
                     {% csrf_token %}
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                    <a class="btn btn-outline-secondary m-2" href="{% url 'blog' %}">Back To Post Room</a>
                 </form>
+
                 {% endif %}
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
-    
+
 {% endblock content %}
