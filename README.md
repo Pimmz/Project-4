@@ -1,14 +1,14 @@
 # Fox Terrier Owners Club
 
-The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone that would like to adopt one or even rehome a Fox Terrier. The app is designed towards users who love fox terriers, would just like to know abit more about them or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the life style you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has a amazing life.
+The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone who would like to adopt one or even rehome a Fox Terrier. The app is designed towards users who love fox terriers, would just like to know a bit more about them or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the lifestyle you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has an amazing life.
 
-Here a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/)
+Here is a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/)
 
 ![Am I Responsive](documentation/readme_images/ami.png)
 
 ## Table of Contents
 
-- [Fox Terrier Owners Club](#Fox-Terrier-Owners-Club)
+- [Fox Terrier Owners Club](#fox-terrier-owners-club)
   - [User Experience (UX)](#user-experience-ux)
     - [User Stories](#user-stories)
     - [Design](#design)
@@ -16,70 +16,70 @@ Here a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9
       - [Typography](#typography)
       - [Icons](#icons)
       - [Wireframes](#wireframes)
-  - [Features](#features)
-    - [Header](#header)
-    - [Navigation](#navigation)
-    - [Footer](#footer)
-    - [Home Page](#home-page)
-    - [About Page](#about-page)
-    - [Adoption page](#adoption-page)
-    - [Adoption Detail Page](#adoption-detail-page)
-    - [No Adoption Detail Page](#no-adoption-details-page)
-    - [Adoption Update Page](#adoption-update-page)
-    - [Adoption Delete Page](#adoption-delete-page)
-    - [Rehome Page](#rehome-page)
-    - [Rehome Details Page](#rehome-details-page)
-    - [No Rehome Details Page](#no-rehome-details-page)
-    - [Rehome Update Page](#rehome-update-page)
-    - [Rehome Deletion Page](#rehome-deletion-page)
-    - [Post Room](#post-room)
-    - [Post Update Page](#post-update-page)
-    - [Post Deletion Page](#post-deletion-page)
-    - [Comment Room](#comment-room)
-    - [Future Features](#future-features)
-  - [Tools and Technologies Used](#tools-and-technologies-used)
-  - [Database Design](#database-design)
-  - [Agile Development Process](#agile-development-process)
-    - [Github Projects](#github-projects)
-    - [Github Issues](#github-issues)
-    - [MoSCoW Prioritization](#MoSCoW-Prioritization)
-  - [Security Features and Defensive Design](#security-features-and-defensive-design)
-    - [User Authentication](#user-authentication)
-    - [Form Validation](#form-validation)
-    - [Database Security](#database-security)
-    - [Custom error pages:](#custom-error-pages-)
-  - [Testing](#testing)
-  - [Deployment - Heroku](#deployment)
-    - [ElephantSQL Database](#elephantsql-database)
-    - [Cloudinary API](#cloudinary-api)
-    - [Heroku Deployment](#heroku-deployment)
-    - [Local Deployment](#local-deployment)
-    - [Cloning](#cloning)
-    - [Forking](#forking)
-  - [Local vs Deployment](#local-vs-deployment)
+- [Features](#features)
+  - [Header](#header)
+  - [Navigation](#navigation)
+  - [Footer](#footer)
+  - [Home Page](#home-page)
+  - [About Page](#about-page)
+  - [Adoption page](#adoption-page)
+  - [Adoption Detail Page](#adoption-detail-page)
+  - [No Adoption Detail Page](#no-adoption-details-page)
+  - [Adoption Update Page](#adoption-update-page)
+  - [Adoption Delete Page](#adoption-delete-page)
+  - [Rehome Page](#rehome-page)
+  - [Rehome Details Page](#rehome-details-page)
+  - [No Rehome Details Page](#no-rehome-details-page)
+  - [Rehome Update Page](#rehome-update-page)
+  - [Rehome Deletion Page](#rehome-deletion-page)
+  - [Post Room](#post-room)
+  - [Post Update Page](#post-update-page)
+  - [Post Deletion Page](#post-deletion-page)
+  - [Comment Room](#comment-room)
+  - [Future Features](#future-features)
+- [Tools and Technologies Used](#tools-and-technologies-used)
+- [Database Design](#database-design)
+- [Agile Development Process](#agile-development-process)
+  - [Github Projects](#github-projects)
+  - [Github Issues](#github-issues)
+  - [MoSCoW Prioritization](#moscow-prioritization)
+- [Security Features and Defensive Design](#security-features-and-defensive-design)
+- [User Authentication](#user-authentication)
+- [Form Validation](#form-validation)
+- [Database Security](#database-security)
+- [Testing](#testing)
+- [Deployment - Heroku](#deployment)
+  - [ElephantSQL Database](#elephantsql-database)
+  - [Cloudinary API](#cloudinary-api)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Local Deployment](#local-deployment)
+  - [Cloning](#cloning)
+  - [Forking](#forking)
+- [Local vs Deployment](#local-vs-deployment)
   - [Credits](#credits)
-    - [Contents](#contents)
-    - [Media](#media)
-  - [Addition Information](#additional-information)
-  - [Acknowledgments](#acknowledgments)
+  - [Contents](#contents)
+- [Media](#media)
+- [Addition Information](#additional-information)
+- [Acknowledgments](#acknowledgments)
 
 ## User Experience (UX)
+
 When I started the design of the Fox Terrier Owners Club I wanted to ensure the site was Useful, Useable and Valuable so that it makes the user experience informative and enjoyable. To do this I looked at the five key fundamentals;
 
-Strategy - So the user can discover, Learn, enjoy, interact and get assistance with all things to do with Fox Terriers. 
+Strategy - So the user can discover, Learn, enjoy, interact and get assistance with all things to do with Fox Terriers.
 
-Scope - Based on the information from the strategy, the features included emotive images and giphs to show the nature of Fox Terriers. A about section that goes through the basic characters of both types of Fox Terrier and a more indepth look via wikipedia. The Post Room that enables the user to post a picture of there dog or comment on another persons. The adoption facility was set up becasue so many dogs unfortunatley dont get the start in life they deserve, so to have a loving family adopt one of those dogs is amazing. Plus if life has changed to a point where it is not possible to offer the life style you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has a amazing life.
+Scope - Based on the information from the strategy, the features included emotive images and gifs to show the nature of Fox Terriers. An about section that goes through the basic characters of both types of Fox Terrier and a more in depth look via Wikipedia. The Post Room enables the user to post a picture of their dog or comment on another person. The adoption facility was set up because so many dogs, unfortunately, don't get the start in life they deserve, so to have a loving family adopt one of those dogs is amazing. Plus if life has changed to a point where it is not possible to offer the lifestyle you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has an amazing life.
 
-Structure - This was designed around the user. After speaking with a number of fox terrier owners, they wanted to know more about Fox Terriers. To be able to interact with other owners, to have the possibility to adopt a fox terrier and of course rehome one if life had unfortunatley changed for them so that they could no lomger look after one.
+Structure - This was designed around the user. After speaking with a number of fox terrier owners, they wanted to know more about Fox Terriers. To be able to interact with other owners, to have the possibility to adopt a fox terrier and of course rehome one if life had unfortunately changed for them so that they could no longer look after one.
 
-Skeleton - As before this was designed around the user which was gained from information supplied by a number of Fox Terrier Owners. This dictated that it would be laid out simply. So that it can be used quickly and efficiently while delivering the most amount of information and receiving help depending on the users needs.
+Skeleton - As before this was designed around the user which was gained from information supplied by a number of Fox Terrier Owners. This dictated that it would be laid out simply. So that it can be used quickly and efficiently while delivering the most amount of information and receiving help depending on the user's needs.
 
 Surface - I wanted the look of the Fox Terrier Owners Club to be informative, clear, and concise, with consistent typography and corresponding colours to help them stand out, to easily navigate with emotive pictures that helped to bring an element of fun which I believe we all need on a daily basis.
 
 Then I sat down and roughly sketched out onto paper what the screens would look like on a mobile, tablet and desktop, This then gave me the basis to start creating Famous Quote Matcher in Codeanywhere.
 <details>
 
- <summary>Rough Sketch</summary>
+<summary>Rough Sketch</summary>
 
 ![Home Page](documentation/readme_images/design.jpg)
 </details>
@@ -88,7 +88,7 @@ Then I sat down and roughly sketched out onto paper what the screens would look 
 
 #### EPIC | User Profile
 
-- As a Site User I can register an account so that I can add/edit/delete my adoption plus rehoming request and comment on the posts of other people's post.
+- As a Site User I can register an account so that I can add/edit/delete my adoption plus rehoming requests and comment on the posts of other people's post.
 - As a Site User, I can log in or log out of my account so that I can keep my account secure.
 - As a Site User I can see my login status so that I know if I'm logged in or out.
 
@@ -98,7 +98,7 @@ Then I sat down and roughly sketched out onto paper what the screens would look 
 - As a Site User, I can intuitively navigate around the site so that I can find content and understand where I am on the site.
 - As a Site User, I can view a paginated list of posts so that I can easily select a post to view.
 - As a Site User, I can click on a post so that I can read the full text
-- As a Site User I can register an account so that I can comment, like, add a adoption and rehome request
+- As a Site User I can register an account so that I can comment, like, add an adoption and rehome request
 - As a Site User, I can view a list of posts so that I can select one to read
 
 #### EPIC | Post Management
@@ -106,7 +106,7 @@ Then I sat down and roughly sketched out onto paper what the screens would look 
 - As a Site User, I can update and delete posts that I have created so that I can easily make changes without having to start over.
 - As a Site User I can leave comments on a post so that I can be involved in the conversation
 - As a Site User I can view my posts so that I can see and manage all my own posts, but not be able to change other peoples.
-- As a Site User I can view my posts so I can find them easily in the one location.
+- As a Site User I can view my posts so I can find them easily in one location.
 - As a Site user I can like or unlike a post so that I can interact with the content
 
 #### EPIC | Adoption Interaction
@@ -122,12 +122,12 @@ Then I sat down and roughly sketched out onto paper what the screens would look 
 #### EPIC | Site Administration
 
 - As a Site Administrator, I can create, read, update and delete adoption, rehome requests, posts and comments so that I can manage the app content.
-- As a Site Administrator,I can view comments on an individual post so that I can read the conversation
+- As a Site Administrator, I can view comments on an individual post so that I can read the conversation
 - As a Site Admin I can create draft posts so that I can finish writing the content later
 
 ### Colour Scheme
 
-The colour scheme of the site is mainly creams and browns. The colours chosen were chosen to specifically to match a Fox Terriers coat or near to it.
+The colour scheme of the site is mainly creams and browns. The colours chosen were chosen specifically to match a Fox Terriers coat or near to it.
 
 Great care was taken to establish a good contrast between background colours and text at all times to ensure maximum user accessibility.
 
@@ -141,21 +141,19 @@ I looked for fonts on Google Fonts, to help me decide as it gave a better visual
 
 - [bubblegum sans](https://fonts.google.com/specimen/Bubblegum+Sans?query=bubble) was used for all the text and headers.
 
-- [Sans serif](https://fonts.google.com/knowledge/glossary/sans_serif) was used for the back up font.
+- [Sans serif](https://fonts.google.com/knowledge/glossary/sans_serif) was used for the backup font.
 
 ## Icons
 
-To help with making Fox Terrier Owners club as user-friendly as possible I used icons from font awesome. This helped highlight specific areas to bring the user's attention to it.
+To help make Fox Terrier Owners Club as user-friendly as possible I used icons from font awesome. This helped highlight specific areas to bring the user's attention to it.
 
 - [Font Awesome](https://fontawesome.com) icons were used in the title.
-
-
 
 ## Wireframes
 
 <details>
 
- <summary>Home Page</summary>
+<summary>Home Page</summary>
 
 ![Home Page](documentation/wireframes/homepage.png)
 </details>
@@ -190,198 +188,195 @@ To help with making Fox Terrier Owners club as user-friendly as possible I used 
 
 <details>
 
-<summary>Signed in user rehome  details</summary>
+<summary>Signed in user rehome details</summary>
 
 ![Signed in user name and details](documentation/wireframes/rehome.png)
 </details>
 
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-
 ## Features
 
 ### Existing Features
 
 - **Header**
-  ![Header](documentation/readme_images/header.png)
+![Header](documentation/readme_images/header.png)
 
-  - A animated Fox Terrier logo was sourced from giphy.com to give the site a sense of fun, to help show the true nature of Fox terriers.
-  - Title of the website to ensure users know exactly whre they are.
-  - A simplfied menu of Home, About, Register and login available to everyone. This changes when the user registers or logs in.
+- An animated Fox Terrier logo was sourced from giphy.com to give the site a sense of fun, and to help show the true nature of Fox terriers.
+- Title of the website to ensure users know exactly where they are.
+- A simplified menu of Home, About, Register and Login available to everyone. This changes when the user registers or logs in.
 
 - **Navigation Bar**
-  ![Navigation bar](documentation/readme_images/navbar.png)
+![Navigation bar](documentation/readme_images/navbar.png)
 
-  - The navigation bar is present at the top of every page and includes all links to the various other pages.
-  - New menus open up when the user is logged in, to display Adoption, Rehome, Post Room, The signed in users name "Welcome Steve" which drops down to show the   
-    adoption or rehome requests they have made. Plus it includes the logout facility.
+- The navigation bar is present at the top of every page and includes all links to the various other pages.
+- New menus open up when the user is logged in, to display Adoption, Rehome, Post Room, The signed-in user's name "Welcome Steve" which drops down to show the
+  adoption or rehome requests they have made. Plus it includes the logout facility.
 
 - **Footer**
-  ![Footer](documentation/readme_images/footer.png)
+![Footer](documentation/readme_images/footer.png)
 
-  - The location of the Fox Terriers Owners club so users are aware, where its located in the world.
-  - The footer section includes links to Facebook, Instagram, Twitter and Youtube.
-  - Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
+- The location of the Fox Terriers Owners Club so users are aware, of where it is located in the world.
+- The footer section includes links to Facebook, Instagram, Twitter and YouTube.
+- Clicking the links in the footer opens a separate browser tab to avoid pulling the user away from the site.
 
 - **Home Page**
-  ![Home Page](documentation/readme_images/homepage1.png)
+![Home Page](documentation/readme_images/homepage1.png)
 
-  - Decription of our website and what were about so users can decide if its for them.
-  - Fontawesome icons used to help draw the eye to the three key sections.
-  - Three key sections enlarged to show the additional added features of the website.
-  - Two images clearly showing the different types of Fox Terrier.  
-  
+- Description of our website and what we're about so users can decide if it's for them.
+- Fontawesome icons are used to help draw the eye to the three key sections.
+- Three key sections enlarged to show the additional added features of the website.
+- Two images clearly showing the different types of Fox Terrier.
 - **About Page**
-  ![About Page](documentation/readme_images/aboutpage1.png)
+![About Page](documentation/readme_images/aboutpage1.png)
 
-  - Clear title explaining the section
-  - Two images clearly showing the different types of Fox Terrier.
-  - A in depth look at the background of the two types of Fox Terriers.
-  - To provide even more of a detailed look into Fox Terriers, a wikipedia link is available if the user wants to know more.
-  
+- Clear title explaining the section
+- Two images clearly showing the different types of Fox Terrier.
+- A in depth look at the background of the two types of Fox Terriers.
+- To provide even more of a detailed look into Fox Terriers, a Wikipedia link is available if the user wants to know more.
 - **Adoption Page**
-  ![Adoption Page](documentation/readme_images/adoptionpage.png)
+![Adoption Page](documentation/readme_images/adoptionpage.png)
 
-  - With a scary statistic that only 10% of dogs born will find a permanent home. Our aim is to find owners for our amazing dogs.
-  - Specific questions targeted to potiental adoptees to greater under more about them.
-  - Submit button to send the application form onwards
-  - Cancel button to redirect the user back if they have changed their mind.
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/confirmation1.png)
-  - You are then taken to Adoption detail page
+- With a scary statistic that only 10% of dogs born will find a permanent home. Our aim is to find owners for our amazing dogs.
+- Specific questions targeted to potential adoptees to greater under more about them.
+- Error message if the user doesn't fill in the required text
+![Empty](documentation/readme_images/empty.png)
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/confirmation1.png)
+- You are then taken to the Adoption detail page
 
 - **Adoption Details Page**
-  ![Adoption Details Page](documentation/readme_images/adoptdetail.png)
+![Adoption Details Page](documentation/readme_images/adoptdetail.png)
 
-  - Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
-  - Update button to allow the user to change any of the information they have just put in.
-  - Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
-  - Cancel button to redirect the user back if they have changed their mind.
+- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
+- Update button to allow the user to change any of the information they have just put in.
+- Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
+- Cancel button to redirect the user if they have changed their mind.
 
 - **No Adoption Details Page**
-  ![No Adoption Details Page](documentation/readme_images/noadoptdetails.png)
+![No Adoption Details Page](documentation/readme_images/noadoptdetails.png)
 
-  - When there arent any rehoming requests a screen informs the user that there isnt any details at the moment.
-  - Cancel button to redirect the user back to home page.
+- When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
+- Cancel button to redirect the user back to the home page.
 
 - **Adoption Update Page**
-  ![Adoption update Page](documentation/readme_images/adoptupdate.png)
+![Adoption update Page](documentation/readme_images/adoptupdate.png)
 
-  - The facility to update the specific questions targeted in the original adoption form
-  - Submit button to send the application form onwards
-  - Cancel button to redirect the user back if they have changed their mind.
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/updateconfirm.png)
+- The facility to update the specific questions targeted in the original adoption form
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/updateconfirm.png)
 
 - **Adoption Delete Page**
-  ![Adoption delete Page](documentation/readme_images/updatedelete.png)
+![Adoption delete Page](documentation/readme_images/updatedelete.png)
 
-  - This page give the user the opportunity to change their mind and delete their request.
-  - Bright red button to highlight the danger of the task
-  - Emotive animated fox terrier from giphy.com to ensure they doing the right thing.
-  - Cancel button to redirect the user back if they have changed their mind.
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/deleteconfirm.png)
+- This page gives the user the opportunity to change their mind and delete their request.
+- Bright red button to highlight the danger of the task
+- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/deleteconfirm.png)
 
 - **Rehome Page**
-  ![Rehome Page](documentation/readme_images/rehomepage.png)
+![Rehome Page](documentation/readme_images/rehomepage.png)
 
-  - With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
-  - Specific questions targeted to owners looking to rehome their Fox Terrier
-  - Submit button to send the application form onwards
-  - Cancel button to redirect the user back if they have changed their mind
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/confirmation2.png)
+- With a worrying 73% rise in dogs being abandoned in the UK. We offer the opportunity to rehome any Fox Terrier rather than it be left on the streets.
+- Specific questions targeted to owners looking to rehome their Fox Terrier
+- Error message if the user doesn't fill in the required text
+![Empty](documentation/readme_images/empty2.png)
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/confirmation2.png)
 
 - **Rehome Details Page**
-  ![Rehome Details Page](documentation/readme_images/rehomedetail.png)
+![Rehome Details Page](documentation/readme_images/rehomedetail.png)
 
-  - Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
-  - Update button to allow the user to change any of the information they have just put in.
-  - Delete button to allow the user to delete the adoption form they have just filled in, if they change their mind.
-  - Cancel button to redirect the user back if they have changed their mind.
-  
+- Details of the form you have just filled in are presented on the screen so the user can ensure they are correct.
+- Update button to allow the user to change any of the information they have just put in.
+- Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
+- Cancel button to redirect the user back if they have changed their mind.
 - **No Rehome Details Page**
-  ![No Rehome Details Page](documentation/readme_images/norehome.png)
+![No Rehome Details Page](documentation/readme_images/norehome.png)
 
-  - When there arent any rehoming requests a screen informs the user that there isnt any details at the moment.
-  - Cancel button to redirect the user back to home page.
-  
+- When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
+- Cancel button to redirect the user back to the home page.
 - **Rehome update Page**
-  ![Rehome update Page](documentation/readme_images/updaterehome.png)
+![Rehome update Page](documentation/readme_images/updaterehome.png)
 
-  - The facility to update the specific questions targeted in the original rehome form
-  - Submit button to send the application form onwards
-  - Cancel button to redirect the user back if they have changed their mind.
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/updateconfirm.png)
+- The facility to update the specific questions targeted in the original rehome form
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/updateconfirm.png)
 
 - **Rehome deletion Page**
-  ![Rehome deletion Page](documentation/readme_images/deleterehome.png)
+![Rehome deletion Page](documentation/readme_images/deleterehome.png)
 
-  - This page give the user the opportunity to change their mind and delete their request.
-  - Bright red button to highlight the danger of the task.
-  - Emotive animated fox terrier from giphy.com to ensure they doing the right thing.
-  - Cancel button to redirect the user back if they have changed their mind.
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/deleteconfirm.png)
+- This page gives the user the opportunity to change their mind and delete their request.
+- Bright red button to highlight the danger of the task.
+- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/deleteconfirm.png)
 
 - **Post Room**
-  ![Post Room](documentation/readme_images/postroom.png)
+![Post Room](documentation/readme_images/postroom.png)
 
-  - Welcoming message and clear explaination as to what you can do.
-  - Area for user to post. With title, content and image upload facility.
-  - Button to submit the users post.
-  - Confirmation message that the post has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/confirmation.png)
-  - Posts go upto a total of six on the page and then automatically go the next page. Next button for the user to scroll through.
-  ![Next Button](documentation/readme_images/next.png)
-  - Security function to only be able to delete the users own posts and no others
-  ![User option](documentation/readme_images/useroption.png)
-  
+- Welcoming message and clear explanation as to what you can do.
+- Area for users to post. With title, content and image upload facility.
+- Button to submit the user's post.
+- Confirmation message that the post has been successfully submitted.
+![Confirmation](documentation/readme_images/confirmation.png)
+- Posts go up to a total of six on the page and then automatically go to the next page. Next button for the user to scroll through.
+![Next Button](documentation/readme_images/next.png)
+- Security function to only be able to delete the user's own posts and no others
+![User option](documentation/readme_images/useroption.png)
 - **Post update Page**
-  ![Post update Page](documentation/readme_images/updatepost.png)
+![Post update Page](documentation/readme_images/updatepost.png)
 
-  - The facility to update the specific questions targeted in the original post form
-  - Submit button to send the application form onwards
-  - Cancel button to redirect the user back if they have changed their mind.
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/updateconfirm.png)
+- The facility to update the specific questions targeted in the original post form
+- Submit button to send the application form onwards
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/updateconfirm.png)
 
 - **Post deletion Page**
-  ![Post deletion Page](documentation/readme_images/deletepost.png)
+![Post deletion Page](documentation/readme_images/deletepost.png)
 
-  - This page give the user the opportunity to change their mind and delete their request.
-  - Bright red button to highlight the danger of the task.
-  - Emotive animated fox terrier from giphy.com to ensure they doing the right thing.
-  - Cancel button to redirect the user back if they have changed their mind.
-  - Confirmation message that the form has been succesfully submitted.
-  ![Confirmation](documentation/readme_images/deleteconfirm.png)
+- This page gives the user the opportunity to change their mind and delete their request.
+- Bright red button to highlight the danger of the task.
+- Emotive animated fox terrier from giphy.com to ensure they are doing the right thing.
+- Cancel button to redirect the user back if they have changed their mind.
+- Confirmation message that the form has been successfully submitted.
+![Confirmation](documentation/readme_images/deleteconfirm.png)
 
 - **Comment Room**
-  ![Comment Room](documentation/readme_images/comment.png)
+![Comment Room](documentation/readme_images/comment.png)
 
-  - Picture and title of the selected post the user wishes to comment on.
-  - The comment left by the user that posted.
-  - The signed in users name, the date and time they posted it.
-  - The options to like the post and unlike the post with a loveheart icon.
-  - The amount of comments added about the post.
-  - Comments left by other users including their name, the date and time they left it.
-  - Submit button to send the comment onwards to be approved
-  ![Confirmation](documentation/readme_images/commentconfirm.png)
-  
+- Picture and title of the selected post the user wishes to comment on.
+- The comment left by the user that posted.
+- The signed-in user's name, the date and time they posted it.
+- The options to like the post and unlike the post with a love heart icon.
+- The number of comments added about the post.
+- Comments left by other users including their name, the date and time they left it.
+- Submit button to send the comment onwards to be approved
+![Confirmation](documentation/readme_images/commentconfirm.png)
+
 ### Future Features
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
 
-- As a user I can receive confirmation that my adoption or rehome request as been successful via an email sent to me.
-- As a user I can search and filter posts so that I can target posts i wish to view instead of scrolling through posts.
+- As a user, I can receive confirmation that my adoption or rehome request has been successful via an email sent to me.
+- As a user, I can search and filter posts so that I can target posts I wish to view instead of scrolling through posts.
 
 Other potential features include:
 
 - Adding training techniques and videos from users to benefit the whole group.
-- Having a Illness diagnoses page so the user can put in the symptoms and its diagnosed with a link to a vet to confirm and assist with the issue.
-
+- Having an Illness diagnoses page so the user can put in the symptoms and their diagnosis with a link to a vet to confirm and assist with the issue.
 
 ## Tools and Technologies Used
 
@@ -390,21 +385,21 @@ Other potential features include:
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
 - [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [Python](https://www.python.org) used as the back-end programming language.
+- [Python](https://www.python.org) is used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [codeanywhere](https://app.codeanywhere.com/) used as a cloud-based IDE for development.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [Bootstrap](https://getbootstrap.com) is used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
 - [Django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): authentication library used to create the user accounts
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
+- [Cloudinary](https://cloudinary.com) is used for online static file storage.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 - [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
-- [Font Awesome](https://fontawesome.com/) - Used for icons in information bar.
+- [Font Awesome](https://fontawesome.com/) - Used for icons in the information bar.
 - [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
 - [PEP8 Online](http://pep8online.com/) - used to validate all the Python code
@@ -412,7 +407,7 @@ Other potential features include:
 - [Coolors](https://coolors.co/) - Used to create colour palette.
 - [Favicon](https://favicon.io/) - Used to create the favicon.
 - [Lucidchart](https://lucid.app/documents#/dashboard) - used to create the database schema design
-- [Grammerly](https://app.grammarly.com/) - used to proof read the README.md
+- [Grammerly](https://app.grammarly.com/) - used to proofread the README.md
 - [Summernote](https://summernote.org/): A WYSIWYG editor to allow users to edit their posts
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) used to manage Django Forms
 
@@ -427,25 +422,23 @@ Other potential features include:
 
 - Table: **Adoption**
 
- | Field | Type | Name | Notes |
- | --- | --- | --- | --- |
- | PK | ID | Autofield | |
- | | terrier_type | CharField(10) | Which Fox terrier do you want to adopt? |
- | | sex | CharField(10) | would prefer a Male or Female? |
- | | age | CharField(200) | What age Fox Terrier, are you looking for?|
- | | why | CharField(200) | Why would you like to adopt a Fox Terrier?|
- | | experience | CharField(200) | What experience with dogs do you have? |
- | | notes | CharField(200) | Additional notes or feedback? |
- | | name | CharField(100) | Your Name? |
- | | email | EmailField | Your Email? |
- | FK | author | ForeignKey(User)| Author |
- | | created_on | DateTimeField | Created_on |
-    
+| Field | Type | Name | Notes |
+| --- | --- | --- | --- |
+| PK | ID | Autofield | |
+| | terrier_type | CharField(10) | Which Fox terrier do you want to adopt? |
+| | sex | CharField(10) | would prefer a Male or Female? |
+| | age | CharField(200) | What age Fox Terrier, are you looking for?|
+| | why | CharField(200) | Why would you like to adopt a Fox Terrier?|
+| | experience | CharField(200) | What experience with dogs do you have? |
+| | notes | CharField(200) | Additional notes or feedback? |
+| | name | CharField(100) | Your Name? |
+| | email | EmailField | Your Email? |
+| FK | author | ForeignKey(User)| Author |
+| | created_on | DateTimeField | Created_on |
 
-- To help organise the remaining models required i used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-448%2C20%2C3328%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
+- To help organise the remaining models required I used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-448%2C20%2C3328%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
 
 ![screenshot](documentation/readme_images/erd.png)
-
 
 ## Agile Development Process
 
@@ -454,24 +447,24 @@ Other potential features include:
 [GitHub Projects](https://github.com/Pimmz/Project-4/projects) served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+Through it, user stories, issues, and milestone tasks were planned and then tracked using the basic Kanban board.
 
 ![screenshot](documentation/readme_images/kanban.png)
 
 ### GitHub Issues
 
-[GitHub Issues](https://github.com/Pimmz/Project-4/issues) served as an another Agile tool.
+[GitHub Issues](https://github.com/Pimmz/Project-4/issues) served as another Agile tool.
 There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a timely basis.
 
 - [Open Issues](https://github.com/Pimmz/Project-4/issues)
 
-    ![screenshot](documentation/readme_images/openissue.png)
+![screenshot](documentation/readme_images/openissue.png)
 
 - [Closed Issues](https://github.com/Pimmz/Project-4/issues?q=is%3Aissue+is%3Aclosed)
 
-    ![screenshot](documentation/readme_images/closed%20issues.png)
+![screenshot](documentation/readme_images/closed%20issues.png)
 
 ### MoSCoW Prioritization
 
@@ -487,8 +480,8 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 ### User Authentication
 
-- Django's @method_decorator is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the login page.
-- Django's conditional statement {% if user.is_authenticated %} was also used to ensure certain pages were only accessible to login users.
+- Django's @method_decorator is used to make sure that any requests to access secure pages by non-authenticated users are redirected to the signup page.
+- Django's conditional statement {% if user.is_authenticated %} was also used to ensure certain pages were only accessible to logged-in users.
 
 ### Form Validation
 
@@ -496,12 +489,11 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 ### Database Security
 
-- The database url and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to     
+- The database URL and secret key are stored in the env.py file to prevent unwanted connections to the database and this was set up before the first push to
   Github.
-- ERROR The cloudinary API key was previously pushed to GitHub. This was due to my workspace being deleted unforseeably and then a miss communicated between a    
+- ERROR The cloudinary API key was previously pushed to GitHub. This was due to my workspace being deleted unforeseeably and then a miscommunication between a
   tutor and myself. The exposed key is no longer in use and has been replaced with a new key to prevent any security issues."
 - Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.
-
 
 ## Testing
 
@@ -581,7 +573,7 @@ Or:
 - In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
 - Set the remote for Heroku: `heroku git:remote -a app_name` (replace *app_name* with your app name)
 - After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
-  - `git push heroku main`
+- `git push heroku main`
 
 The project should now be connected and deployed to Heroku!
 
@@ -601,9 +593,11 @@ Sample `env.py` file:
 ```python
 import os
 
+
 os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 os.environ.setdefault("DATABASE_URL", "user's own value")
 os.environ.setdefault("SECRET_KEY", "user's own value")
+
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
@@ -629,7 +623,9 @@ You can clone the repository by following these steps:
 4. Open Git Bash or Terminal
 5. Change the current working directory to the one where you want the cloned directory
 6. In your IDE Terminal, type the following command to clone my repository:
-	- `git clone https://github.com/Pimmz/Project-4.git`
+
+- `git clone https://github.com/Pimmz/Project-4.git`
+
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
@@ -650,7 +646,7 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-When I first deployed the site there was a difference between the local and the deployed site. The issue was the CSS wasnt coming through to the live site. Then I realised that I had commited with Debug set to true. Changing this over to false soon allowed the issue to be rectifyed
+When I first deployed the site there was a difference between the local and the deployed site. The issue was the CSS wasn't coming through to the live site. Then I realised that I had committed with Debug set to true. Changing this over to false soon allowed the issue to be rectified
 
 ## Credits
 
@@ -682,7 +678,6 @@ When I first deployed the site there was a difference between the local and the 
 
 ### Content
 
-
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
@@ -712,16 +707,14 @@ All the images except for the ones listed below are from my own gallery so I hav
 | [Wikipedia](https://en.wikipedia.org/wiki/Fox_Terrier#/media/File:01_Wire_Fox_terrier.jpg) | Home page & Post page | image | Free image of Wired Haired Fox Terrier |
 | [Wikipedia](https://en.wikipedia.org/wiki/Fox_Terrier#/media/File:Two_Fox_Terriers.jpg) | Home page & Post page | image | Free image of Smooth Haired Fox Terrier |
 
-
 ### Acknowledgements
 
 - I would like to thank my Code Institute mentor, Antonio Rodriguez for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self-doubt and imposter syndrome.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of - - 
+  self-doubt and imposter syndrome.
 - I would like to thank my partner, Hilda, for believing in me and allowing me to make this transition into software development.
 - I would like to thank my family for believing in me and allowing me to make this transition into software development.
-- And of course the inspiration for this project Obi
-  ![screenshot](documen)
+- And of course the inspiration for this project Ob.
+![screenshot](documentation/readme_images/obi.jpg)
 
-
-- security error - The cloudinary API key was previously pushed to GitHub. The exposed key is no longer in use and has been replaced with a new key to prevent any security issues."
