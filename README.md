@@ -4,7 +4,7 @@ The Fox Terrier Owners Club site was designed to raise awareness of how amazing 
 
 Here a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/)
 
-(https://ui.dev/amiresponsive?url=https://pimmz-project-4-9cc2ab59cc64.herokuapp.com)
+![Am I Responsive](documentation/readme_images/ami.png)
 
 ## Table of Contents
 

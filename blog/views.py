@@ -291,7 +291,6 @@ class UpdatePostView(UpdateView):
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
 
-@method_decorator(login_required, name='dispatch')
 class AboutView(TemplateView):
     template_name = "about.html"
 
