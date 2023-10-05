@@ -1,3 +1,4 @@
+"""Views"""
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
@@ -8,6 +9,9 @@ from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm, PostUp
 from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
+
+
+"""View for the Adoption page hwere you can submit a form"""
 
 
 @method_decorator(login_required, name='dispatch')
@@ -36,6 +40,9 @@ class AdoptionView(TemplateView):
         return self.render_to_response(context)
 
 
+"""View for the Adoption detail page where you can view the form submitted"""
+
+
 @method_decorator(login_required, name='dispatch')
 class AdoptionDetailView(DetailView):
     model = Adoption
@@ -59,6 +66,9 @@ class AdoptionDetailView(DetailView):
             return render(request, 'no_adoption.html')
 
 
+"""View for the update Adoption page where you can update the form submitted"""
+
+
 @method_decorator(login_required, name='dispatch')
 class AdoptionUpdateView(UpdateView):
     model = Adoption
@@ -70,6 +80,9 @@ class AdoptionUpdateView(UpdateView):
         context['user'] = self.request.user
         messages.success(self.request, 'Your update has been successfull')
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
+
+
+"""View for the delete Adoption page where you can delete the form submitted"""
 
 
 @method_decorator(login_required, name='dispatch')
@@ -85,6 +98,9 @@ class DeleteAdoptionView(DeleteView):
         adoption.delete()
         messages.success(self.request, 'Your deletion has been successfull')
         return redirect(self.success_url)
+
+
+"""View for the Rehome page where you can submit the form"""
 
 
 @method_decorator(login_required, name='dispatch')
@@ -112,6 +128,9 @@ class RehomeView(TemplateView):
         return self.render_to_response(context)
 
 
+"""View for the Rehome detail page where you can view the form submitted"""
+
+
 @method_decorator(login_required, name='dispatch')
 class RehomeDetailView(TemplateView):
     model = Rehome
@@ -134,6 +153,9 @@ class RehomeDetailView(TemplateView):
             return render(request, 'no_rehome.html')
 
 
+"""View for the update Rehome page where you can update the form submitted"""
+
+
 @method_decorator(login_required, name='dispatch')
 class RehomeUpdateView(UpdateView):
     model = Rehome
@@ -145,6 +167,9 @@ class RehomeUpdateView(UpdateView):
         context['user'] = self.request.user
         messages.success(self.request, 'Your update has been successful')
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
+
+
+"""View for the delete Rehome page where you can delete the form submitted"""
 
 
 @method_decorator(login_required, name='dispatch')
@@ -160,6 +185,9 @@ class DeleteRehomeView(DeleteView):
         rehome.delete()
         messages.success(self.request, 'Your deletion has been successful')
         return redirect(self.success_url)
+
+
+"""View for the Postroom page "blog.html" where you can post images and text"""
 
 
 @method_decorator(login_required, name='dispatch')
@@ -192,6 +220,9 @@ class PostList(generic.ListView):
             context['post_create_form'] = post_create_form
 
             return self.render_to_response(context)
+
+
+"""View for the Postroom page "post_detail" displays information about a post and allows for commenting"""
 
 
 @method_decorator(login_required, name='dispatch')
@@ -257,6 +288,27 @@ class PostDetail(View):
             return HttpResponseServerError("Post not found.")
 
 
+"""View for the post detail page for adding and removing comments"""
+
+
+@method_decorator(login_required, name='dispatch')
+class PostComment(View):
+
+    def post(self, request, slug, *args, **kwargs):
+        post = get_object_or_404(Post, slug=slug)
+        context['user'] = self.request.user
+
+        if post.comment.filter(id=request.user.id).exists():
+            post.comment.remove(request.user)
+        else:
+            post.comment.add(request.user)
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+
+"""View for the delete Post page where you can delete the post submitted"""
+
+
 @method_decorator(login_required, name='dispatch')
 class DeletePostView(DeleteView):
     model = Post
@@ -280,6 +332,9 @@ class DeletePostView(DeleteView):
             return HttpResponseServerError("Post not found.")
 
 
+"""View for the Update Post page where you can update the post submitted"""
+
+
 @method_decorator(login_required, name='dispatch')
 class UpdatePostView(UpdateView):
     model = Post
@@ -291,13 +346,7 @@ class UpdatePostView(UpdateView):
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
 
-class AboutView(TemplateView):
-    template_name = "about.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['user'] = self.request.user
-        return context
+"""View for the Post detail page where you can like or unlike a post"""
 
 
 class PostLike(View):
@@ -314,8 +363,11 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class HomeView(TemplateView):
-    template_name = "index.html"
+"""View for the About page"""
+
+
+class AboutView(TemplateView):
+    template_name = "about.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -323,16 +375,13 @@ class HomeView(TemplateView):
         return context
 
 
-@method_decorator(login_required, name='dispatch')
-class PostComment(View):
+"""View for the Home page"""
 
-    def post(self, request, slug, *args, **kwargs):
-        post = get_object_or_404(Post, slug=slug)
+
+class HomeView(TemplateView):
+    template_name = "index.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
-
-        if post.comment.filter(id=request.user.id).exists():
-            post.comment.remove(request.user)
-        else:
-            post.comment.add(request.user)
-
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+        return context

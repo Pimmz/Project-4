@@ -5,19 +5,19 @@ from django.contrib.messages import constants as messages
 if os.path.isfile("env.py"):
     import env
 
-
+# Base directory of project4
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
+# SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-
+# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 
 ALLOWED_HOSTS = ['8000-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com',
                  '8002-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com', 'pimmz-project-4-9cc2ab59cc64.herokuapp.com']
 
+# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -108,6 +108,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# Internationalization
+# https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
 
@@ -118,6 +120,9 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'

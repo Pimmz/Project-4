@@ -1,3 +1,4 @@
+"""Forms"""
 from .models import Comment, Adoption, Rehome, Post
 from django import forms
 
@@ -11,8 +12,14 @@ class CommentForm(forms.ModelForm):
 class AdoptionForm(forms.ModelForm):
     class Meta:
         model = Adoption
-        fields = ('terrier_type', 'sex', 'age', 'why',
-                  'experience', 'notes', 'name', 'email')
+        fields = ('name', 'email', 'terrier_type', 'sex', 'age', 'why',
+                  'experience', 'notes')
+        widgets = {
+            'age': forms.Textarea(attrs={'cols': 100}),
+            'why': forms.Textarea(attrs={'cols': 100}),
+            'experience': forms.Textarea(attrs={'cols': 100}),
+            'notes': forms.Textarea(attrs={'cols': 100}),
+        }
 
     def clean(self):
         cleaned_data = super().clean()
@@ -38,6 +45,7 @@ class RehomeForm(forms.ModelForm):
             if not cleaned_data.get(field):
                 self.add_error(field, "This field is required.")
         return cleaned_data
+
 
 class PostCreateForm(forms.ModelForm):
     class Meta:

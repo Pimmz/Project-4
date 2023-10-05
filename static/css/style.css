@@ -17,6 +17,16 @@ body {
     height: 20%;
 }
 
+.card-text1 input {
+    width: 200px;
+    border: none;
+}
+
+.card-text textarea,
+.card-text select {
+    border: none;
+}
+
 .gif img {
     max-width: 150px;
 }
