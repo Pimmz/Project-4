@@ -1,32 +1,37 @@
 {% extends "base.html" %} {% block content %}
 {% load crispy_forms_tags %}
 
+<!-- The adoption page sets out a form for potential adoptees-->
 <div class="container">
     <h1 class="page-title text-center">Adoption Page</h1>
-    <h4 class="text-center">Can you offer a Fox Terrier that didnt have the best start to their life, a place to live?, where they will be loved and cherished as all dogs should be. We'd love to here from you. Just fill in the from and we'll be in touch.</h4>
+    <h4 class="text-center">Can you offer a Fox Terrier that didnt have the best start to their life, a place to live?,
+        where they will be loved and cherished as all dogs should be. We'd love to here from you. Just fill in the from
+        and we'll be in touch.</h4>
     <hr class="adoption">
     <br>
-
+    <!-- Checks and displays a success message when submitted-->
     {% if success_message %}
     <div id="msg" class="alert alert-success" role="alert">
         {{ success_message }}
     </div>
     {% endif %}
-
+    <!--Form to display the adoption questions -->
     <form method="post" class="m" enctype="multipart/form-data">
         {{ adoption_form|crispy }}
+        <!--security token to prevent against attacks-->
         {% csrf_token %}
         <button type="submit" class="btn btn-outline-secondary">Submit</button>
         <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
     </form>
 </div>
+<!-- Checks and displays a success message when submitted-->
 <div class="container">
-    {%  if messages %}
-        <div class="alert alert-success" role="alert">
-            {%  for messages in messages %}
-                {{ message }}
-            {% endfor %}  
-        </div>
-    {%  endif %}
+    {% if messages %}
+    <div class="alert alert-success" role="alert">
+        {% for messages in messages %}
+        {{ message }}
+        {% endfor %}
+    </div>
+    {% endif %}
 </div>
 {%endblock%}

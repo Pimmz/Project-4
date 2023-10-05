@@ -3,12 +3,12 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-
+<!-- The adoption detail page sets out a form the user submitted in the rehome page that can be updated and deleted-->
 <div class="container">
     <h1 class="page-title text-center">Your Rehoming Information</h1>
     <hr class="rehome">
     <br>
-
+    <!--Rehome form-->
     <div class="row">
         <div class="col-md-6">
             <div class="card mb-3">
@@ -85,7 +85,7 @@
                     <div class="card-text">{{ rehome.name }}</div>
                 </div>
             </div>
-            <a class="btn btn-outline-secondary m-2 " href="{% url 'update_rehome' pk=rehome.id %}">Update</a> 
+            <a class="btn btn-outline-secondary m-2 " href="{% url 'update_rehome' pk=rehome.id %}">Update</a>
         </div>
         <div class="col-md-6">
             <div class="card mb-3">

@@ -29,10 +29,6 @@ body {
     color: white;
 }
 
-.masthead-image img {
-    width: 75%;
-}
-
 .form-group textarea {
     height: 100px;
 }
@@ -44,7 +40,9 @@ body {
 }
 
 .card1,
-.card2 {
+.card2,
+.masthead-image img,
+.post1 {
     width: 75%;
 }
 

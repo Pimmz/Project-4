@@ -1,10 +1,14 @@
 {% extends "base.html" %} {% block content %}
 {% load crispy_forms_tags %}
+<!-- This page is actually the post room page which has been adapted from the blog walkthrough-->
 
 <div class="row">
     <div class="card-body">
         <form method="post" action="" enctype="multipart/form-data">
+            <!--security token to prevent against attacks-->
             {% csrf_token %}
+
+            <!--Post section for users to post their images and text-->
             <div class="row">
                 <div class="col-lg-4 ">
                     <div class="form-group fs-5">
@@ -33,6 +37,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
+                        <!--Welcome message and explaination of page-->
                         <div class="col-12-secondary">
                             <h3 class="mt-3 fs-1"><u>Welcome to the Post Room</u></h3>
                             <li class="fs-3">Come and share your pictures of your Fox Terrier</li>
@@ -47,6 +52,7 @@
         </form>
     </div>
 </div>
+<!--Post display area with user details, likes. Plus the delete and Update buttons for the signed in user-->
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-5 left">
@@ -54,13 +60,13 @@
                 {% for post in post_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">
-                        <div class="card-body" style="width: 75%;">
+                        <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
                                     src="https://res.cloudinary.com/dtqjcm9e6/image/upload/v1692087667/Screenshot_20230815_081948_Facebook_twsgyu.jpg" />
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}" />
+                                <img class="card-img-top post1" src=" {{ post.featured_image.url }}" />
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
@@ -75,6 +81,7 @@
                                 {{ post.created_on}} <i class="far fa-heart"></i> {{ post.number_of_likes }}
                             </p>
                             {% if request.user == post.author %}
+                            <!--security token to prevent against attacks-->
                             {% csrf_token%}
                             <a class="btn btn-outline-secondary m-2"
                                 href="{% url 'delete_post' pk=post.pk %}">Delete</a>
@@ -90,7 +97,7 @@
             <div class="row">{% endif %} {% endfor %}</div>
         </div>
     </div>
-
+    <!-- Checks and displays a success message when submitted-->
     <div class="container">
         {% if messages %}
         <div class="alert alert-success" role="alert">
@@ -100,7 +107,7 @@
         </div>
         {% endif %}
     </div>
-
+    <!-- Checks and handles pagination and supplies buttons to access the different pages -->
     <div class="col-12 d-flex justify-content-end">
         {% if is_paginated %}
         <nav aria-label="Page navigation ">

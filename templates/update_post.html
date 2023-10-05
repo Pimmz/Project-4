@@ -1,15 +1,16 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
 
 {% block content %}
+{% load crispy_forms_tags %}
 
-{%  load crispy_forms_tags %}
-
+<!--Page to Update the post request submitted-->
 <div class="container">
     <h1 class="page-title text-center">Update Post Page</h1>
     <hr class="post">
     <br>
     <div class="text-center">
         <form method="post" action="" class="m" enctype="multipart/form-data">
+            <!--security token to prevent against attacks-->
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="btn btn-outline-secondary">Submit</button>
@@ -17,13 +18,14 @@
         </form>
     </div>
 </div>
+<!-- Checks and displays a success message when submitted-->
 <div class="container">
-    {%  if messages %}
-        <div class="alert alert-success" role="alert">
-            {%  for messages in messages %}
-                {{ message }}
-            {% endfor %}  
-        </div>
-    {%  endif %}
+    {% if messages %}
+    <div class="alert alert-success" role="alert">
+        {% for messages in messages %}
+        {{ message }}
+        {% endfor %}
+    </div>
+    {% endif %}
 </div>
 {%endblock%}
