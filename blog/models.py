@@ -57,21 +57,21 @@ SEX_TYPE = [(M, "Male"), (F, "Female")]
 
 class Rehome(models.Model):
     terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE,
-                                    verbose_name="Which Fox terrier do you want to rehome?", null=True, blank=True)
+                                    verbose_name="", null=True, blank=True)
     sex = models.CharField(max_length=10, choices=SEX_TYPE,
-                           verbose_name="Is your Fox Terrier Male or Female?", null=True, blank=True)
+                           verbose_name="", null=True, blank=True)
     age = models.CharField(
-        max_length=200, verbose_name="What age is your Fox Terrier?", null=True, blank=True)
+        max_length=200, verbose_name="", null=True, blank=True)
     why = models.CharField(
-        max_length=200, verbose_name="Why would you like to rehome a Fox Terrier?", null=True, blank=True)
+        max_length=200, verbose_name="", null=True, blank=True)
     behaviour = models.CharField(
-        max_length=200, verbose_name="What are they like around other dogs?", null=True, blank=True)
+        max_length=200, verbose_name="", null=True, blank=True)
     notes = models.CharField(
-        max_length=200, verbose_name="Additional notes or feedback", null=True, blank=True)
+        max_length=200, verbose_name="", null=True, blank=True)
     name = models.CharField(
-        max_length=100, verbose_name="Your Name?", null=True, blank=True)
+        max_length=100, verbose_name="", null=True, blank=True)
     email = models.EmailField(
-        max_length=100, verbose_name="Your Email Address", null=True, blank=True)
+        max_length=100, verbose_name="", null=True, blank=True)
 
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="rehome_author", default=1

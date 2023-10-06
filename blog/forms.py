@@ -36,6 +36,12 @@ class RehomeForm(forms.ModelForm):
         model = Rehome
         fields = ('terrier_type', 'sex', 'age', 'why',
                   'behaviour', 'notes', 'name', 'email')
+        widgets = {
+            'age': forms.Textarea(attrs={'cols': 100}),
+            'why': forms.Textarea(attrs={'cols': 100}),
+            'behaviour': forms.Textarea(attrs={'cols': 100}),
+            'notes': forms.Textarea(attrs={'cols': 100}),
+        }
 
     def clean(self):
         cleaned_data = super().clean()

@@ -15,13 +15,98 @@
         {{ success_message }}
     </div>
     {% endif %}
+
     <!--Form to display the rehoming questions -->
-    <form method="post" class="m" enctype="multipart/form-data">
-        {{ rehome_form|crispy }}
-        <!--security token to prevent against attacks-->
-        {% csrf_token %}
-        <button type="submit" class="btn btn-outline-secondary">Submit</button>
-        <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
+    <form method="post" class="form" enctype="multipart/form-data">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <h5 class="card-header">Name</h5>
+                        <div class="card-body">
+                            <div class="card-text1">{{ rehome_form.name|as_crispy_field }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <h5 class="card-header">Email</h5>
+                        <div class="card-body">
+                            <div class="card-text1">{{ rehome_form.email|as_crispy_field }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <h5 class="card-header">Which Fox Terrier do you want to rehome?</h5>
+                    <div class="card-body">
+                        <div class="card-text">{{ rehome_form.terrier_type|as_crispy_field }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-3">
+                    <h5 class="card-header">What sex is your Fox Terrier?</h5>
+                    <div class="card-body">
+                        <div class="card-text">{{ rehome_form.sex|as_crispy_field }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <h5 class="card-header">
+                            What Age Fox Terrier are you looking to rehome?
+                        </h5>
+                        <div class="card-body">
+                            <div class="card-text">{{ rehome_form.age|as_crispy_field }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <h5 class="card-header">Why do you want to rehome your Fox Terrier?</h5>
+                        <div class="card-body">
+                            <div class="card-text">{{ rehome_form.why|as_crispy_field }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <h5 class="card-header">
+                            What are they like around other dog and children?
+                        </h5>
+                        <div class="card-body">
+                            <div class="card-text">{{ rehome_form.behaviour|as_crispy_field }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <h5 class="card-header">Any additional notes</h5>
+                        <div class="card-body">
+                            <div class="card-text">{{ rehome_form.notes|as_crispy_field }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--security token to prevent against attacks-->
+            <div class="text-center ">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-secondary m-2">Submit</button>
+                <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
+            </div>
+        </div>
+
     </form>
 </div>
 <!-- Checks and displays a success message when submitted-->
