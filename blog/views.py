@@ -48,20 +48,12 @@ class AdoptionDetailView(DetailView):
     model = Adoption
     template_name = "adoption_detail.html"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        pk = self.kwargs.get('pk')
-        adoption = get_object_or_404(Adoption, pk=pk)
-        context['adoption'] = adoption
-        context['user'] = self.request.user
-        return context
-
     def get(self, request, *args, **kwargs):
-
+        pk = self.kwargs.get('pk')
         try:
-            pk = self.kwargs.get('pk')
-            return super().get(request, *args, **kwargs)
-
+            adoption = get_object_or_404(Adoption, pk=pk)
+            context = {'adoption': adoption, 'user': self.request.user}
+            return self.render_to_response(context)
         except Http404:
             return render(request, 'no_adoption.html')
 
