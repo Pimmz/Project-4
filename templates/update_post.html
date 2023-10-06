@@ -5,16 +5,45 @@
 
 <!--Page to Update the post request submitted-->
 <div class="container">
-    <h1 class="page-title text-center">Update Post Page</h1>
+    <h1 class="page-title text-center mt-5">Update Post Page</h1>
     <hr class="post">
     <br>
-    <div class="text-center">
-        <form method="post" action="" class="m" enctype="multipart/form-data">
-            <!--security token to prevent against attacks-->
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit" class="btn btn-outline-secondary">Submit</button>
-            <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
+    <div class="">
+        <form method="post" class="form" enctype="multipart/form-data">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <div class="card mb-3">
+                            <h5 class="card-header">Title</h5>
+                            <div class="card-body">
+                                <div class="card-text1">{{ form.title|as_crispy_field }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mx-auto">
+                        <div class="card mb-3">
+                            <h5 class="card-header">Upload Image</h5>
+                            <div class="card-body">
+                                <div class="card-text1">{{ form.featured_image|as_crispy_field }}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-12 mx-auto ">
+                        <div class="card mb-3">
+                            <h5 class="card-header">Content</h5>
+                            <div class="card-body ">
+                                <div class="card-text1">{{ form.content|as_crispy_field }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <!--security token to prevent against attacks-->
+                {% csrf_token %}
+                <button type="submit" class="btn btn-outline-secondary m-2">Submit</button>
+                <a class="btn btn-outline-secondary m-2" href="{% url 'blog' %}">Cancel</a>
+            </div>
         </form>
     </div>
 </div>

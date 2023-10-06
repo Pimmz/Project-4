@@ -57,6 +57,7 @@ class PostCreateForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'content', 'featured_image']
+
         widget = {
             'content': forms.Textarea(attrs={'cols': 80, 'rows': 20}),
         }
@@ -66,3 +67,7 @@ class PostUpdateForm(forms.ModelForm):
     class Meta:
         model = Post
         fields = ['title', 'content', 'featured_image']
+
+        widgets = {
+            'content': forms.Textarea(attrs={'cols': 1000}),
+        }
