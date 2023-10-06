@@ -33,6 +33,7 @@ body {
 
 .card-img-top {
     max-height: 300px;
+    width: 75%;
 }
 
 .fab {
@@ -52,7 +53,8 @@ body {
 .card1,
 .card2,
 .masthead-image img,
-.post1 {
+.post1,
+.featured_image {
     width: 75%;
 }
 
