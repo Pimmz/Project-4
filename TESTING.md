@@ -13,7 +13,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F) | ![screenshot](documentation/testing_images/htmlcheck1.png) | Pass: No Errors  |
-| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FProject-4%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
+| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FProject-4%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | Forbidden code point U+009d. Fixed by removing invalid syntax |
 | Register | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FProject-4%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
 | Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FProject-4%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
 | Adoption| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FPimmz.github.io%2FProject-4%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
