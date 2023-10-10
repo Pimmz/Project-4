@@ -11,7 +11,7 @@ To ensure that The Fox Terriers Owners Club works effectively over several sites
 Use the space to discuss code validation for any of your own code files (where applicable).
 You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
 
-**IMPORTANT**: You must provide a screenshot for each file you validate.
+
 
 **PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
 
