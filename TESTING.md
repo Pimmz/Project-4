@@ -10,6 +10,7 @@ To ensure that The Fox Terriers Owners Club works effectively over several sites
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files. Which I have put into a tanle below so you can easily check them.
 
+
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F) | ![screenshot](documentation/testing_images/htmlcheck1.png) | Pass: No Errors  |
@@ -19,40 +20,20 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Adoption| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F) | ![screenshot](documentation/testing_images/htmlcheck5.png) | Pass: No Errors |
 | Rehome | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F) | ![screenshot](documentation/testing_images/htmlcheck6.png) |  Pass: No Errors |
 | Post Room | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fblog.html) | ![screenshot](documentation/testing_images/htmlcheck7.png) |  Pass: No Errors |
-| Adoption Details | [W3C](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/adoption/29/) | ![screenshot](documentation/testing_images/htmlcheck8.png) | Pass: No Errors |
-| Rehome Details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F26%2F) | ![screenshot](documentation/testing_images/htmlcheck9.png) | Pass: No Errors |
+| Adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F97%2F) | ![screenshot](documentation/testing_images/htmlcheck9.png) | Pass: No Errors |
+| Update adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fupdate_adoption%2F97%2F) | ![screenshot](documentation/testing_images/htmlcheck11.png) | Pass: No Errors |
+| Delete adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fdelete_adoption%2F98%2F) | ![screenshot](documentation/testing_images/htmlcheck12.png) | Pass: No Errors |
+| No adoption Details | [W3C](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/adoption/29/) | ![screenshot](documentation/testing_images/htmlcheck10.png) | Pass: No Errors |
+| Rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F) | ![screenshot](documentation/testing_images/htmlcheck13.png) | Pass: No Errors |
+| No Rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F26%2F) | ![screenshot](documentation/testing_images/htmlcheck14.png) | Pass: No Errors |
+| Update rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fupdate_rehome%2F48%2F) | ![screenshot](documentation/testing_images/htmlcheck15.png) | Pass: No Errors |
+| Delete rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fdelete_rehome%2F48%2F) | ![screenshot](documentation/testing_images/htmlcheck16.png) | Pass: No Errors |
 
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT**: Python/Jinja syntax in HTML
-
-Python projects that use Jinja syntax, such as `{% for loops %}`, `{% url 'home' %}`, and `{{ variable|filter }}`
-will not validate properly if you're copying/pasting into the HTML validator.
-
-In order to properly validate these types of files, it's recommended to
-[validate by uri](https://validator.w3.org/#validate_by_uri) from the deployed Heroku pages.
-
-Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
-will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
-access to login to your pages.
-In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
-
-- Navigate to the deployed pages which require authentication
-- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
-- This will display the entire "compiled" code, without any Jinja syntax.
-- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
-- Repeat this process for every page that requires a user to be logged-in/authenticated.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: <https://jigsaw.w3.org/css-validator/#validate_by_input>
 - (*recommended*) If you are using the live deployed site, use this link: <https://jigsaw.w3.org/css-validator/#validate_by_uri>
 
 It's recommended to validate the live site if you only have a single CSS file using the deployed URL.
