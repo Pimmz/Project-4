@@ -34,6 +34,8 @@ body {
 .card-img-top {
     max-height: 300px;
     width: 75%;
+    display: block;
+    margin: 0 auto;
 }
 
 .fab {
@@ -50,8 +52,8 @@ body {
     align-items: flex-start;
 }
 
-.card1,
-.card2,
+
+
 .masthead-image img,
 .post1,
 .featured_image {

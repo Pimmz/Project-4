@@ -6,24 +6,10 @@ To ensure that The Fox Terriers Owners Club works effectively over several sites
 
 ## Code Validation
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: <https://validator.w3.org/#validate_by_input>
 - (*recommended*) If you are using the live deployed site pages, use this link: <https://validator.w3.org/#validate_by_uri>
 
 It's recommended to validate the live pages (each of them) using the deployed URL.
