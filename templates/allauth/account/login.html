@@ -11,15 +11,16 @@
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-2">
             <div class="hello">
-                <img src="https://media.giphy.com/media/YjfENaIDJyNk5amFJf/giphy.gif" alt="hello" style="max-width: 90px;">
-            </div> 
+                <img src="https://media.giphy.com/media/YjfENaIDJyNk5amFJf/giphy.gif" alt="hello"
+                    style="max-width: 90px;">
+            </div>
             <h3>{% trans "Sign In" %}</h3>
-            
+
             <p class="signin">{% blocktrans %}Welcome back to the Fox Terrier Owners Club. please
                 login. If you have not created an account yet, then please
                 <a class="link" href="{{ sign_up }}">sign up</a>.{% endblocktrans %}
-            </p>  
-            
+            </p>
+
         </div>
     </div>
     <div class="row">
@@ -29,16 +30,10 @@
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
-                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
                 {% endif %}
                 <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
             </form>
-        </div>
-        <div class="row" id="signup-form">
-            <div class="col-md-8 mt-3 offset-md-2">
-                <a class="btn btn-1" href="{% provider_login_url "google" %}">Google login</a>
-                <a class="btn btn-1" href="{% provider_login_url "facebook" method="oauth2" %}">Facebook login</a>
-            </div>
         </div>
     </div>
 </div>

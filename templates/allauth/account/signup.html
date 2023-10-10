@@ -22,16 +22,10 @@
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
-                    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}">
                 {% endif %}
                 <button class="btn btn-signup right" type="submit">{% trans "Sign Up" %}</button>
             </form>
-        </div>
-    </div>
-    <div class="row" id="signup-form">
-        <div class="col-md-8 mt-3 offset-md-2">
-            <a class="btn btn-1" href="{% provider_login_url "google" %}">Google login</a>
-            <a class="btn btn-1" href="{% provider_login_url "facebook" method="oauth2" %}">Facebook login</a>
         </div>
     </div>
 </div>
