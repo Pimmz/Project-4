@@ -13,21 +13,21 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F) | ![screenshot](documentation/testing_images/htmlcheck1.png) | Pass: No Errors  |
-| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Fabout%2F) | ![screenshot](documentation/testing_images/htmlcheck2.png) | Forbidden code point U+009d. Fixed by removing invalid syntax |
-| Register | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing_images/htmlcheck3.png) | There was an Error: Duplicate ID signup-form. Server 500. trailing slash. These wouldnt remedy by changing the duplicate Id or removing the slash and were traced back to a google authentication issue which the Tutors dont advise on. So I have had to delete the google and facebook button to resolve the error due to spending to much time on it which I simply dont have. |
-| Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing_images/htmlcheck4.png) | Pass: No Errors |
-| Adoption| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F) | ![screenshot](documentation/testing_images/htmlcheck5.png) | Pass: No Errors |
-| Rehome | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F) | ![screenshot](documentation/testing_images/htmlcheck6.png) |  Pass: No Errors |
-| Post Room | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fblog.html) | ![screenshot](documentation/testing_images/htmlcheck7.png) |  Pass: No Errors |
-| Adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F97%2F) | ![screenshot](documentation/testing_images/htmlcheck9.png) | Pass: No Errors |
-| Update adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fupdate_adoption%2F97%2F) | ![screenshot](documentation/testing_images/htmlcheck11.png) | Pass: No Errors |
-| Delete adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fdelete_adoption%2F98%2F) | ![screenshot](documentation/testing_images/htmlcheck12.png) | Pass: No Errors |
-| No adoption Details | [W3C](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/adoption/29/) | ![screenshot](documentation/testing_images/htmlcheck10.png) | Pass: No Errors |
-| Rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F) | ![screenshot](documentation/testing_images/htmlcheck13.png) | Pass: No Errors |
-| No Rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F26%2F) | ![screenshot](documentation/testing_images/htmlcheck14.png) | Pass: No Errors |
-| Update rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fupdate_rehome%2F48%2F) | ![screenshot](documentation/testing_images/htmlcheck15.png) | Pass: No Errors |
-| Delete rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fdelete_rehome%2F48%2F) | ![screenshot](documentation/testing_images/htmlcheck16.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F) | ![screenshot](documentation/testing_images/html/htmlcheck1.png) | Pass: No Errors  |
+| About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Fabout%2F) | ![screenshot](documentation/testing_images/html/htmlcheck2.png) | Forbidden code point U+009d. Fixed by removing invalid syntax |
+| Register | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing_images/html/htmlcheck3.png) | There was an Error: Duplicate ID signup-form. Server 500. trailing slash. These wouldnt remedy by changing the duplicate Id or removing the slash and were traced back to a google authentication issue which the Tutors dont advise on. So I have had to delete the google and facebook button to resolve the error due to spending to much time on it which I simply dont have. |
+| Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing_images/html/htmlcheck4.png) | Pass: No Errors |
+| Adoption| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F) | ![screenshot](documentation/testing_images/html/htmlcheck5.png) | Pass: No Errors |
+| Rehome | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F) | ![screenshot](documentation/testing_images/html/htmlcheck6.png) |  Pass: No Errors |
+| Post Room | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fblog.html) | ![screenshot](documentation/testing_images/html/htmlcheck7.png) |  Pass: No Errors |
+| Adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F97%2F) | ![screenshot](documentation/testing_images/html/htmlcheck9.png) | Pass: No Errors |
+| Update adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fupdate_adoption%2F97%2F) | ![screenshot](documentation/testing_images/html/htmlcheck11.png) | Pass: No Errors |
+| Delete adoption details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fdelete_adoption%2F98%2F) | ![screenshot](documentation/testing_images/html/htmlcheck12.png) | Pass: No Errors |
+| No adoption Details | [W3C](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/adoption/29/) | ![screenshot](documentation/testing_images/html/htmlcheck10.png) | Pass: No Errors |
+| Rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F) | ![screenshot](documentation/testing_images/html/htmlcheck13.png) | Pass: No Errors |
+| No Rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Frehome%2F26%2F) | ![screenshot](documentation/testing_images/html/htmlcheck14.png) | Pass: No Errors |
+| Update rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fupdate_rehome%2F48%2F) | ![screenshot](documentation/testing_images/html/htmlcheck15.png) | Pass: No Errors |
+| Delete rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fdelete_rehome%2F48%2F) | ![screenshot](documentation/testing_images/html/htmlcheck16.png) | Pass: No Errors |
 
 
 ### CSS
@@ -36,7 +36,7 @@ I have used the recommended [CSS Jigsaw Validator](<https://jigsaw.w3.org/css-va
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/testing_images/csscheck.png) | Pass: No Errors |
+| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](documentation/testing_images/css/csscheck.png) | Pass: No Errors |
 
 
 ### JavaScript
@@ -48,72 +48,28 @@ I have used /* jshint esversion: 11, jquery: true */ at the top of the file so J
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/testing_images/javacheck.png) | Unused variables from external file|
+| script.js | ![screenshot](documentation/testing_images/javascript/javacheck.png) | Unused variables from external file|
 
 ### Python
 
-
-
-The CI Python Linter can be used two different ways.
-
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-  - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-  - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-  - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-  - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+
+For lines that have been to long I have shortened everything where possible however there was one section in settings.py that couldnt be shortened due to it affecting the functionality of the code so I have used `# noqa` at the end of those lines so it will ignore linting validation.
+
+![screenshot](documentation/testing_images/python/pychecknoqa.png)
+
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/admin.py) | ![screenshot](documentation/testing_images/pycheckadmin.png) | Pass: No Errors  |
-| forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/forms.py) | ![screenshot](documentation/testing_images/pycheckforms.png) | Pass: No Errors |
-| models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/models.py) | ![screenshot](documentation/testing_images/pycheckmodels.png) | Pass: No Errors |
-
-
-| urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/project-4/main/blog/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-
-| views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/views.py) | ![screenshot](documentation/testing_images/pycheckviews.png) | Pass: No Errors |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/project-4/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/project-4/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| wsgi.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/project-4/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/project-4/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
+| admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/admin.py) | ![screenshot](documentation/testing_images/python/pycheckadmin.png) | Pass: No Errors  |
+| forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/forms.py) | ![screenshot](documentation/testing_images/python/pycheckforms.png) | Pass: No Errors |
+| models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/models.py) | ![screenshot](documentation/testing_images/python/pycheckmodels.png) | Pass: No Errors |
+| urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/project-4/main/blog/urls.py) | ![screenshot](documentation/testing_images/python/pycheckurls.png) | Pass: No Errors |
+| views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/blog/views.py) | ![screenshot](documentation/testing_images/python/pycheckviews.png) | Pass: No Errors |
+| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/codestar/settings.py) | ![screenshot](documentation/testing_images/python/pycheckset.png) | Pass: No Errors |
+| urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/codestar/urls.py) | ![screenshot](documentation/testing_images/python/pycheckurl2.png) | Pass: No Errors |
+| wsgi.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/codestar/wsgi.py) | ![screenshot](documentation/testing_images/python/pycheckwsgi.png) | Pass: No Errors |
+| manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/manage.py) | ![screenshot](documentation/testing_images/python/py.checkmanage.png) | Pass: No Errors |
 
 
 **IMPORTANT**: Django settings.py
