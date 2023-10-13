@@ -1,17 +1,19 @@
-"""Views"""
+# Views
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
 from django.urls import reverse_lazy
 from django.contrib import messages
 from .models import Post, Adoption, Rehome
-from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm, PostUpdateForm
-from django.views.generic import TemplateView, UpdateView, DetailView, DeleteView
+from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm
+from .forms import PostUpdateForm
+from django.views.generic import TemplateView, UpdateView, DetailView
+from django.views.generic import DeleteView
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
 
-"""View for the Adoption page hwere you can submit a form"""
+# View for the Adoption page hwere you can submit a form
 
 
 @method_decorator(login_required, name='dispatch')
@@ -32,7 +34,9 @@ class AdoptionView(TemplateView):
             adoption.save()
 
             messages.success(
-                self.request, 'Your adoption request has been posted successfully. You will be contacted shortly.')
+                self.request,
+                'Your request has been posted successfully.'
+                'You will be contacted shortly.')
             return redirect(reverse('adoption_detail', args=[adoption.id]))
 
         context = self.get_context_data()
@@ -40,7 +44,7 @@ class AdoptionView(TemplateView):
         return self.render_to_response(context)
 
 
-"""View for the Adoption detail page where you can view the form submitted"""
+# View for the Adoption detail page where you can view the form submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -58,7 +62,7 @@ class AdoptionDetailView(DetailView):
             return render(request, 'no_adoption.html')
 
 
-"""View for the update Adoption page where you can update the form submitted"""
+# View for the update Adoption page where you can update the form submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -74,7 +78,7 @@ class AdoptionUpdateView(UpdateView):
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
 
-"""View for the delete Adoption page where you can delete the form submitted"""
+# View for the delete Adoption page where you can delete the form submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -92,7 +96,7 @@ class DeleteAdoptionView(DeleteView):
         return redirect(self.success_url)
 
 
-"""View for the Rehome page where you can submit the form"""
+# View for the Rehome page where you can submit the form
 
 
 @method_decorator(login_required, name='dispatch')
@@ -112,7 +116,9 @@ class RehomeView(TemplateView):
             rehome.author = request.user
             rehome.save()
             messages.success(
-                self.request, 'Your rehoming request has been posted successfully. You will be contacted shortly.')
+                self.request,
+                'Your request has been posted successfully.'
+                'You will be contacted shortly.')
             return redirect(reverse('rehome_detail', args=[rehome.id]))
 
         context = self.get_context_data()
@@ -120,7 +126,7 @@ class RehomeView(TemplateView):
         return self.render_to_response(context)
 
 
-"""View for the Rehome detail page where you can view the form submitted"""
+# View for the Rehome detail page where you can view the form submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -145,7 +151,7 @@ class RehomeDetailView(TemplateView):
             return render(request, 'no_rehome.html')
 
 
-"""View for the update Rehome page where you can update the form submitted"""
+# View for the update Rehome page where you can update the form submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -161,7 +167,7 @@ class RehomeUpdateView(UpdateView):
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
 
 
-"""View for the delete Rehome page where you can delete the form submitted"""
+# View for the delete Rehome page where you can delete the form submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -179,7 +185,7 @@ class DeleteRehomeView(DeleteView):
         return redirect(self.success_url)
 
 
-"""View for the Postroom page "blog.html" where you can post images and text"""
+# View for the Postroom page "blog.html" where you can post images and text
 
 
 @method_decorator(login_required, name='dispatch')
@@ -214,7 +220,8 @@ class PostList(generic.ListView):
             return self.render_to_response(context)
 
 
-"""View for the Postroom page "post_detail" displays information about a post and allows for commenting"""
+# View for the Postroom page "post_detail" displays information about a post
+# and allows for commenting
 
 
 @method_decorator(login_required, name='dispatch')
@@ -280,7 +287,7 @@ class PostDetail(View):
             return HttpResponseServerError("Post not found.")
 
 
-"""View for the post detail page for adding and removing comments"""
+# View for the post detail page for adding and removing comments
 
 
 @method_decorator(login_required, name='dispatch')
@@ -298,7 +305,7 @@ class PostComment(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-"""View for the delete Post page where you can delete the post submitted"""
+# View for the delete Post page where you can delete the post submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -324,7 +331,7 @@ class DeletePostView(DeleteView):
             return HttpResponseServerError("Post not found.")
 
 
-"""View for the Update Post page where you can update the post submitted"""
+# View for the Update Post page where you can update the post submitted
 
 
 @method_decorator(login_required, name='dispatch')
@@ -338,7 +345,7 @@ class UpdatePostView(UpdateView):
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
 
-"""View for the Post detail page where you can like or unlike a post"""
+# View for the Post detail page where you can like or unlike a post
 
 
 class PostLike(View):
@@ -355,7 +362,7 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-"""View for the About page"""
+# View for the About page
 
 
 class AboutView(TemplateView):
@@ -367,7 +374,7 @@ class AboutView(TemplateView):
         return context
 
 
-"""View for the Home page"""
+# View for the Home page
 
 
 class HomeView(TemplateView):
