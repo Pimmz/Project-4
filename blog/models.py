@@ -35,7 +35,8 @@ class Adoption(models.Model):
         max_length=100, verbose_name="", null=True, blank=True)
 
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="adoption_author", default=1
+        User, on_delete=models.CASCADE, related_name="adoption_author",
+        default=1
     )
     created_on = models.DateTimeField(auto_now_add=True)
 
