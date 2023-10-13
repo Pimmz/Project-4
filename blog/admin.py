@@ -3,7 +3,6 @@ from .models import Post, Comment, Adoption, Rehome
 from django_summernote.admin import SummernoteModelAdmin
 
 
-
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
@@ -17,6 +16,7 @@ class PostAdmin(SummernoteModelAdmin):
     def approve_posts(self, request, queryset):
         queryset.update(approved=True)
 
+
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
 
@@ -25,17 +25,15 @@ class CommentAdmin(admin.ModelAdmin):
     search_fields = ('name', 'email', 'body')
     actions = ['approve_comments']
 
-
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
+
 
 @admin.register(Adoption)
 class AdoptionAdmin(SummernoteModelAdmin):
     list_display = ('author', 'created_on')
 
-   
+
 @admin.register(Rehome)
 class RehomeAdmin(SummernoteModelAdmin):
     list_display = ('author', 'created_on')
-    
-    
