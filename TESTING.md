@@ -112,35 +112,48 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ## Lighthouse Audit
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
-
+Desktop
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| About | Mobile | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
-| About | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Gallery | Mobile | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Gallery | Desktop | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Home | Desktop | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
+| About | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
+| Register | Desktop | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
+| Login | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
+| Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
+| Adoption Page | Desktop | ![screenshot](d) |  |
+| Adoption Update Page | Desktop | ![screenshot](d) |  |
+| Adoption Delete Page | Desktop | ![screenshot](d) |  |
+| Rehome Page | Desktop | ![screenshot](d) |  |
+| Rehome Update Page | Desktop | ![screenshot](d) |  |
+| Rehome Delete Page | Desktop | ![screenshot](d) |  |
+| Post Room Page | Desktop | ![screenshot](d) |  |
+| Post Room Update Page | Desktop | ![screenshot](d) |  |
+| Post Room Delete Page | Desktop | ![screenshot](d) |  |
+| Comment Room Page | Desktop | ![screenshot](d) |  |
+| Adoption Detail Page | Desktop | ![screenshot](d) |  |
+| Rehome Detail Page | Desktop | ![screenshot](d) |  |
 
+Mobile
+| Page | Size | Screenshot | Notes |
+| --- | --- | --- | --- |
+| Home | Desktop | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
+| About | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
+| Register | Desktop | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
+| Login | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
+| Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
+| Adoption Page | Desktop | ![screenshot](d) |  |
+| Adoption Update Page | Desktop | ![screenshot](d) |  |
+| Adoption Delete Page | Desktop | ![screenshot](d) |  |
+| Rehome Page | Desktop | ![screenshot](d) |  |
+| Rehome Update Page | Desktop | ![screenshot](d) |  |
+| Rehome Delete Page | Desktop | ![screenshot](d) |  |
+| Post Room Page | Desktop | ![screenshot](d) |  |
+| Post Room Update Page | Desktop | ![screenshot](d) |  |
+| Post Room Delete Page | Desktop | ![screenshot](d) |  |
+| Comment Room Page | Desktop | ![screenshot](d) |  |
+| Adoption Detail Page | Desktop | ![screenshot](d) |  |
+| Rehome Detail Page | Desktop | ![screenshot](d) |  |
 ## Defensive Programming
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
