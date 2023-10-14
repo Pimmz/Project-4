@@ -113,47 +113,48 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 ## Lighthouse Audit
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+
 Desktop
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
+| Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homelight.png) | Worked as expected |
 | About | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
 | Register | Desktop | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
 | Login | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
 | Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Adoption Page | Desktop | ![screenshot](d) |  |
-| Adoption Update Page | Desktop | ![screenshot](d) |  |
-| Adoption Delete Page | Desktop | ![screenshot](d) |  |
-| Rehome Page | Desktop | ![screenshot](d) |  |
-| Rehome Update Page | Desktop | ![screenshot](d) |  |
-| Rehome Delete Page | Desktop | ![screenshot](d) |  |
-| Post Room Page | Desktop | ![screenshot](d) |  |
-| Post Room Update Page | Desktop | ![screenshot](d) |  |
-| Post Room Delete Page | Desktop | ![screenshot](d) |  |
-| Comment Room Page | Desktop | ![screenshot](d) |  |
-| Adoption Detail Page | Desktop | ![screenshot](d) |  |
-| Rehome Detail Page | Desktop | ![screenshot](d) |  |
+| Adoption Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Update Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Update Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Delete Page | Desktop | ![screenshot](documentation) |  |
+| Post Room Page | Desktop | ![screenshot](documentation) |  |
+| Post Room Update Page | Desktop | ![screenshot](documentation) |  |
+| Post Room Delete Page | Desktop | ![screenshot](documentation) |  |
+| Comment Room Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
 
 Mobile
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| About | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
+| Home | Mobile | ![screenshot](documentation) | Some minor warnings |
+| About | Dp | ![screenshot](documentation) | Few warnings |
 | Register | Desktop | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
 | Login | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
 | Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Adoption Page | Desktop | ![screenshot](d) |  |
-| Adoption Update Page | Desktop | ![screenshot](d) |  |
-| Adoption Delete Page | Desktop | ![screenshot](d) |  |
-| Rehome Page | Desktop | ![screenshot](d) |  |
-| Rehome Update Page | Desktop | ![screenshot](d) |  |
-| Rehome Delete Page | Desktop | ![screenshot](d) |  |
-| Post Room Page | Desktop | ![screenshot](d) |  |
-| Post Room Update Page | Desktop | ![screenshot](d) |  |
-| Post Room Delete Page | Desktop | ![screenshot](d) |  |
-| Comment Room Page | Desktop | ![screenshot](d) |  |
-| Adoption Detail Page | Desktop | ![screenshot](d) |  |
-| Rehome Detail Page | Desktop | ![screenshot](d) |  |
+| Adoption Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Update Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Update Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Delete Page | Desktop | ![screenshot](documentation) |  |
+| Post Room Page | Desktop | ![screenshot](documentation) |  |
+| Post Room Update Page | Desktop | ![screenshot](documentation) |  |
+| Post Room Delete Page | Desktop | ![screenshot](documentation) |  |
+| Comment Room Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
 ## Defensive Programming
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
