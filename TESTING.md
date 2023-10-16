@@ -117,10 +117,10 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 Desktop
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homelight.png) | Worked as expected |
-| About | Desktop | ![screenshot](documentation/) | Few warnings |
-| Register | Desktop | ![screenshot](documentation/) | Some minor warnings |
-| Login | Desktop | ![screenshot](documentation) | Few warnings |
+| Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homelight.png) | Few warnings |
+| About | Desktop | ![screenshot](documentation/testing_images/lighthouse/aboutlight.png) | Few warnings |
+| Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/registerlight.png) | Some minor warnings |
+| Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginlight.png) | Few warnings on SEO|
 | Adoption | Desktop | ![screenshot](documentation/) | Slow response time due to large images |
 | Adoption Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Update Page | Desktop | ![screenshot](documentation) |  |
@@ -138,11 +138,11 @@ Desktop
 Mobile
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation) | Some minor warnings |
-| About | Dp | ![screenshot](documentation) | Few warnings |
-| Register | Desktop | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
+| Home | Mobile | ![screenshot](documentation/testing_images/lighthouse/homemoblight.png) | Slow response time due to giph and images. Compressed and using cloudinary to be more effective. |
+| About | Mobile | ![screenshot](documentation/testing_images/lighthouse/aboutmoblight.png) | Average performance score due to giph and images|
+| Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/regestermoblight.png) | Average performance score due to giph. loaded to cloudinary to be more effective |
 | Login | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
+| Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to images from cloudinary |
 | Adoption Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Update Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
