@@ -38,6 +38,11 @@ body {
     margin: 0 auto;
 }
 
+.card-img-top2,
+.card-img-top3 {
+    max-width: 90px;
+}
+
 .fab {
     color: white;
 }
