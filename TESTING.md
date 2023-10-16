@@ -112,7 +112,7 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ## Lighthouse Audit
 
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+I've tested my deployed project using the Lighthouse Audit tool to check for any major issues. 
 
 Desktop
 | Page | Size | Screenshot | Notes |
@@ -120,19 +120,19 @@ Desktop
 | Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homelight.png) | Few warnings |
 | About | Desktop | ![screenshot](documentation/testing_images/lighthouse/aboutlight.png) | Few warnings |
 | Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/registerlight.png) | Some minor warnings |
-| Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginlight.png) | Worked as expected|
+| Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginlight.png) | Worked as expected |
 | Adoption | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptlight.png) | Good overall though average accessibility due to form labels |
-| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
-| Adoption Update Page | Desktop | ![screenshot](documentation) |  |
-| Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Update Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Delete Page | Desktop | ![screenshot](documentation) |  |
-| Post Room Page | Desktop | ![screenshot](documentation) |  |
-| Post Room Update Page | Desktop | ![screenshot](documentation) |  |
-| Post Room Delete Page | Desktop | ![screenshot](documentation) |  |
-| Comment Room Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptdetaillight.png) | Worked as expected |
+| Adoption Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/updateadoptlight%20.png) | Good overall although accessibilty knocked out slightly by large giph |
+| Adoption Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/deleteadoptlight.png) | Worked as expected |
+| Rehome Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomelight.png) | good over all with one warning |
+| Rehome Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedetaillight.png) | Worked as expected  |
+| Rehome Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomeupdatelight.png) | Good overall although accessibilty knocked out slightly by giph |
+| Rehome Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedetaillight.png) | Worked as expected |
+| Post Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroomlight.png) | Average performance due to number of images and size |
+| Post Room Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroomupdate.png) | Good overall though average accessibility |
+| Post Room Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postdelete.png) | Worked as expected  |
+| Comment Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/commentroomlight.png) | Good overall although accessibilty knocked out slightly by giph |
 
 
 Mobile
@@ -143,18 +143,18 @@ Mobile
 | Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/regestermoblight.png) | Average performance score due to giph. loaded to cloudinary to be more effective |
 | Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginmoblight.png) | Average performance score due to giph and images |
 | Adoption | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptmoblight.png) |  Average performance score due to giph and accessibility due to form labels|
-| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
-| Adoption Update Page | Desktop | ![screenshot](documentation) |  |
-| Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Update Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Delete Page | Desktop | ![screenshot](documentation) |  |
-| Post Room Page | Desktop | ![screenshot](documentation) |  |
-| Post Room Update Page | Desktop | ![screenshot](documentation) |  |
-| Post Room Delete Page | Desktop | ![screenshot](documentation) |  |
-| Comment Room Page | Desktop | ![screenshot](documentation) |  |
-| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
+| Adoption Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptdetailmob.png) | All good except Average performance score due to large giph |
+| Adoption Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptupdatemob.png) | Few warning about the giph size and the form elements not having a label. |
+| Adoption Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/deletemoblight.png) | All good except Average performance score due to large giph |
+| Rehome Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomelight.png) | Average performance score due to giph and accessibility due to form labels |
+| Rehome Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedetailmob.png) | All good except Average performance score due to large giph |
+| Rehome Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomeupdatemob.png) | Few warnings on performance and accessibility |
+| Rehome Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedeletemob.png) | All good except Average performance score due to giph |
+| Post Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroommob.png) | Average performance due to number of images and size |
+| Post Room Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroommob.png) | Average performance and accessability score due to giph |
+| Post Room Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postdeletemob.png) | All good except Average performance score due to  giph |
+| Comment Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/commentlight.png) | Average performance and accessability score due to giph |
+
 
 ## Defensive Programming
 
