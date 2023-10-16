@@ -249,16 +249,36 @@ from the respective feature.
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature02.png) |
-| As a new site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature03.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to ____________, so that I can ____________. | ![screenshot](documentation/feature06.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature07.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to ____________, so that I can ____________. | ![screenshot](documentation/feature09.png) |
-| repeat for all remaining user stories | x |
+| EPIC User Story | User Profile |
+| As a Site User I can register an account so that I can add/edit/delete my adoption plus rehoming requests and comment on the posts of other people's post. | ![screenshot](documentation/readme_images/admin3.png) |
+| As a Site User, I can log in or log out of my account so that I can keep my account secure. | ![screenshot](documentation/readme_images/admin4.png) |
+| As a Site User I can see my login status so that I know if I'm logged in or out. | ![screenshot](documentation/readme_images/admin5.png) |
+|EPIC User Story | User Navigation |
+| As a Site User I can immediately understand the purpose of the site so that I can decide if it meets my needs.| ![screenshot](documentation/readme_images/homepage1.png) |
+| As a Site User, I can intuitively navigate around the site so that I can find content and understand where I am on the site. | ![screenshot](documentation/readme_images/admin6.png) |
+| As a Site User, I can view a paginated list of posts so that I can easily select a post to view. | ![screenshot](documentation/readme_images/postroom.png) |
+| As a Site User, I can click on a post so that I can read the full text | ![screenshot](documentation/readme_images/comment.png) |
+| As a Site User I can register an account so that I can comment, like, add an adoption and rehome request | ![screenshot](documentation/readme_images/admin3.png) |
+| As a Site User, I can view a list of posts so that I can select one to read | ![screenshot](documentation/readme_images/postroom.png) |
+|EPIC User Story | Post Management |
+| As a Site User, I can update and delete posts that I have created so that I can easily make changes without having to start over. | ![screenshot](documentation/readme_images/postroom.png) |
+| As a Site User I can leave comments on a post so that I can be involved in the conversation | ![screenshot](documentation/readme_images/comment.png) |
+| As a Site User I can view my posts so that I can see and manage all my own posts, but not be able to change other peoples. | ![screenshot](documentation/readme_images/postroom.png) |
+| As a Site User I can view my posts so I can find them easily in one location. | ![screenshot](documentation/readme_images/postroom.png) |
+| As a Site user I can like or unlike a post so that I can interact with the content | ![screenshot](documentation/readme_images/comment.png) |
+| EPIC User Story | Adoption Interaction |
+| As a Site User, I can see my request so that I can find it easily at a later date. | ![screenshot](documentation/readme_images/adoptdetail.png) |
+| As a Site User, I can update and delete adoption requests that I have created so that I can easily make changes if I have made a mistake. | ![screenshot](documentation/readme_images/adoptdetail.png) |
+| EPIC User Story | Rehome Interaction |
+| As a Site User, I can see my request so that I can find it easily at a later date. | ![screenshot](documentation/readme_images/rehomedetail.png) |
+| As a Site User, I can update and delete rehome requests that I have created so that I can easily make changes if I have made a mistake. | ![screenshot](documentation/readme_images/rehomedetail.png) |
+| EPIC User Story | Site Administration |
+| As a Site Administrator, I can create, read, update and delete adoption, rehome requests, posts and comments so that I can manage the app content. | ![screenshot](documentation/readme_images/admin.png) |
+| As a Site Administrator, I can view comments on an individual post so that I can read the conversation | ![screenshot](documentation/readme_images/admin1.png) |
+| As a Site Admin I can create draft posts so that I can finish writing the content later | ![screenshot](documentation/readme_images/admin2.png) |
+
+
+
 
 ## Automated Testing
 
