@@ -14,8 +14,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com',
-                 '8002-pimmz-project-4-eouk5rv90v.us2.codeanyapp.com',
+ALLOWED_HOSTS = ['8000-pimmz-project-4-78d1tm6wx9.us2.codeanyapp.com',
                  'pimmz-project-4-9cc2ab59cc64.herokuapp.com']
 
 # Application definition
