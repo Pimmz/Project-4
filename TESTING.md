@@ -120,20 +120,20 @@ Desktop
 | Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homelight.png) | Few warnings |
 | About | Desktop | ![screenshot](documentation/testing_images/lighthouse/aboutlight.png) | Few warnings |
 | Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/registerlight.png) | Some minor warnings |
-| Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginlight.png) | Few warnings on SEO|
-| Adoption | Desktop | ![screenshot](documentation/) | Slow response time due to large images |
-| Adoption Page | Desktop | ![screenshot](documentation) |  |
+| Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginlight.png) | Worked as expected|
+| Adoption | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptlight.png) | Good overall though average accessibility due to form labels |
+| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Update Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
 | Rehome Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
 | Rehome Update Page | Desktop | ![screenshot](documentation) |  |
 | Rehome Delete Page | Desktop | ![screenshot](documentation) |  |
 | Post Room Page | Desktop | ![screenshot](documentation) |  |
 | Post Room Update Page | Desktop | ![screenshot](documentation) |  |
 | Post Room Delete Page | Desktop | ![screenshot](documentation) |  |
 | Comment Room Page | Desktop | ![screenshot](documentation) |  |
-| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
+
 
 Mobile
 | Page | Size | Screenshot | Notes |
@@ -141,12 +141,13 @@ Mobile
 | Home | Mobile | ![screenshot](documentation/testing_images/lighthouse/homemoblight.png) | Slow response time due to giph and images. Compressed and using cloudinary to be more effective. |
 | About | Mobile | ![screenshot](documentation/testing_images/lighthouse/aboutmoblight.png) | Average performance score due to giph and images|
 | Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/regestermoblight.png) | Average performance score due to giph. loaded to cloudinary to be more effective |
-| Login | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to images from cloudinary |
-| Adoption Page | Desktop | ![screenshot](documentation) |  |
+| Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginmoblight.png) | Average performance score due to giph and images |
+| Adoption | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptmoblight.png) |  Average performance score due to giph and accessibility due to form labels|
+| Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Update Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
 | Rehome Page | Desktop | ![screenshot](documentation) |  |
+| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
 | Rehome Update Page | Desktop | ![screenshot](documentation) |  |
 | Rehome Delete Page | Desktop | ![screenshot](documentation) |  |
 | Post Room Page | Desktop | ![screenshot](documentation) |  |
@@ -154,7 +155,7 @@ Mobile
 | Post Room Delete Page | Desktop | ![screenshot](documentation) |  |
 | Comment Room Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Detail Page | Desktop | ![screenshot](documentation) |  |
-| Rehome Detail Page | Desktop | ![screenshot](documentation) |  |
+
 ## Defensive Programming
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
