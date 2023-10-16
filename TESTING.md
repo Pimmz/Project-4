@@ -118,10 +118,10 @@ Desktop
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homelight.png) | Worked as expected |
-| About | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| Register | Desktop | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
-| Login | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Adoption | Desktop | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
+| About | Desktop | ![screenshot](documentation/) | Few warnings |
+| Register | Desktop | ![screenshot](documentation/) | Some minor warnings |
+| Login | Desktop | ![screenshot](documentation) | Few warnings |
+| Adoption | Desktop | ![screenshot](documentation/) | Slow response time due to large images |
 | Adoption Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Update Page | Desktop | ![screenshot](documentation) |  |
 | Adoption Delete Page | Desktop | ![screenshot](documentation) |  |
