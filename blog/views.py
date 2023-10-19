@@ -7,7 +7,7 @@ from django.contrib import messages
 from .models import Post, Adoption, Rehome
 from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm
 from .forms import PostUpdateForm
-from django.views.generic import TemplateView, UpdateView, DetailView
+from django.views.generic import TemplateView, UpdateView, View
 from django.views.generic import DeleteView
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
@@ -48,17 +48,17 @@ class AdoptionView(TemplateView):
 
 
 @method_decorator(login_required, name='dispatch')
-class AdoptionDetailView(DetailView):
+class AdoptionDView(View):
     model = Adoption
     template_name = "adoption_detail.html"
 
     def get(self, request, *args, **kwargs):
-        pk = self.kwargs.get('pk')
-        try:
-            adoption = get_object_or_404(Adoption, pk=pk)
-            context = {'adoption': adoption, 'user': self.request.user}
-            return self.render_to_response(context)
-        except Http404:
+        adoption = Adoption.objects.filter(author=request.user).first()
+
+        if adoption is not None:
+            context = {'adoption': adoption, 'user': request.user}
+            return render(request, self.template_name, context)
+        else:
             return render(request, 'no_adoption.html')
 
 
@@ -134,23 +134,28 @@ class RehomeDetailView(TemplateView):
     model = Rehome
     template_name = "rehome_detail.html"
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['user'] = self.request.user
-        pk = self.kwargs.get('pk')
-        rehome = get_object_or_404(Rehome, pk=pk)
-        context['rehome'] = rehome
-        return context
-
     def get(self, request, *args, **kwargs):
-        try:
-            pk = self.kwargs.get('pk')
-            return super().get(request, *args, **kwargs)
-
-        except Http404:
+        rehome = Rehome.objects.filter(author=request.user).first()
+    
+        if rehome is not None:
+            context = {'rehome': rehome, 'user': request.user}
+            return render(request, self.template_name, context)
+        else:
             return render(request, 'no_rehome.html')
 
+@method_decorator(login_required, name='dispatch')
+class AdoptionDView(View):
+    model = Adoption
+    template_name = "adoption_detail.html"
 
+    def get(self, request, *args, **kwargs):
+        adoption = Adoption.objects.filter(author=request.user).first()
+
+        if adoption is not None:
+            context = {'adoption': adoption, 'user': request.user}
+            return render(request, self.template_name, context)
+        else:
+            return render(request, 'no_adoption.html')
 # View for the update Rehome page where you can update the form submitted
 
 

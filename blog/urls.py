@@ -15,7 +15,7 @@ urlpatterns = [
     path('blog.html', views.PostList.as_view(), name='blog'),
     path("adoption/", views.AdoptionView.as_view(), name='adoption'),
     path("rehome/", views.RehomeView.as_view(), name='rehome'),
-    path("adoption/<int:pk>/", views.AdoptionDetailView.as_view(),
+    path("adoption/<int:pk>/", views.AdoptionDView.as_view(),
          name='adoption_detail'),
     path("update_adoption/<int:pk>/",
          views.AdoptionUpdateView.as_view(), name='update_adoption'),
