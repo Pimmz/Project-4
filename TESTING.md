@@ -197,36 +197,100 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
 | Home Page | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
+| | Click on Logo Name | Redirection to Home page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
+| | Brute forcing the URL to get to page for loggin users only |  User redirected to sign up page | Pass |  |
+| About Page | | | | |
+| | Click on About link in navbar | Redirection to About page | Pass | |
+| | Click on Wikipedia links | Wikipedia loaded as expected | Pass | |
+| | Brute forcing the URL to get to another user's profile | Redirects user back to own profile | Pass | |
+| Register | | | | |
+| | Click on Register link in navbar | Redirection to Register page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
+| | Submit without filling in all required boxes | Error message appears highlighting area | Pass | |
 | Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
+| | Click Login link in the navbar | Redirection to Login page | Pass | |
+| | Enter valid username | Field will only accept a registered username | Pass | |
+| | Enter valid password | Field will only accept a registered password | Pass | |
+| Adoption Page | | | | |
+| | Click on Adoption link in navbar | Redirection to Adoption page | Pass | |
+| | Enter first/last name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
+| | Select terrier type or sex from drop down menu | User can only choose from the two available choices| Pass | |
+| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | No message in textareas | error message appears stating this field is required | Pass | |
+| | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update / delete or cancel which returns to the adoption page | Pass |  |
+| Rehome Page | | | | |
+| | Enter first/last name | Field will accept freeform text | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Select which terrier or sex from drop down menu | User can only choose from the two available choices | Pass | |
+| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | No message in textareas | error message appears stating this field is required | Pass | |
+| | Click the Submit button | Redirects user to the rehome detail page where they have the opportunity to update / delete or cancel which returns to the adoption page | Pass |  |
+| Adoption Detail Page | | | | |
+| | Click on Update button | User will be redirected to the Update adoption page | Pass | |
+| | Click on the Delete button | User will be redirected to the Delete adoption page | Pass | |
+| | Click on the Cancel button | User will be redirected to the Home page | Pass | |
+<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
+| Rehome Detail Page | | | | |
+| | Click on Update button | User will be redirected to the Update adoption page | Pass | |
+| | Click on the Delete button | User will be redirected to the Delete adoption page | Pass | |
+| | Click on the Cancel button | User will be redirected to the Home page | Pass | |
+<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
+| Update Adoption Page | | | | |
+| | Enter first/last name | Field will accept freeform text | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Select terrier type or sex from drop down menu | User can only choose from the two available choices| Pass | |
+| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | No message in textareas | error message appears stating this field is required | Pass | |
+| | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update / delete or cancel which returns to the Update adoption page | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
+<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
+| Update Rehome Page | | | | |
+| | Enter first/last name | Field will accept freeform text | Pass | |
+| | Enter valid email address | Field will only accept email address format | Pass | |
+| | Select terrier type or sex from drop down menu | User can only choose from the two available choices| Pass | |
+| | Enter message in textarea | Field will accept freeform text | Pass | |
+| | No message in textareas | error message appears stating this field is required | Pass | |
+| | Click the Submit button | Redirects user to the rehome detail page where they have the opportunity to update / delete or cancel which returns to the Update adoption page | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
+<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
+| Delete Adoption Page | | | | |
+| | Click on the Delete Button | Redirection to Adoption page | Pass | Confirms delete first|
+| | Click the Delete button | Redirects user to Adoption page  | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
+| Delete Rehome Page | | | | |
+| | Click on the Delete Button | Redirection to Rehome page | Pass | Confirms delete first|
+| | Click the Delete button | Redirects user to the Rehome Page page  | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
+| Post Room Page | | | | |
+| | Click on Post Room link in navbar | Redirection to Post Room page | Pass | |
+| | Enter Title | Field will accept freeform text | Pass | |
+| | Enter Content | Field will accept freeform text | Pass | |
+| | No message in textareas | error message appears stating this field is required | Pass | |
+| | Click on Choose Image button |  Choose your image you want to upload| Pass | |
+| | Click on Add Your Post button  | Redirection to Post Room page with message to confirm the post was successful | Pass | |
+| | Click post title  | Redirected to the comment room page | Pass | |
+| | Click on Update button | User will be redirected to the Update adoption page | Pass | |
+| | Click on the Delete button | User will be redirected to the Delete adoption page | Pass | |
+| | Click on Update button | Only available to registered user that made the post | Pass | |
+| | Click on the Delete button | Only available to registered user that made the post | Pass | |
+| Update Post Page | | | | |
+| | Click on the Update Button | Redirection to Update post page | Pass | |
+| | Enter Title | Field will accept freeform text | Pass | |
+| | Enter Content | Field will accept freeform text | Pass | |
+| | Choose Image | Change your image you have uploaded| Pass | |
+| | Click the Submit button | Redirects user to the comment page  | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Post Room page  | Pass | |
+| Delete Post Page | | | | |
+| | Click on the Delete Button | Redirection to Delete post page | Pass | Confirms delete first|
+| | Click the Delete button | Redirects user to the Post Room page  | Pass |  |
+| | Click on the Cancel button | User will be redirected to the Post Room page  | Pass | |
 | Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
+| | Click Logout button | Redirects user to sign out page | Pass | Confirms logout first |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
+
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 

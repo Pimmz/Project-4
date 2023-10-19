@@ -347,7 +347,7 @@ class UpdatePostView(UpdateView):
 
 # View for the Post detail page where you can like or unlike a post
 
-
+@method_decorator(login_required, name='dispatch')
 class PostLike(View):
 
     def post(self, request, slug, *args, **kwargs):
@@ -364,7 +364,6 @@ class PostLike(View):
 
 # View for the About page
 
-
 class AboutView(TemplateView):
     template_name = "about.html"
 
@@ -375,7 +374,6 @@ class AboutView(TemplateView):
 
 
 # View for the Home page
-
 
 class HomeView(TemplateView):
     template_name = "index.html"
