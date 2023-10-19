@@ -136,26 +136,14 @@ class RehomeDetailView(TemplateView):
 
     def get(self, request, *args, **kwargs):
         rehome = Rehome.objects.filter(author=request.user).first()
-    
+
         if rehome is not None:
             context = {'rehome': rehome, 'user': request.user}
             return render(request, self.template_name, context)
         else:
             return render(request, 'no_rehome.html')
 
-@method_decorator(login_required, name='dispatch')
-class AdoptionDView(View):
-    model = Adoption
-    template_name = "adoption_detail.html"
 
-    def get(self, request, *args, **kwargs):
-        adoption = Adoption.objects.filter(author=request.user).first()
-
-        if adoption is not None:
-            context = {'adoption': adoption, 'user': request.user}
-            return render(request, self.template_name, context)
-        else:
-            return render(request, 'no_adoption.html')
 # View for the update Rehome page where you can update the form submitted
 
 
@@ -387,3 +375,23 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context['user'] = self.request.user
         return context
+
+
+class custom_400(View):
+    def custom_400(request, exception):
+        return render(request, '400.html', status=400)
+
+
+class custom_403(View):
+    def custom_403(request, exception):
+        return render(request, '403.html', status=403)
+
+
+class custom_404(View):
+    def custom_404(request, exception):
+        return render(request, '404.html', status=404)
+
+
+class custom_500(View):
+    def custom_500(request, exception):
+        return render(request, '500.html', status=500)

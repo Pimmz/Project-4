@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load crispy_forms_tags %}
+
+<!--Catches any 400 error bad requests-->
+
+<div class="container">
+    <p class="page-title text-center mt-5">Error 400 "Bad Request"</p>
+    <hr class="rehome">
+    <br>
+    <h2 class="text-center mt-3">Oh No! Looks like you made a bad request</h2>
+</div>
+<div class="gif text-center mt-5">
+    <img src="https://media.giphy.com/media/KSyBlMKqqmfwVvKd9s/giphy.gif" alt="bye">
+</div>
+<div class="dog text-center mt-5">
+    <a class="btn btn-outline-secondary m-2" href="{% url 'index' %}">Cancel</a>
+</div>
+{%endblock%}

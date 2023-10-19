@@ -34,7 +34,10 @@ urlpatterns = [
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
     path('accounts/', include('allauth.urls')),
-
+    path('400/', views.custom_400.as_view(), name='custom_400'),
+    path('403/', views.custom_403.as_view(), name='custom_403'),
+    path('404/', views.custom_404.as_view(), name='custom_404'),
+    path('500/', views.custom_500.as_view(), name='custom_500'),
 ]
 
 if settings.DEBUG:

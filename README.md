@@ -9,58 +9,47 @@ Here is a link to my project - [Fox Terriers Owners Club](https://pimmz-project-
 ## Table of Contents
 
 - [Fox Terrier Owners Club](#fox-terrier-owners-club)
+  - [Table of Contents](#table-of-contents)
   - [User Experience (UX)](#user-experience-ux)
     - [User Stories](#user-stories)
-    - [Design](#design)
-      - [Colour Scheme](#colour-scheme)
-      - [Typography](#typography)
-      - [Icons](#icons)
-      - [Wireframes](#wireframes)
-- [Features](#features)
-  - [Header](#header)
-  - [Navigation](#navigation)
-  - [Footer](#footer)
-  - [Home Page](#home-page)
-  - [About Page](#about-page)
-  - [Adoption page](#adoption-page)
-  - [Adoption Detail Page](#adoption-detail-page)
-  - [No Adoption Detail Page](#no-adoption-details-page)
-  - [Adoption Update Page](#adoption-update-page)
-  - [Adoption Delete Page](#adoption-delete-page)
-  - [Rehome Page](#rehome-page)
-  - [Rehome Details Page](#rehome-details-page)
-  - [No Rehome Details Page](#no-rehome-details-page)
-  - [Rehome Update Page](#rehome-update-page)
-  - [Rehome Deletion Page](#rehome-deletion-page)
-  - [Post Room](#post-room)
-  - [Post Update Page](#post-update-page)
-  - [Post Deletion Page](#post-deletion-page)
-  - [Comment Room](#comment-room)
-  - [Future Features](#future-features)
-- [Tools and Technologies Used](#tools-and-technologies-used)
-- [Database Design](#database-design)
-- [Agile Development Process](#agile-development-process)
-  - [Github Projects](#github-projects)
-  - [Github Issues](#github-issues)
-  - [MoSCoW Prioritization](#moscow-prioritization)
-- [Security Features and Defensive Design](#security-features-and-defensive-design)
-- [User Authentication](#user-authentication)
-- [Form Validation](#form-validation)
-- [Database Security](#database-security)
-- [Testing](#testing)
-- [Deployment - Heroku](#deployment)
-  - [ElephantSQL Database](#elephantsql-database)
-  - [Cloudinary API](#cloudinary-api)
-  - [Heroku Deployment](#heroku-deployment)
-  - [Local Deployment](#local-deployment)
-  - [Cloning](#cloning)
-  - [Forking](#forking)
-- [Local vs Deployment](#local-vs-deployment)
+      - [EPIC | User Profile](#epic--user-profile)
+      - [EPIC | User Navigation](#epic--user-navigation)
+      - [EPIC | Post Management](#epic--post-management)
+      - [EPIC | Adoption Interaction](#epic--adoption-interaction)
+      - [EPIC | Rehome Interaction](#epic--rehome-interaction)
+      - [EPIC | Site Administration](#epic--site-administration)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+  - [Icons](#icons)
+  - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Error Pages](#error-pages)
+    - [Future Features](#future-features)
+  - [Tools and Technologies Used](#tools-and-technologies-used)
+  - [Database Design](#database-design)
+  - [Agile Development Process](#agile-development-process)
+    - [GitHub Projects](#github-projects)
+    - [GitHub Issues](#github-issues)
+    - [MoSCoW Prioritization](#moscow-prioritization)
+  - [Security Features and Defensive Design](#security-features-and-defensive-design)
+    - [User Authentication](#user-authentication)
+    - [Form Validation](#form-validation)
+    - [Database Security](#database-security)
+    - [Custom Error Pages](#custom-error-pages)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+    - [ElephantSQL Database](#elephantsql-database)
+    - [Cloudinary API](#cloudinary-api)
+    - [Heroku Deployment](#heroku-deployment)
+    - [Local Deployment](#local-deployment)
+      - [Cloning](#cloning)
+      - [Forking](#forking)
+    - [Local VS Deployment](#local-vs-deployment)
   - [Credits](#credits)
-  - [Contents](#contents)
-- [Media](#media)
-- [Addition Information](#additional-information)
-- [Acknowledgments](#acknowledgments)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgements](#acknowledgements)
 
 ## User Experience (UX)
 
@@ -366,6 +355,17 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Submit button to send the comment onwards to be approved
 ![Confirmation](documentation/readme_images/commentconfirm.png)
 
+### Error Pages
+
+Custom Error Pages were created to give the user more information on the error and to guide them back to the site.
+
+![Error](documentation/readme_images/error404.png)
+
+- 400 Bad Request - The Easy Eater is unable to handle this request.
+- 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
+- 404 Page Not Found - The page you're looking for doesn't exist.
+- 500 Server Error - The Easy Eater is currently unable to handle this request
+
 ### Future Features
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
@@ -494,6 +494,15 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - ERROR The cloudinary API key was previously pushed to GitHub. This was due to my workspace being deleted unforeseeably and then a miscommunication between a
   tutor and myself. The exposed key is no longer in use and has been replaced with a new key to prevent any security issues."
 - Cross-Site Request Forgery (CSRF) tokens were used on all forms throughout this site.
+
+### Custom Error Pages
+
+    Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
+
+- 400 Bad Request - Error 400 "Bad Request" Oh No! Looks like you made a bad request.
+- 403 Page Forbidden - Error 403 "Forbidden Request" Sorry thats a Forbidden request.
+- 404 Page Not Found - Error 404 "Not Found" Yikes! that page is Not Found.
+- 500 Server Error - Error 500 "Internal Server Error" Oh No! Dont worry its me! not you!
 
 ## Testing
 
