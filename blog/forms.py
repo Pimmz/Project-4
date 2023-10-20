@@ -5,12 +5,18 @@ from django import forms
 
 class CommentForm(forms.ModelForm):
     class Meta:
+        """
+        Form for commenting on a post in the Comment page
+        """
         model = Comment
         fields = ('body',)
 
 
 class AdoptionForm(forms.ModelForm):
     class Meta:
+        """
+        Form for Adoption requests
+        """
         model = Adoption
         fields = ('name', 'email', 'terrier_type', 'sex', 'age', 'why',
                   'experience', 'notes')
@@ -33,6 +39,9 @@ class AdoptionForm(forms.ModelForm):
 
 class RehomeForm(forms.ModelForm):
     class Meta:
+        """
+        Form for Rehome requests
+        """
         model = Rehome
         fields = ('terrier_type', 'sex', 'age', 'why',
                   'behaviour', 'notes', 'name', 'email')
@@ -55,6 +64,9 @@ class RehomeForm(forms.ModelForm):
 
 class PostCreateForm(forms.ModelForm):
     class Meta:
+        """
+        Form for creating posts in the Post Room(blog)
+        """
         model = Post
         fields = ['title', 'content', 'featured_image']
 
@@ -65,6 +77,9 @@ class PostCreateForm(forms.ModelForm):
 
 class PostUpdateForm(forms.ModelForm):
     class Meta:
+        """
+        Form to update posts in the Post Room(blog)
+        """
         model = Post
         fields = ['title', 'content', 'featured_image']
 

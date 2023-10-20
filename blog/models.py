@@ -1,4 +1,4 @@
-# Models
+"""Models"""
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
@@ -13,10 +13,11 @@ STATUS = ((0, "Draft"), (1, "Published"))
 TERRIER_TYPE = [(W, "Wired"), (S, "Smooth")]
 SEX_TYPE = [(M, "Male"), (F, "Female")]
 
-# Model for Adoption
-
 
 class Adoption(models.Model):
+    """
+    Model for Adoption Page
+    """
     terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE,
                                     verbose_name="", null=True, blank=True)
     sex = models.CharField(max_length=10, choices=SEX_TYPE,
@@ -53,10 +54,11 @@ STATUS = ((0, "Draft"), (1, "Published"))
 TERRIER_TYPE = [(W, "Wired"), (S, "Smooth")]
 SEX_TYPE = [(M, "Male"), (F, "Female")]
 
-# Model for Rehome
-
 
 class Rehome(models.Model):
+    """
+    Model for Rehome Page
+    """
     terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE,
                                     verbose_name="", null=True, blank=True)
     sex = models.CharField(max_length=10, choices=SEX_TYPE,
@@ -84,10 +86,10 @@ class Rehome(models.Model):
         return str(self.pk)
 
 
-# Model for Post room specifically blog posts
-
-
 class Post(models.Model):
+    """
+    Model for Post room specifically blog posts
+    """
     title = models.CharField(max_length=200, verbose_name="", unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -117,10 +119,11 @@ class Post(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
-# Model for the post room, specifically commenting
-
 
 class Comment(models.Model):
+    """
+    Model for the post room, specifically commenting
+    """
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")
     name = models.CharField(max_length=80)
