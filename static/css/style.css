@@ -19,12 +19,6 @@ body {
 
 .card-text1 input {
     width: 200px;
-    border: none;
-}
-
-.card-text textarea,
-.card-text select {
-    border: none;
 }
 
 .gif img {
@@ -36,6 +30,8 @@ body {
     width: 75%;
     display: block;
     margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+    border-radius: 15px;
 }
 
 .card-img-top2,
@@ -57,12 +53,11 @@ body {
     align-items: flex-start;
 }
 
-
-
 .masthead-image img,
 .post1,
 .featured_image {
     width: 75%;
+    object-fit: cover;
 }
 
 .signin {

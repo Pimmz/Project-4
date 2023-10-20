@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-pimmz-project-4-78d1tm6wx9.us2.codeanyapp.com',
                  'pimmz-project-4-9cc2ab59cc64.herokuapp.com']
