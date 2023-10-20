@@ -13,11 +13,11 @@ from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
 
-# View for the Adoption page hwere you can submit a form
-
-
 @method_decorator(login_required, name='dispatch')
 class AdoptionView(TemplateView):
+    """
+    View for the Adoption page hwere you can submit a form
+    """
     template_name = "adoption.html"
 
     def get_context_data(self, **kwargs):
@@ -44,11 +44,15 @@ class AdoptionView(TemplateView):
         return self.render_to_response(context)
 
 
-# View for the Adoption detail page where you can view the form submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class AdoptionDView(View):
+    """
+    View for the Adoption detail page where you can view the form submitted. 
+    The view name AdoptionDView is because it was originally called 
+    Adoptiondetailview to match the template name but it caused an issue with 
+    a single view so the name was changed to stop that and so that it didnt 
+    match any other names.
+    """
     model = Adoption
     template_name = "adoption_detail.html"
 
@@ -62,11 +66,11 @@ class AdoptionDView(View):
             return render(request, 'no_adoption.html')
 
 
-# View for the update Adoption page where you can update the form submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class AdoptionUpdateView(UpdateView):
+    """
+    View for the update Adoption page where you can update the form submitted
+    """
     model = Adoption
     form_class = AdoptionForm
     template_name = "update_adoption.html"
@@ -78,11 +82,11 @@ class AdoptionUpdateView(UpdateView):
         return reverse('adoption_detail', kwargs={'pk': self.object.pk})
 
 
-# View for the delete Adoption page where you can delete the form submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class DeleteAdoptionView(DeleteView):
+    """
+    View for the delete Adoption page where you can delete the form submitted
+    """
     model = Adoption
     template_name = "delete_adoption.html"
     success_url = reverse_lazy('adoption')
@@ -96,11 +100,11 @@ class DeleteAdoptionView(DeleteView):
         return redirect(self.success_url)
 
 
-# View for the Rehome page where you can submit the form
-
-
 @method_decorator(login_required, name='dispatch')
 class RehomeView(TemplateView):
+    """
+    View for the Rehome page where you can submit the form
+    """
     template_name = "rehome.html"
 
     def get_context_data(self, **kwargs):
@@ -126,11 +130,11 @@ class RehomeView(TemplateView):
         return self.render_to_response(context)
 
 
-# View for the Rehome detail page where you can view the form submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class RehomeDetailView(TemplateView):
+    """
+    View for the Rehome detail page where you can view the form submitted
+    """
     model = Rehome
     template_name = "rehome_detail.html"
 
@@ -144,11 +148,11 @@ class RehomeDetailView(TemplateView):
             return render(request, 'no_rehome.html')
 
 
-# View for the update Rehome page where you can update the form submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class RehomeUpdateView(UpdateView):
+    """
+    View for the update Rehome page where you can update the form submitted
+    """
     model = Rehome
     form_class = RehomeForm
     template_name = "update_rehome.html"
@@ -160,11 +164,11 @@ class RehomeUpdateView(UpdateView):
         return reverse('rehome_detail', kwargs={'pk': self.object.pk})
 
 
-# View for the delete Rehome page where you can delete the form submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class DeleteRehomeView(DeleteView):
+    """
+    View for the delete Rehome page where you can delete the form submitted
+    """
     model = Rehome
     template_name = "delete_rehome.html"
     success_url = reverse_lazy('rehome')
@@ -178,11 +182,11 @@ class DeleteRehomeView(DeleteView):
         return redirect(self.success_url)
 
 
-# View for the Postroom page "blog.html" where you can post images and text
-
-
 @method_decorator(login_required, name='dispatch')
 class PostList(generic.ListView):
+    """
+    View for the Postroom page "blog.html" where you can post images and text
+    """
     model = Post
     queryset = Post.objects.filter(
         status=1, approved=True).order_by("-created_on")
@@ -213,12 +217,12 @@ class PostList(generic.ListView):
             return self.render_to_response(context)
 
 
-# View for the Postroom page "post_detail" displays information about a post
-# and allows for commenting
-
-
 @method_decorator(login_required, name='dispatch')
 class PostDetail(View):
+    """
+    View for the Postroom page "post_detail" displays information about a post
+    and allows for commenting
+    """
 
     def get(self, request, slug, *args, **kwargs):
         context = {}
@@ -280,11 +284,11 @@ class PostDetail(View):
             return HttpResponseServerError("Post not found.")
 
 
-# View for the post detail page for adding and removing comments
-
-
 @method_decorator(login_required, name='dispatch')
 class PostComment(View):
+    """
+    View for the post detail page for adding and removing comments
+    """
 
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
@@ -298,11 +302,11 @@ class PostComment(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-# View for the delete Post page where you can delete the post submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class DeletePostView(DeleteView):
+    """
+    View for the delete Post page where you can delete the post submitted
+    """
     model = Post
     template_name = "delete_post.html"
     success_url = reverse_lazy('blog')
@@ -324,11 +328,11 @@ class DeletePostView(DeleteView):
             return HttpResponseServerError("Post not found.")
 
 
-# View for the Update Post page where you can update the post submitted
-
-
 @method_decorator(login_required, name='dispatch')
 class UpdatePostView(UpdateView):
+    """
+    View for the Update Post page where you can update the post submitted
+    """
     model = Post
     form_class = PostUpdateForm
     template_name = "update_post.html"
@@ -338,10 +342,11 @@ class UpdatePostView(UpdateView):
         return reverse_lazy('post_detail', kwargs={'slug': self.object.slug})
 
 
-# View for the Post detail page where you can like or unlike a post
-
 @method_decorator(login_required, name='dispatch')
 class PostLike(View):
+    """
+    View for the Post detail page where you can like or unlike a post
+    """
 
     def post(self, request, slug, *args, **kwargs):
         context = {}
@@ -355,9 +360,10 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-# View for the About page
-
 class AboutView(TemplateView):
+    """
+    View for the About page
+    """
     template_name = "about.html"
 
     def get_context_data(self, **kwargs):
@@ -366,9 +372,10 @@ class AboutView(TemplateView):
         return context
 
 
-# View for the Home page
-
 class HomeView(TemplateView):
+    """
+    View for the Home page
+    """
     template_name = "index.html"
 
     def get_context_data(self, **kwargs):
@@ -378,20 +385,32 @@ class HomeView(TemplateView):
 
 
 class custom_400(View):
+    """
+    View for the 400 error page
+    """
     def custom_400(request, exception):
         return render(request, '400.html', status=400)
 
 
 class custom_403(View):
+    """
+    View for the 403 error page
+    """
     def custom_403(request, exception):
         return render(request, '403.html', status=403)
 
 
 class custom_404(View):
+    """
+    View for the 404 error page
+    """
     def custom_404(request, exception):
         return render(request, '404.html', status=404)
 
 
 class custom_500(View):
+    """
+    View for the 500 error page
+    """
     def custom_500(request, exception):
         return render(request, '500.html', status=500)
