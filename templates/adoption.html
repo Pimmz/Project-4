@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-3">
                     <h5 class="card-header">Fox Terrier Type</h5>
                     <div class="card-body">
@@ -47,11 +47,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="card mb-3">
                     <h5 class="card-header">Sex</h5>
                     <div class="card-body">
                         <div class="card-text">{{ adoption_form.sex|as_crispy_field }}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <h5 class="card-header">Adoption/Rehome</h5>
+                    <div class="card-body">
+                        <div class="card-text">{{ adoption_form.adoption_type|as_crispy_field }}</div>
                     </div>
                 </div>
             </div>
