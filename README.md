@@ -306,6 +306,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 ![Next Button](documentation/readme_images/next.png)
 - Security function to only be able to delete the user's own posts and no others
 ![User option](documentation/readme_images/useroption.png)
+
 - **Post update Page**
 ![Post update Page](documentation/readme_images/updatepost.png)
 
@@ -348,7 +349,15 @@ Custom Error Pages were created to give the user more information on the error a
 - 404 Page Not Found - The page you're looking for doesn't exist.
 - 500 Server Error - The Easy Eater is currently unable to handle this request
 
+### Google and Facebook login
 
+- Google and Facebook login were added to the site on the the sign in page. Unfortunately their was an issue with the URLs not matching even though they were exactly the same as the ones in Django admin. When asking the tutors they said it wasnt covered in the training. Plus when I started validating the code the same URL problem arose.  So with the time constraints as well I decided to delete the code.
+
+![Google](documentation/readme_images/google.png)
+![Facebook](documentation/readme_images/facebook.png)
+
+- 400 Bad Request - The Easy Eater is unable to handle this request.
+- 
 ### Future Features
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
