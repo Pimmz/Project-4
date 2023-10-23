@@ -4,37 +4,34 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django.utils.text import slugify
 
-W = "Wired"
-S = "Smooth"
-M = "Male"
-F = "Female"
-
 STATUS = ((0, "Draft"), (1, "Published"))
-TERRIER_TYPE = [(W, "Wired"), (S, "Smooth")]
-SEX_TYPE = [(M, "Male"), (F, "Female")]
+TERRIER_TYPE = [("Wired", "Wired"), ("Smooth", "Smooth")]
+SEX_TYPE = [("Male", "Male"), ("Female", "Female")]
+ADOPTION_TYPE = [("Adoption", "Adoption"), ("Rehome", "Rehome")]
 
 
 class Adoption(models.Model):
     """
     Model for Adoption Page
     """
-    terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE,
-                                    verbose_name="", null=True, blank=True)
-    sex = models.CharField(max_length=10, choices=SEX_TYPE,
-                           verbose_name="", null=True, blank=True)
+    terrier_type = models.CharField(
+        max_length=10, choices=TERRIER_TYPE, null=False, blank=False)
+    sex = models.CharField(
+        max_length=10, choices=SEX_TYPE, null=False, blank=False)
     age = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
+        max_length=200, null=False, blank=False)
     why = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
+        max_length=200, null=False, blank=False)
     experience = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
+        max_length=200, null=False, blank=False)
     notes = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
+        max_length=200, null=False, blank=False)
     name = models.CharField(
-        max_length=100, verbose_name="", null=True, blank=True)
+        max_length=100, null=False, blank=False)
     email = models.EmailField(
-        max_length=100, verbose_name="", null=True, blank=True)
-
+        max_length=100, null=False, blank=False)
+    adoption_type = models.CharField(
+        max_length=10, choices=ADOPTION_TYPE, null=False, blank=False)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="adoption_author",
         default=1
@@ -45,52 +42,11 @@ class Adoption(models.Model):
         return str(self.pk)
 
 
-W = "Wired"
-S = "Smooth"
-M = "Male"
-F = "Female"
-
-STATUS = ((0, "Draft"), (1, "Published"))
-TERRIER_TYPE = [(W, "Wired"), (S, "Smooth")]
-SEX_TYPE = [(M, "Male"), (F, "Female")]
-
-
-class Rehome(models.Model):
-    """
-    Model for Rehome Page
-    """
-    terrier_type = models.CharField(max_length=10, choices=TERRIER_TYPE,
-                                    verbose_name="", null=True, blank=True)
-    sex = models.CharField(max_length=10, choices=SEX_TYPE,
-                           verbose_name="", null=True, blank=True)
-    age = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
-    why = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
-    behaviour = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
-    notes = models.CharField(
-        max_length=200, verbose_name="", null=True, blank=True)
-    name = models.CharField(
-        max_length=100, verbose_name="", null=True, blank=True)
-    email = models.EmailField(
-        max_length=100, verbose_name="", null=True, blank=True)
-
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="rehome_author", default=1
-    )
-
-    created_on = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return str(self.pk)
-
-
 class Post(models.Model):
     """
     Model for Post room specifically blog posts
     """
-    title = models.CharField(max_length=200, verbose_name="", unique=True)
+    title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
