@@ -157,6 +157,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - The navigation bar is present at the top of every page and includes all links to the various other pages.
 - New menus open up when the user is logged in, to display Adoption, Rehome, Post Room, The signed-in user's name "Welcome Steve" which drops down to show the
   adoption or rehome requests they have made. Plus it includes the logout facility.
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome forms so it was easier to use and cleaner to look at.
+![Navigation bar](documentation/readme_images/navbar1.png)
 
 - **Footer**
 ![Footer](documentation/readme_images/footer.png)
@@ -172,6 +174,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Fontawesome icons are used to help draw the eye to the three key sections.
 - Three key sections enlarged to show the additional added features of the website.
 - Two images clearly showing the different types of Fox Terrier.
+
 - **About Page**
 ![About Page](documentation/readme_images/about.png)
 
@@ -179,6 +182,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Two images clearly showing the different types of Fox Terrier.
 - A in depth look at the background of the two types of Fox Terriers.
 - To provide even more of a detailed look into Fox Terriers, a Wikipedia link is available if the user wants to know more.
+  
 - **Adoption Page**
 ![Adoption Page](documentation/readme_images/adoptionpage.png)
 
@@ -191,6 +195,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Confirmation message that the form has been successfully submitted.
 ![Confirmation](documentation/readme_images/confirmation1.png)
 - You are then taken to the Adoption detail page
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome page so it was easier to use and cleaner to look at.
+![Adoption Page](documentation/readme_images/updateadoption.png)
 
 - **Adoption Details Page**
 ![Adoption Details Page](documentation/readme_images/adoptdetail.png)
@@ -199,12 +205,16 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Update button to allow the user to change any of the information they have just put in.
 - Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
 - Cancel button to redirect the user if they have changed their mind.
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![Adoption Details Page](documentation/readme_images/updateadoptdetails.png)
 
 - **No Adoption Details Page**
 ![No Adoption Details Page](documentation/readme_images/noadoptdetails.png)
 
 - When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
 - Cancel button to redirect the user back to the home page.
+- UPDATE!!! After some consideration I decided to amalgamate the No Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![No Adoption Details Page](documentation/readme_images/updatenoadopt.png)
 
 - **Adoption Update Page**
 ![Adoption update Page](documentation/readme_images/adoptupdate.png)
@@ -214,6 +224,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
 ![Confirmation](documentation/readme_images/updateconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome update page so it was easier to use and cleaner to look at.
+![Adoption update page](documentation/readme_images/updateadoptrehome.png)
 
 - **Adoption Delete Page**
 ![Adoption delete Page](documentation/readme_images/updatedelete.png)
@@ -224,6 +236,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
 ![Confirmation](documentation/readme_images/deleteconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome delete page so it was easier to use and cleaner to look at.
+![Adoption delete page](documentation/readme_images/updatedeleteadopt.png)
 
 - **Rehome Page**
 ![Rehome Page](documentation/readme_images/rehomepage.png)
@@ -236,6 +250,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Cancel button to redirect the user back if they have changed their mind
 - Confirmation message that the form has been successfully submitted.
 ![Confirmation](documentation/readme_images/confirmation2.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome page so it was easier to use and cleaner to look at.
+![Rehome Page](documentation/readme_images/updateadoption.png)
 
 - **Rehome Details Page**
 ![Rehome Details Page](documentation/readme_images/rehomedetail.png)
@@ -244,11 +260,17 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Update button to allow the user to change any of the information they have just put in.
 - Delete button to allow the user to delete the adoption form they have just filled in if they change their mind.
 - Cancel button to redirect the user back if they have changed their mind.
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![Rehome details page](documentation/readme_images/updateadoptdetails.png)
+
 - **No Rehome Details Page**
 ![No Rehome Details Page](documentation/readme_images/norehome.png)
 
 - When there aren't any rehoming requests a screen informs the user that there aren't any details at the moment.
 - Cancel button to redirect the user back to the home page.
+- UPDATE!!! After some consideration I decided to amalgamate the No Adoption and Rehome details page so it was easier to use and cleaner to look at.
+![No Rehome Details Page](documentation/readme_images/updatenoadopt.png)
+
 - **Rehome update Page**
 ![Rehome update Page](documentation/readme_images/updaterehome.png)
 
@@ -257,6 +279,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
 ![Confirmation](documentation/readme_images/updateconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome update page so it was easier to use and cleaner to look at.
+![Rehome update page](documentation/readme_images/updateadoptrehome.png)
 
 - **Rehome deletion Page**
 ![Rehome deletion Page](documentation/readme_images/deleterehome.png)
@@ -267,6 +291,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Cancel button to redirect the user back if they have changed their mind.
 - Confirmation message that the form has been successfully submitted.
 ![Confirmation](documentation/readme_images/deleteconfirm.png)
+- UPDATE!!! After some consideration I decided to amalgamate the Adoption and Rehome delete page so it was easier to use and cleaner to look at.
+![Rehome deletion page](documentation/readme_images/updatedeleteadopt.png)
 
 - **Post Room**
 ![Post Room](documentation/readme_images/postroom.png)

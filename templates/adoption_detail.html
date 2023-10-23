@@ -13,6 +13,32 @@
 
     <!--Adoption form-->
 
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <h5 class="card-header">Adoption/Rehome</h5>
+                <div class="card-body">
+                    <div class="card-text">{{ adoption.adoption_type }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <h5 class="card-header">Fox Terrier Type</h5>
+                <div class="card-body">
+                    <div class="card-text">{{ adoption.terrier_type }}</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <h5 class="card-header">Sex</h5>
+                <div class="card-body">
+                    <div class="card-text">{{ adoption.sex }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -29,34 +55,6 @@
                     <div class="card-body">
                         <div class="card-text">{{ adoption.email }}</div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <h5 class="card-header">
-                    Fox Terrier Type
-                </h5>
-                <div class="card-body">
-                    <div class="card-text">{{ adoption.terrier_type }}</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <h5 class="card-header">Sex</h5>
-                <div class="card-body">
-                    <div class="card-text">{{ adoption.sex }}</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card mb-3">
-                <h5 class="card-header">Adoption/Rehome</h5>
-                <div class="card-body">
-                    <div class="card-text">{{ adoption.adoption_type }}</div>
                 </div>
             </div>
         </div>
