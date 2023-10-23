@@ -4,8 +4,8 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect, Http404, HttpResponseServerError
 from django.urls import reverse_lazy
 from django.contrib import messages
-from .models import Post, Adoption, Rehome
-from .forms import CommentForm, AdoptionForm, RehomeForm, PostCreateForm
+from .models import Post, Adoption
+from .forms import CommentForm, AdoptionForm, PostCreateForm
 from .forms import PostUpdateForm
 from django.views.generic import TemplateView, UpdateView, View
 from django.views.generic import DeleteView
@@ -97,88 +97,6 @@ class DeleteAdoptionView(DeleteView):
         adoption = self.get_object()
         adoption.delete()
         messages.success(self.request, 'Your deletion has been successfull')
-        return redirect(self.success_url)
-
-
-@method_decorator(login_required, name='dispatch')
-class RehomeView(TemplateView):
-    """
-    View for the Rehome page where you can submit the form
-    """
-    template_name = "rehome.html"
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['rehome_form'] = RehomeForm()
-        context['user'] = self.request.user
-        return context
-
-    def post(self, request, *args, **kwargs):
-        rehome_form = RehomeForm(request.POST)
-        if rehome_form.is_valid():
-            rehome = rehome_form.save(commit=False)
-            rehome.author = request.user
-            rehome.save()
-            messages.success(
-                self.request,
-                'Your request has been posted successfully.'
-                'You will be contacted shortly.')
-            return redirect(reverse('rehome_detail', args=[rehome.id]))
-
-        context = self.get_context_data()
-        context['rehome_form'] = rehome_form
-        return self.render_to_response(context)
-
-
-@method_decorator(login_required, name='dispatch')
-class RehomeDetailView(TemplateView):
-    """
-    View for the Rehome detail page where you can view the form submitted
-    """
-    model = Rehome
-    template_name = "rehome_detail.html"
-
-    def get(self, request, *args, **kwargs):
-        rehome = Rehome.objects.filter(author=request.user).first()
-
-        if rehome is not None:
-            context = {'rehome': rehome, 'user': request.user}
-            return render(request, self.template_name, context)
-        else:
-            return render(request, 'no_rehome.html')
-
-
-@method_decorator(login_required, name='dispatch')
-class RehomeUpdateView(UpdateView):
-    """
-    View for the update Rehome page where you can update the form submitted
-    """
-    model = Rehome
-    form_class = RehomeForm
-    template_name = "update_rehome.html"
-
-    def get_success_url(self):
-        context = {}
-        context['user'] = self.request.user
-        messages.success(self.request, 'Your update has been successful')
-        return reverse('rehome_detail', kwargs={'pk': self.object.pk})
-
-
-@method_decorator(login_required, name='dispatch')
-class DeleteRehomeView(DeleteView):
-    """
-    View for the delete Rehome page where you can delete the form submitted
-    """
-    model = Rehome
-    template_name = "delete_rehome.html"
-    success_url = reverse_lazy('rehome')
-
-    def post(self, request, *args, **kwargs):
-        context = {}
-        context['user'] = self.request.user
-        rehome = self.get_object()
-        rehome.delete()
-        messages.success(self.request, 'Your deletion has been successful')
         return redirect(self.success_url)
 
 
