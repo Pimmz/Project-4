@@ -344,19 +344,18 @@ Custom Error Pages were created to give the user more information on the error a
 
 ![Error](documentation/readme_images/error404.png)
 
-- 400 Bad Request - The Easy Eater is unable to handle this request.
-- 403 Page Forbidden - Looks like you're trying to access forbidden content. Please log out and sign in to the correct account.
-- 404 Page Not Found - The page you're looking for doesn't exist.
-- 500 Server Error - The Easy Eater is currently unable to handle this request
+- 400 Bad Request - Oh No! Looks like you made a bad request.
+- 403 Page Forbidden - Sorry thats a Forbidden request.
+- 404 Page Not Found - Yikes! that page is Not Found.
+- 500 Server Error - Oh No! Dont worry its me! not you!
 
 ### Google and Facebook login
 
-- Google and Facebook login were added to the site on the the sign in page. Unfortunately their was an issue with the URLs not matching even though they were exactly the same as the ones in Django admin. When asking the tutors they said it wasnt covered in the training. Plus when I started validating the code the same URL problem arose.  So with the time constraints as well I decided to delete the code.
+- Google and Facebook login were added to the site on the the sign in page. Unfortunately their was an issue with the URLs not matching even though they were   
+  exactly the same as the ones in Django admin. When asking the tutors they said it wasnt covered in the training. Plus when I started validating the code the same URL problem arose.  So with the time constraints as well I decided to delete the code.
 
 ![Google](documentation/readme_images/google.png)
 ![Facebook](documentation/readme_images/facebook.png)
-
-- 400 Bad Request - The Easy Eater is unable to handle this request.
 - 
 ### Future Features
 
