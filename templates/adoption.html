@@ -3,9 +3,9 @@
 
 <!-- The adoption page sets out a form for potential adoptees-->
 <div class="container">
-    <h1 class="page-title text-center">Adoption Page</h1>
+    <h1 class="page-title text-center">Adoption/Rehome Page</h1>
     <h4 class="text-center">Can you offer a Fox Terrier that didnt have the best start to their life, a place to live?,
-        where they will be loved and cherished as all dogs should be. We'd love to here from you. Just fill in the from
+        Or have your circumstances changed and you're thinking of rehoming your Fox Terrier?. If so We'd love to here from you. Just fill in the from
         and we'll be in touch.</h4>
     <hr class="adoption">
     <br>
@@ -18,27 +18,15 @@
 
     <!--Form to display the adoption questions -->
     <form method="post" class="form" enctype="multipart/form-data">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <h5 class="card-header">Name</h5>
-                        <div class="card-body">
-                            <div class="card-text1">{{ adoption_form.name|as_crispy_field }}</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card mb-3">
-                        <h5 class="card-header">Email</h5>
-                        <div class="card-body">
-                            <div class="card-text1">{{ adoption_form.email|as_crispy_field }}</div>
-                        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <h5 class="card-header">Adoption/Rehome</h5>
+                    <div class="card-body">
+                        <div class="card-text">{{ adoption_form.adoption_type|as_crispy_field }}</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-4">
                 <div class="card mb-3">
                     <h5 class="card-header">Fox Terrier Type</h5>
@@ -55,11 +43,23 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                    <h5 class="card-header">Adoption/Rehome</h5>
-                    <div class="card-body">
-                        <div class="card-text">{{ adoption_form.adoption_type|as_crispy_field }}</div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <h5 class="card-header">Name</h5>
+                        <div class="card-body">
+                            <div class="card-text1">{{ adoption_form.name|as_crispy_field }}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-3">
+                        <h5 class="card-header">Email</h5>
+                        <div class="card-body">
+                            <div class="card-text1">{{ adoption_form.email|as_crispy_field }}</div>
+                        </div>
                     </div>
                 </div>
             </div>

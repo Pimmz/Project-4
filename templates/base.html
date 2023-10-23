@@ -55,7 +55,7 @@
                     <!--Sections to be displayed when a user is signed into the webpage-->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'adoption' %}">Adoption</a>
+                        <a class="nav-link" href="{% url 'adoption' %}">Adoption/Rehome</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'blog' %}">Post Room</a>
@@ -67,7 +67,7 @@
                         </a>
 
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="{% url 'adoption_detail' pk=29 %}">Adoption details</a>
+                            <li><a class="dropdown-item" href="{% url 'adoption_detail' pk=29 %}">Adoption/Rehome details</a>
                             </li>
                             <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
 
