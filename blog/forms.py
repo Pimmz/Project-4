@@ -1,5 +1,5 @@
 """Forms"""
-from .models import Comment, Adoption, Rehome, Post
+from .models import Comment, Adoption, Post
 from django import forms
 
 
@@ -19,7 +19,7 @@ class AdoptionForm(forms.ModelForm):
         """
         model = Adoption
         fields = ('name', 'email', 'terrier_type', 'sex', 'age', 'why',
-                  'experience', 'notes')
+                  'experience', 'notes', 'adoption_type')
         widgets = {
             'age': forms.Textarea(attrs={'cols': 100}),
             'why': forms.Textarea(attrs={'cols': 100}),
@@ -31,31 +31,6 @@ class AdoptionForm(forms.ModelForm):
         cleaned_data = super().clean()
         required_fields = ('terrier_type', 'sex', 'age', 'why',
                            'experience', 'notes', 'name', 'email')
-        for field in required_fields:
-            if not cleaned_data.get(field):
-                self.add_error(field, "This field is required.")
-        return cleaned_data
-
-
-class RehomeForm(forms.ModelForm):
-    class Meta:
-        """
-        Form for Rehome requests
-        """
-        model = Rehome
-        fields = ('terrier_type', 'sex', 'age', 'why',
-                  'behaviour', 'notes', 'name', 'email')
-        widgets = {
-            'age': forms.Textarea(attrs={'cols': 100}),
-            'why': forms.Textarea(attrs={'cols': 100}),
-            'behaviour': forms.Textarea(attrs={'cols': 100}),
-            'notes': forms.Textarea(attrs={'cols': 100}),
-        }
-
-    def clean(self):
-        cleaned_data = super().clean()
-        required_fields = ('terrier_type', 'sex', 'age', 'why',
-                           'behaviour', 'notes', 'name', 'email')
         for field in required_fields:
             if not cleaned_data.get(field):
                 self.add_error(field, "This field is required.")
