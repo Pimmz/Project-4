@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment, Adoption, Rehome
+from .models import Post, Comment, Adoption
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -31,9 +31,4 @@ class CommentAdmin(admin.ModelAdmin):
 
 @admin.register(Adoption)
 class AdoptionAdmin(SummernoteModelAdmin):
-    list_display = ('author', 'created_on')
-
-
-@admin.register(Rehome)
-class RehomeAdmin(SummernoteModelAdmin):
     list_display = ('author', 'created_on')
