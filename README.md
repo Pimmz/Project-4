@@ -356,7 +356,7 @@ Custom Error Pages were created to give the user more information on the error a
 
 ![Google](documentation/readme_images/google.png)
 ![Facebook](documentation/readme_images/facebook.png)
-- 
+
 ### Future Features
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
