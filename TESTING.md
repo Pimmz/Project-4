@@ -115,19 +115,14 @@ Desktop
 | About | Desktop | ![screenshot](documentation/testing_images/lighthouse/aboutlight.png) | Few warnings |
 | Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/registerlight.png) | Some minor warnings |
 | Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginlight.png) | Worked as expected |
-| Adoption | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptlight.png) | Good overall though average accessibility due to form labels |
-| Adoption Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptdetaillight.png) | Worked as expected |
-| Adoption Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/updateadoptlight%20.png) | Good overall although accessibilty knocked out slightly by large giph |
-| Adoption Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/deleteadoptlight.png) | Worked as expected |
-| Rehome Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomelight.png) | good over all with one warning |
-| Rehome Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedetaillight.png) | Worked as expected  |
-| Rehome Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomeupdatelight.png) | Good overall although accessibilty knocked out slightly by giph |
-| Rehome Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedetaillight.png) | Worked as expected |
+| Adoption/Rehome | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptlight.png) | Worked as expected |
+| Adoption/Rehome Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptdetaillight.png) | Worked as expected |
+| Adoption/Rehome Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/updateadoptlight.png) | Worked as expected |
+| Adoption/Rehome Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/deleteadoptlight.png) | Worked as expected |
 | Post Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroomlight.png) | Average performance due to number of images and size |
 | Post Room Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroomupdate.png) | Good overall though average accessibility |
 | Post Room Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postdelete.png) | Worked as expected  |
 | Comment Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/commentroomlight.png) | Good overall although accessibilty knocked out slightly by giph |
-
 
 Mobile
 | Page | Size | Screenshot | Notes |
@@ -136,14 +131,10 @@ Mobile
 | About | Mobile | ![screenshot](documentation/testing_images/lighthouse/aboutmoblight.png) | Average performance score due to giph and images|
 | Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/regestermoblight.png) | Average performance score due to giph. loaded to cloudinary to be more effective |
 | Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginmoblight.png) | Average performance score due to giph and images |
-| Adoption | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptmoblight.png) |  Average performance score due to giph and accessibility due to form labels|
-| Adoption Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptdetailmob.png) | All good except Average performance score due to large giph |
-| Adoption Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptupdatemob.png) | Few warning about the giph size and the form elements not having a label. |
-| Adoption Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/deletemoblight.png) | All good except Average performance score due to large giph |
-| Rehome Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomelight.png) | Average performance score due to giph and accessibility due to form labels |
-| Rehome Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedetailmob.png) | All good except Average performance score due to large giph |
-| Rehome Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomeupdatemob.png) | Few warnings on performance and accessibility |
-| Rehome Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/rehomedeletemob.png) | All good except Average performance score due to giph |
+| Adoption/Rehome | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptmoblight.png) |  Average performance score due to giph |
+| Adoption/Rehome Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptdetailmob.png) | All good except Average performance score due to large giph |
+| Adoption/Rehome Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptupdatemob.png) | All good except Average performance score due to large giph. |
+| Adoption/Rehome Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/deletemoblight.png) | All good except Average performance score due to large giph |
 | Post Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroommob.png) | Average performance due to number of images and size |
 | Post Room Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroommob.png) | Average performance and accessability score due to giph |
 | Post Room Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postdeletemob.png) | All good except Average performance score due to  giph |
@@ -151,40 +142,6 @@ Mobile
 
 
 ## Defensive Programming
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-Flask/Django:
-
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 Defensive programming was manually tested with the below user acceptance testing:
 
@@ -207,7 +164,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click Login link in the navbar | Redirection to Login page | Pass | |
 | | Enter valid username | Field will only accept a registered username | Pass | |
 | | Enter valid password | Field will only accept a registered password | Pass | |
-| Adoption Page | | | | |
+| Adoption/Rehome Page | | | | |
 | | Click on Adoption link in navbar | Redirection to Adoption page | Pass | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -215,24 +172,12 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Enter message in textarea | Field will accept freeform text | Pass | |
 | | No message in textareas | error message appears stating this field is required | Pass | |
 | | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update / delete or cancel which returns to the adoption page | Pass |  |
-| Rehome Page | | | | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Select which terrier or sex from drop down menu | User can only choose from the two available choices | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | No message in textareas | error message appears stating this field is required | Pass | |
-| | Click the Submit button | Redirects user to the rehome detail page where they have the opportunity to update / delete or cancel which returns to the adoption page | Pass |  |
-| Adoption Detail Page | | | | |
+| Adoption/Rehome Detail Page | | | | |
 | | Click on Update button | User will be redirected to the Update adoption page | Pass | |
 | | Click on the Delete button | User will be redirected to the Delete adoption page | Pass | |
 | | Click on the Cancel button | User will be redirected to the Home page | Pass | |
-<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
-| Rehome Detail Page | | | | |
-| | Click on Update button | User will be redirected to the Update adoption page | Pass | |
-| | Click on the Delete button | User will be redirected to the Delete adoption page | Pass | |
-| | Click on the Cancel button | User will be redirected to the Home page | Pass | |
-<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
-| Update Adoption Page | | | | |
+| | Brute forcing the URL to get to another user's profile | User will not be allowed access | Pass | Redirects user back to own profile |
+| Update Adoption/Rehome Page | | | | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Select terrier type or sex from drop down menu | User can only choose from the two available choices| Pass | |
@@ -240,23 +185,10 @@ Defensive programming was manually tested with the below user acceptance testing
 | | No message in textareas | error message appears stating this field is required | Pass | |
 | | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update / delete or cancel which returns to the Update adoption page | Pass |  |
 | | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
-<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
-| Update Rehome Page | | | | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Select terrier type or sex from drop down menu | User can only choose from the two available choices| Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | No message in textareas | error message appears stating this field is required | Pass | |
-| | Click the Submit button | Redirects user to the rehome detail page where they have the opportunity to update / delete or cancel which returns to the Update adoption page | Pass |  |
-| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
-<!--| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |-->
-| Delete Adoption Page | | | | |
+| | Brute forcing the URL to get to another user's profile | User will not be allowed access | Pass | Redirects user back to own profile |
+| Delete Adoption/Rehome Page | | | | |
 | | Click on the Delete Button | Redirection to Adoption page | Pass | Confirms delete first|
 | | Click the Delete button | Redirects user to Adoption page  | Pass |  |
-| | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
-| Delete Rehome Page | | | | |
-| | Click on the Delete Button | Redirection to Rehome page | Pass | Confirms delete first|
-| | Click the Delete button | Redirects user to the Rehome Page page  | Pass |  |
 | | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
 | Post Room Page | | | | |
 | | Click on Post Room link in navbar | Redirection to Post Room page | Pass | |
@@ -285,25 +217,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click Logout button | Redirects user to sign out page | Pass | Confirms logout first |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
 
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ## User Story Testing
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | User Story | Screenshot |
 | --- | --- |
@@ -334,9 +248,6 @@ from the respective feature.
 | As a Site Administrator, I can create, read, update and delete adoption, rehome requests, posts and comments so that I can manage the app content. | ![screenshot](documentation/readme_images/admin.png) |
 | As a Site Administrator, I can view comments on an individual post so that I can read the conversation | ![screenshot](documentation/readme_images/admin1.png) |
 | As a Site Admin I can create draft posts so that I can finish writing the content later | ![screenshot](documentation/readme_images/admin2.png) |
-
-
-
 
 ## Automated Testing
 
