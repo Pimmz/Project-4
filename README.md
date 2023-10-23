@@ -322,6 +322,7 @@ Custom Error Pages were created to give the user more information on the error a
 - 404 Page Not Found - The page you're looking for doesn't exist.
 - 500 Server Error - The Easy Eater is currently unable to handle this request
 
+
 ### Future Features
 
 The following user stories were scoped out of the project due to time constraints and labelled as "Nice to Have" on the project board in Github and put into the "No time to complete" column. It is intended that these user stories will be implemented at a later date.
@@ -680,6 +681,6 @@ All the images except for the ones listed below are from my own gallery so I hav
   self-doubt and imposter syndrome.
 - I would like to thank my partner, Hilda, for believing in me and allowing me to make this transition into software development.
 - I would like to thank my family for believing in me and allowing me to make this transition into software development.
-- And of course the inspiration for this project Ob.
+- And of course the inspiration for this project Obi.
 ![screenshot](documentation/readme_images/obi.jpg)
 
