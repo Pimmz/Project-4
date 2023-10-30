@@ -79,10 +79,10 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/testing_images/Browser/chrometest.png) | Works as expected |
-| Firefox | ![screenshot](documentation/testing_images/Browser/firefoxtest.png) | Works as expected |
-| Edge | ![screenshot](documentation/testing_images/Browser/edgetest.png) | Works as expected |
-| Opera | ![screenshot](documentation/testing_images/Browser/operatest.png) | Works as expected |
+| Chrome | ![screenshot](documentation/testing_images/browser/chrometest.png) | Works as expected |
+| Firefox | ![screenshot](documentation/testing_images/browser/firefoxtest.png) | Works as expected |
+| Edge | ![screenshot](documentation/testing_images/browser/edgetest.png) | Works as expected |
+| Opera | ![screenshot](documentation/testing_images/browser/operatest.png) | Works as expected |
 
 
 ## Responsiveness
@@ -257,12 +257,6 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ### JavaScript (Jest Testing)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Adjust the code below (file names, etc.) to match your own project files/folders.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I have used the [Jest](https://jestjs.io) JavaScript testing framework to test the application functionality.
 
 In order to work with Jest, I first had to initialize NPM.
@@ -338,13 +332,10 @@ This can be used for both "fixed" and "unresolved" issues.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
+
+
+
 ### Python (Unit Testing)
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Adjust the code below (file names, etc.) to match your own project files/folders.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I have used Django's built-in unit testing framework to test the application functionality.
 
@@ -368,27 +359,19 @@ Below are the results from the various apps on my application that I've tested:
 
 | App | File | Coverage | Screenshot |
 | --- | --- | --- | --- |
-| Bag | test_forms.py | 99% | ![screenshot](documentation/py-test-bag-forms.png) |
-| Bag | test_models.py | 89% | ![screenshot](documentation/py-test-bag-models.png) |
-| Bag | test_urls.py | 100% | ![screenshot](documentation/py-test-bag-urls.png) |
-| Bag | test_views.py | 71% | ![screenshot](documentation/py-test-bag-views.png) |
-| Checkout | test_forms.py | 99% | ![screenshot](documentation/py-test-checkout-forms.png) |
-| Checkout | test_models.py | 89% | ![screenshot](documentation/py-test-checkout-models.png) |
-| Checkout | test_urls.py | 100% | ![screenshot](documentation/py-test-checkout-urls.png) |
-| Checkout | test_views.py | 71% | ![screenshot](documentation/py-test-checkout-views.png) |
-| Home | test_forms.py | 99% | ![screenshot](documentation/py-test-home-forms.png) |
-| Home | test_models.py | 89% | ![screenshot](documentation/py-test-home-models.png) |
-| Home | test_urls.py | 100% | ![screenshot](documentation/py-test-home-urls.png) |
-| Home | test_views.py | 71% | ![screenshot](documentation/py-test-home-views.png) |
-| Products | test_forms.py | 99% | ![screenshot](documentation/py-test-products-forms.png) |
-| Products | test_models.py | 89% | ![screenshot](documentation/py-test-products-models.png) |
-| Products | test_urls.py | 100% | ![screenshot](documentation/py-test-products-urls.png) |
-| Products | test_views.py | 71% | ![screenshot](documentation/py-test-products-views.png) |
-| Profiles | test_forms.py | 99% | ![screenshot](documentation/py-test-profiles-forms.png) |
-| Profiles | test_models.py | 89% | ![screenshot](documentation/py-test-profiles-models.png) |
-| Profiles | test_urls.py | 100% | ![screenshot](documentation/py-test-profiles-urls.png) |
-| Profiles | test_views.py | 71% | ![screenshot](documentation/py-test-profiles-views.png) |
-| x | x | x | repeat for all remaining tested apps/files |
+| Blog | test___init__.py | 100% | ![screenshot](documentation/testing_images/pythontesting/coverage.png) |
+| Blog | test_admin.py | 92% | ![screenshot](documentation/testing_images/pythontesting/coverage.png) |
+| Blog | test_apps.py | 79% | ![screenshot](documentation/testing_images/pythontesting/coverage.png) |
+| Blog | test_forms.py | 99% | ![screenshot](documentation/testing_images/pythontesting/coverage.png) |
+| Blog | test_models.py | 87% | ![screenshot](documentation/testing_images/pythontesting/coverage1.png) |
+| Blog | test_test.py | 99% | ![screenshot](documentation/testing_images/pythontesting/coverage1.png) |
+| Blog | test_urls.py | 89% | ![screenshot](documentation/testing_images/pythontesting/coverage1.png) |
+| Blog | test_views.py | 43% | ![screenshot](documentation/testing_images/pythontesting/coverage1.png) |
+| Main | test___init__.py | 100% | ![screenshot](documentation/testing_images/pythontesting/coverage2.png) |
+| Main | test_asgi.py | 0% | ![screenshot](documentation/testing_images/pythontesting/coverage2.png) |
+| Main | test_settings.py   | 100% | ![screenshot](documentation/testing_images/pythontesting/coverage2.png) |
+| Main | test_urls.py| 100% | ![screenshot](documentation/testing_images/pythontesting/coverage2.png) |
+| Main | test_wsgi.py | 0% | ![screenshot](documentation/testing_images/pythontesting/coverage2.png) |
 
 #### Unit Test Issues
 

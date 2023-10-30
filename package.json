@@ -1,0 +1,22 @@
+{
+  "name": "project-4",
+  "version": "1.0.0",
+  "description": "The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone who would like to adopt one or even rehome a Fox Terrier. To Help any Fox Terrier avoid a very scary statistic that only 10% of dogs born will have a permanent home, and as we speak in the financial crisis 73% of dogs are being abandoned in the UK. The app is designed towards fox terriers, although it could be eaisly changed to any other breed. So if you Love a Fox Terrier, would just like to know a bit more about them, or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the lifestyle you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has an amazing life.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pimmz/Project-4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pimmz/Project-4/issues"
+  },
+  "homepage": "https://github.com/Pimmz/Project-4#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
