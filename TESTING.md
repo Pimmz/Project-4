@@ -15,7 +15,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F) | ![screenshot](documentation/testing_images/html/htmlcheck1.png) | Pass: No Errors  |
 | About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Fabout%2F) | ![screenshot](documentation/testing_images/html/htmlcheck2.png) | Forbidden code point U+009d. Fixed by removing invalid syntax |
-| Register | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing_images/html/htmlcheck3.png) | There was an Error: Duplicate ID signup-form. Server 500. trailing slash. These wouldnt remedy by changing the duplicate Id or removing the slash and were traced back to a google authentication issue which the Tutors dont advise on. So I have had to delete the google and facebook button to resolve the error due to spending to much time on it which I simply dont have. |
+| Register | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing_images/html/htmlcheck3.png) | There was an Error: Duplicate ID signup-form. Server 500. trailing slash. These wouldn't be remedied by changing the duplicate Id or removing the slash and were traced back to a Google authentication issue which the Tutors don't advise on. So I have had to delete the Google and Facebook button to resolve the error due to spending to much time on it which I simply don't have. |
 | Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing_images/html/htmlcheck4.png) | Pass: No Errors |
 | Adoption/Rehome| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F) | ![screenshot](documentation/testing_images/html/htmlcheck5.png) | Pass: No Errors |
 | Adoption/rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F29%2F) | ![screenshot](documentation/testing_images/html/htmlcheck9.png) | Pass: No Errors |
@@ -48,7 +48,7 @@ I have used /* jshint esversion: 11, jquery: true */ at the top of the file so J
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-For lines that have been to long I have shortened everything where possible however there was one section in settings.py that couldnt be shortened due to it affecting the functionality of the code so I have used `# noqa` at the end of those lines so it will ignore linting validation.
+For lines that have been too long I have shortened everything where possible however there was one section in settings.py that couldn't be shortened due to it affecting the functionality of the code so I have used `# noqa` at the end of those lines so it will ignore linting validation.
 
 ![screenshot](documentation/testing_images/python/pychecknoqa.png)
 
@@ -122,7 +122,7 @@ Desktop
 | Post Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroomlight.png) | Average performance due to number of images and size |
 | Post Room Update Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postroomupdate.png) | Good overall though average accessibility |
 | Post Room Delete Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/postdelete.png) | Worked as expected  |
-| Comment Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/commentroomlight.png) | Good overall although accessibilty knocked out slightly by giph |
+| Comment Room Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/commentroomlight.png) | Good overall although accessibility knocked out slightly by giph |
 
 Mobile
 | Page | Size | Screenshot | Notes |
@@ -150,7 +150,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | Home Page | | | | |
 | | Click on Logo Name | Redirection to Home page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
-| | Brute forcing the URL to get to page for loggin users only |  User redirected to sign up page | Pass |  |
+| | Brute forcing the URL to get to the page for loggin users only |  User redirected to sign up page | Pass |  |
 | About Page | | | | |
 | | Click on About link in navbar | Redirection to About page | Pass | |
 | | Click on Wikipedia links | Wikipedia loaded as expected | Pass | |
@@ -171,7 +171,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Select terrier type or sex from drop down menu | User can only choose from the two available choices| Pass | |
 | | Enter message in textarea | Field will accept freeform text | Pass | |
 | | No message in textareas | error message appears stating this field is required | Pass | |
-| | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update / delete or cancel which returns to the adoption page | Pass |  |
+| | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update/delete or cancel which returns to the adoption page | Pass |  |
 | Adoption/Rehome Detail Page | | | | |
 | | Click on Update button | User will be redirected to the Update adoption page | Pass | |
 | | Click on the Delete button | User will be redirected to the Delete adoption page | Pass | |
@@ -180,10 +180,10 @@ Defensive programming was manually tested with the below user acceptance testing
 | Update Adoption/Rehome Page | | | | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
-| | Select terrier type or sex from drop down menu | User can only choose from the two available choices| Pass | |
+| | Select terrier type or sex from drop-down menu | User can only choose from the two available choices| Pass | |
 | | Enter message in textarea | Field will accept freeform text | Pass | |
 | | No message in textareas | error message appears stating this field is required | Pass | |
-| | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update / delete or cancel which returns to the Update adoption page | Pass |  |
+| | Click the Submit button | Redirects user to the adoption detail page where they have the opportunity to update/delete or cancel which returns to the Update adoption page | Pass |  |
 | | Click on the Cancel button | User will be redirected to the Home page  | Pass | |
 | | Brute forcing the URL to get to another user's profile | User will not be allowed access | Pass | Redirects user back to own profile |
 | Delete Adoption/Rehome Page | | | | |
