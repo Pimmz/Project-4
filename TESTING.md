@@ -15,14 +15,14 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2F) | ![screenshot](documentation/testing_images/html/htmlcheck1.png) | Pass: No Errors  |
 | About | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Fabout%2F) | ![screenshot](documentation/testing_images/html/htmlcheck2.png) | Forbidden code point U+009d. Fixed by removing invalid syntax |
-| Register | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing_images/html/htmlcheck3.png) | There was an Error: Duplicate ID signup-form. Server 500. trailing slash. These wouldn't be remedied by changing the duplicate Id or removing the slash and were traced back to a Google authentication issue which the Tutors don't advise on. So I have had to delete the Google and Facebook button to resolve the error due to spending to much time on it which I simply don't have. |
+| Register | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/testing_images/html/htmlcheck3.png) |  Pass: No Errors  |
 | Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/testing_images/html/htmlcheck4.png) | Pass: No Errors |
 | Adoption/Rehome| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F) | ![screenshot](documentation/testing_images/html/htmlcheck5.png) | Pass: No Errors |
 | Adoption/rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fadoption%2F29%2F) | ![screenshot](documentation/testing_images/html/htmlcheck9.png) | Pass: No Errors |
 | Update adoption/rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fupdate_adoption%2F125%2F) | ![screenshot](documentation/testing_images/html/htmlcheck11.png) | Pass: No Errors |
 | Delete adoption/rehome details | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fdelete_adoption%2F98%2F) | ![screenshot](documentation/testing_images/html/htmlcheck12.png) | Pass: No Errors |
 | No adoption Details | [W3C](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/adoption/29/) | ![screenshot](documentation/testing_images/html/htmlcheck10.png) | Pass: No Errors |
-| Post Room | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fblog.html) | ![screenshot](documentation/testing_images/html/htmlcheck7.png) |  Pass: No Errors |
+| Post Room | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpimmz-project-4-9cc2ab59cc64.herokuapp.com%2Faccounts%2Fsignup%2F%3Fnext%3D%2Fblog.html) | ![screenshot](documentation/testing_images/html/html.check7.png) |  Pass: No Errors |
 
 ### CSS
 

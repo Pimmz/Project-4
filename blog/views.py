@@ -47,10 +47,10 @@ class AdoptionView(TemplateView):
 @method_decorator(login_required, name='dispatch')
 class AdoptionDView(View):
     """
-    View for the Adoption detail page where you can view the form submitted. 
-    The view name AdoptionDView is because it was originally called 
-    Adoptiondetailview to match the template name but it caused an issue with 
-    a single view so the name was changed to stop that and so that it didnt 
+    View for the Adoption detail page where you can view the form submitted.
+    The view name AdoptionDView is because it was originally called
+    Adoptiondetailview to match the template name but it caused an issue with
+    a single view so the name was changed to stop that and so that it didnt
     match any other names.
     """
     model = Adoption
