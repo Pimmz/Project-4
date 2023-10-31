@@ -93,7 +93,6 @@
                     <div class="card-text">{{ adoption.experience }}</div>
                 </div>
             </div>
-            <a class="btn btn-outline-secondary m-2" href="{% url 'update_adoption' pk=adoption.id %}">Update</a>
         </div>
         <div class="col-md-6">
             <div class="card mb-3">
@@ -102,12 +101,20 @@
                     <div class="card-text">{{ adoption.notes }}</div>
                 </div>
             </div>
-            <div class="d-flex justify-content-between">
+        </div> 
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <a class="btn btn-outline-secondary m-2" href="{% url 'update_adoption' pk=adoption.id %}">Update</a>
+            </div>
+            <div class="col-md-4 text-center">
                 <a class="btn btn-outline-secondary m-2" href="{% url 'delete_adoption' pk=adoption.pk %}">Delete</a>
+            </div>
+            <div class="col-md-4 text-center">
                 <a class="btn btn-outline-secondary m-2 " href="{% url 'adoption' %}">Cancel</a>
             </div>
         </div>
     </div>
+  
 </div>
 
 
