@@ -1,6 +1,6 @@
 # Fox Terrier Owners Club
 
-The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone who would like to adopt one or even rehome a Fox Terrier. To Help any Fox Terrier avoid a very scary statistic that only 10% of dogs born will have a permanent home, and as we speak in the financial crisis 73% of dogs are being abandoned in the UK. The app is designed towards fox terriers, although it could be eaisly changed to any other breed. So if you Love a Fox Terrier, would just like to know a bit more about them, or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the lifestyle you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has an amazing life.
+The Fox Terrier Owners Club site was designed to raise awareness of how amazing Fox Terriers are and to help anyone who would like to adopt one or even rehome a Fox Terrier. To Help any Fox Terrier avoid a very scary statistic that only 10% of dogs born will have a permanent home, and as we speak in the financial crisis 73% of dogs are being abandoned in the UK. The app is designed towards fox terriers, although it could be easily changed to any other breed. So if you Love a Fox Terrier, would just like to know a bit more about them, or would indeed like to own one through our adoption process. Plus if life has changed to a point where it is not possible to offer the lifestyle you want for your Fox Terrier anymore, we have a rehoming process that can be used to ensure every Fox Terrier has an amazing life.
 
 Here is a link to my project - [Fox Terriers Owners Club](https://pimmz-project-4-9cc2ab59cc64.herokuapp.com/)
 
@@ -427,7 +427,7 @@ Other potential features include:
 | FK | author | ForeignKey(User)| Author |
 | | created_on | DateTimeField | Created_on |
 
-- To help organise the remaining models required I used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-448%2C20%2C3328%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
+- To help organise the remaining models required I used [Lucidchart](https://lucid.app/lucidchart/0a00742c-aa55-4964-8626-cff679e4ba5b/edit?viewport_loc=-476%2C20%2C3384%2C1572%2C0_0&invitationId=inv_85e6fc15-610f-42fe-b2bf-59e51136a95c)
 
 ![screenshot](documentation/readme_images/erd.png)
 
@@ -488,7 +488,7 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 ### Custom Error Pages
 
-    Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
+- Custom Error Pages were created to give the user more information on the error and to provide them with buttons to guide them back to the site.
 
 - 400 Bad Request - Error 400 "Bad Request" Oh No! Looks like you made a bad request.
 - 403 Page Forbidden - Error 403 "Forbidden Request" Sorry thats a Forbidden request.
@@ -703,13 +703,13 @@ All the images except for the ones listed below are from my own gallery so I hav
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Giphy](https://giphy.com/stickers/wft-wire-fox-terrier-foxie-cleo-FP3UIHzd5U5g8k7szQ) | a number of pages | image | giph to liven page up |
+| [Giphy](https://giphy.com/stickers/wft-wire-fox-terrier-foxie-cleo-FP3UIHzd5U5g8k7szQ) | a number of pages | image | gif to liven page up |
 | [Wikipedia](https://en.wikipedia.org/wiki/Fox_Terrier#/media/File:01_Wire_Fox_terrier.jpg) | Home page & Post page | image | Free image of Wired Haired Fox Terrier |
 | [Wikipedia](https://en.wikipedia.org/wiki/Fox_Terrier#/media/File:Two_Fox_Terriers.jpg) | Home page & Post page | image | Free image of Smooth Haired Fox Terrier |
 
 ### Acknowledgements
 
-- I would like to thank my Code Institute mentor, Antonio Rodriguez for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, Tim Nelson for their support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of - - 
   self-doubt and imposter syndrome.
