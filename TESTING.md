@@ -63,7 +63,7 @@ For lines that have been too long I have shortened everything where possible how
 | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/main/settings.py) | ![screenshot](documentation/testing_images/python/pycheckset.png) | Pass: No Errors |
 | urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/main/urls.py) | ![screenshot](documentation/testing_images/python/pycheckurl2.png) | Pass: No Errors |
 | wsgi.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/main/wsgi.py) | ![screenshot](documentation/testing_images/python/pycheckwsgi.png) | Pass: No Errors |
-| manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/manage.py) | ![screenshot](documentation/testing_images/python/py.checkmanage.png) | Pass: No Errors |
+| manage.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/Pimmz/Project-4/main/manage.py) | ![screenshot](documentation/testing_images/python/pycheckmanage.png) | Pass: No Errors |
 
 
 ## Browser Compatibility
