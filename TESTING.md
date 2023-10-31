@@ -113,7 +113,7 @@ Desktop
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](documentation/testing_images/lighthouse/homelight.png) | Few warnings |
 | About | Desktop | ![screenshot](documentation/testing_images/lighthouse/aboutlight.png) | Few warnings |
-| Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/registerlight.png) | Some minor warnings |
+| Register | Desktop | ![screenshot](documentation/testing_images/lighthouse/registerlight.png) | Worked as expected |
 | Login | Desktop | ![screenshot](documentation/testing_images/lighthouse/loginlight.png) | Worked as expected |
 | Adoption/Rehome | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptlight.png) | Worked as expected |
 | Adoption/Rehome Detail Page | Desktop | ![screenshot](documentation/testing_images/lighthouse/adoptdetaillight.png) | Worked as expected |
@@ -238,12 +238,9 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a Site User I can view my posts so that I can see and manage all my own posts, but not be able to change other peoples. | ![screenshot](documentation/readme_images/postroom.png) |
 | As a Site User I can view my posts so I can find them easily in one location. | ![screenshot](documentation/readme_images/postroom.png) |
 | As a Site user I can like or unlike a post so that I can interact with the content | ![screenshot](documentation/readme_images/comment.png) |
-| EPIC User Story | Adoption Interaction |
-| As a Site User, I can see my request so that I can find it easily at a later date. | ![screenshot](documentation/readme_images/adoptdetail.png) |
-| As a Site User, I can update and delete adoption requests that I have created so that I can easily make changes if I have made a mistake. | ![screenshot](documentation/readme_images/adoptdetail.png) |
-| EPIC User Story | Rehome Interaction |
-| As a Site User, I can see my request so that I can find it easily at a later date. | ![screenshot](documentation/readme_images/rehomedetail.png) |
-| As a Site User, I can update and delete rehome requests that I have created so that I can easily make changes if I have made a mistake. | ![screenshot](documentation/readme_images/rehomedetail.png) |
+| EPIC User Story | Adoption/Rehome Interaction |
+| As a Site User, I can see my request so that I can find it easily at a later date. | ![screenshot](documentation/readme_images/updateadoptdetails.png) |
+| As a Site User, I can update and delete adoption/rehome requests that I have created so that I can easily make changes if I have made a mistake. | ![screenshot](documentation/readme_images/adoptdetail.png) |
 | EPIC User Story | Site Administration |
 | As a Site Administrator, I can create, read, update and delete adoption, rehome requests, posts and comments so that I can manage the app content. | ![screenshot](documentation/readme_images/admin.png) |
 | As a Site Administrator, I can view comments on an individual post so that I can read the conversation | ![screenshot](documentation/readme_images/admin1.png) |
