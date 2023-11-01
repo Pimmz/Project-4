@@ -374,12 +374,10 @@ Other potential features include:
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
-- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) is used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [codeanywhere](https://app.codeanywhere.com/) used as a cloud-based IDE for development.
 - [Bootstrap](https://getbootstrap.com) is used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
@@ -387,13 +385,11 @@ Other potential features include:
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Cloudinary](https://cloudinary.com) is used for online static file storage.
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 - [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
 - [Font Awesome](https://fontawesome.com/) - Used for icons in the information bar.
 - [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
-- [PEP8 Online](http://pep8online.com/) - used to validate all the Python code
 - [Jshint](https://jshint.com/) - used to validate javascript
 - [Coolors](https://coolors.co/) - Used to create colour palette.
 - [Favicon](https://favicon.io/) - Used to create the favicon.
@@ -660,13 +656,11 @@ When I first deployed the site there was a difference between the local and the 
 - [Balsamiq](https://balsamiq.com/)
 - [GitHub](https://github.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [PEP8 Online](http://pep8online.com/)
 - [Jshint](https://jshint.com/)
 - [Grammerly](https://app.grammarly.com/)
 - [Lucidchart](https://lucid.app/documents#/documents?folder_id=recent)
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
-- [Bootstrap 4.6 Docs](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
 - [Stack Overflow](https://stackoverflow.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Django Project](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
@@ -680,18 +674,13 @@ When I first deployed the site there was a difference between the local and the 
 
 | Source | Location | Notes |
 | --- | --- | --- |
-| [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
 | [W3Schools](https://www.w3schools.com/django/django_views.php) | entire site | To help with Django Views |
 | [W3Schools](https://www.w3schools.com/django/django_models.php) | entire site | To help with Django models |
 | [W3Schools](https://www.w3schools.com/django/django_urls.php) | entire site | To help with Django urls |
-| [W3Schools](https://www.w3schools.com/django/django_urls.php) | entire site | To help with Django urls |
 | [Djangoprojects](https://docs.djangoproject.com/en/4.2/ref/forms/) | entire site | To help with Django forms |
 | [Stackoverflow](https://stackoverflow.com/questions/31633259/django-how-to-use-decorator-in-class-based-view-methods) | None logged into pages | To stop users changing urls to access pages when not logged in|
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
 | [YouTube](<https://www.youtube.com/watch?v=-s7e_Fy6NRU>) | entire site | To help with CRUD |
 | [Code Institute - I think therefore I blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) | entire site | General advice for all of project |
 | [Code Institute - Hello Django](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/dc049b343a9b474f8d75822c5fda1582/121ef050096f4546a1c74327a9113ea6/?child=first)| entire site | General advice for all of project |

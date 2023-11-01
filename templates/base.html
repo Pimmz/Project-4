@@ -7,7 +7,7 @@
 <head>
     <title>Fox Terrier Owners Club</title>
     
-    <link rel="icon" href="{% static 'favicon/pic1.png' %}" type="image/x-icon">    <link rel="icon" href="/documentation/readme_images/pic1.png" type="image/x-icon">
+    <link rel="icon" href="{% static 'favicon/pic1.png' %}" type="image/x-icon"> 
 
     <!--linking area for fonts and stylesheets-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -34,7 +34,7 @@
 <!--Navbar-->
 
 <body class="d-flex flex-column h-100 main-bg">
-    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3">
+    <nav class="navbar navbar-expand-xl bg-secondary navbar-dark py-3">
         <div class="container-fluid">
             <div class="logo">
                 <img src="https://res.cloudinary.com/dtqjcm9e6/image/upload/v1697443012/giphy_uewrhf.gif" alt="logo">
@@ -150,13 +150,9 @@
         </div>
     </footer>
     <!--Javascript to choose how long the messages display for-->
-    <script>
-        setTimeout(function () {
-            let messages = document.getElementById("msg");
-            let alert = new bootstrap.Alert(messages);
-            alert.close();
-        }, 4000);
-    </script>
+    <script src="{% static 'javascript/base.js' %}"></script>
+    {% block js %} {% endblock js %}
+
 </body>
 
 </html>
