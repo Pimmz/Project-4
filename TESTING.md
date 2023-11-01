@@ -254,7 +254,11 @@ I fully acknowledge and understand that, in a real-world scenario, an extensive 
 
 ### JavaScript (Jest Testing)
 
+Due to only having 5 lines of javascript used as a timeout method for the pop up messages I was unable to test it with jest. If I had more javascript I would have used the [jestspyon method](https://jestjs.io/docs/jest-object#jestspyonobject-methodname)
 
+Although I have completed a manual test with a screen shot so you can see the pop up message that will then disappear in 4 secounds.
+
+![Confirmation](documentation/readme_images/confirmation1.png)
 
 ### Python (Unit Testing)
 

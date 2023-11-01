@@ -17,8 +17,8 @@
             <h3>{% trans "Sign In" %}</h3>
 
             <p class="signin">{% blocktrans %}Welcome back to the Fox Terrier Owners Club. please
-                login. If you have not created an account yet, then please
-                <a class="link" href="{{ sign_up }}">sign up</a>.{% endblocktrans %}
+                login. If you have not created an account yet, then please {% endblocktrans %}
+                <a class="link" href="{% url 'account_signup' %}">Register</a>
             </p>
 
         </div>

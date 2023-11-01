@@ -13,7 +13,7 @@ body {
 }
 
 .logo img {
-    max-width: 110px;
+    max-width: 70px;
     height: 20%;
 }
 
@@ -267,5 +267,23 @@ body {
     .nav-link {
         font-size: 25px;
 
+    }
+}
+
+@media (max-width: 488px) {
+    .logo img {
+        max-width: 50px;
+        height: 15%;
+    }
+}
+
+@media (max-width: 367px) {
+
+    .fox1,
+    .fox,
+    .page-title,
+    .nav-link,
+    .title1 {
+        font-size: 24px;
     }
 }

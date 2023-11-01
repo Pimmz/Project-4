@@ -414,7 +414,7 @@ Other potential features include:
 | PK | ID | Autofield | |
 | | terrier_type | CharField(10) | Which Fox terrier do you want to adopt? |
 | | sex | CharField(10) | would prefer a Male or Female? |
-| | age | CharField(200) | What age Fox Terrier, are you looking for?|
+| | age | CharField(200) | What age Fox Terrier, are you looking for? Due to this being an opened question I didnt restrict it to just numbers|
 | | why | CharField(200) | Why would you like to adopt a Fox Terrier?|
 | | experience | CharField(200) | What experience with dogs do you have? |
 | | notes | CharField(200) | Additional notes or feedback? |
@@ -650,19 +650,10 @@ When I first deployed the site there was a difference between the local and the 
 - [Giphy](https://giphy.com/)
 - [My Color Space](https://mycolor.space/)
 - [Googlefonts](https://fonts.google.com/)
-- [Giphy](https://giphy.com/)
 - [Django Docs](https://docs.djangoproject.com/en/4.0/)
-- [Heroku](https://dashboard.heroku.com/login)
-- [Balsamiq](https://balsamiq.com/)
-- [GitHub](https://github.com/)
-- [Font Awesome](https://fontawesome.com/)
-- [Jshint](https://jshint.com/)
-- [Grammerly](https://app.grammarly.com/)
-- [Lucidchart](https://lucid.app/documents#/documents?folder_id=recent)
+- [PEP8 CI Python Linter](https://pep8ci.herokuapp.com)
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
-- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/)
 - [Stack Overflow](https://stackoverflow.com/)
-- [Cloudinary](https://cloudinary.com/)
 - [Django Project](https://docs.djangoproject.com/en/3.2/intro/tutorial01/)
 - [Update View](https://pytutorial.com/django-updateview-example)
 - [Pagination](https://docs.djangoproject.com/en/2.2/topics/pagination/#using-paginator-in-a-view)
