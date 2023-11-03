@@ -6,7 +6,6 @@ Here is a link to my project - [Fox Terriers Owners Club](https://pimmz-project-
 
 ![Am I Responsive](documentation/readme_images/ami.png)
 
-
 ## User Experience (UX)
 
 When I started the design of the Fox Terrier Owners Club I wanted to ensure the site was Useful, Useable and Valuable so that it makes the user experience informative and enjoyable. To do this I looked at the five key fundamentals;
@@ -150,6 +149,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - An animated Fox Terrier logo was sourced from giphy.com to give the site a sense of fun, and to help show the true nature of Fox terriers.
 - Title of the website to ensure users know exactly where they are.
 - A simplified menu of Home, About, Register and Login available to everyone. This changes when the user registers or logs in.
+- Update!!! After some consideration I added a call to action to Register. To make it more user friendly.
+![Call to action](documentation/readme_images/register.png)
 
 - **Navigation Bar**
 ![Navigation bar](documentation/readme_images/navbar.png)
