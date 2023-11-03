@@ -149,8 +149,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - An animated Fox Terrier logo was sourced from giphy.com to give the site a sense of fun, and to help show the true nature of Fox terriers.
 - Title of the website to ensure users know exactly where they are.
 - A simplified menu of Home, About, Register and Login available to everyone. This changes when the user registers or logs in.
-- Update!!! After some consideration I added a call to action to Register. To make it more user friendly.
-![Call to action](documentation/readme_images/register.png)
 
 - **Navigation Bar**
 ![Navigation bar](documentation/readme_images/navbar.png)
@@ -175,6 +173,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - Fontawesome icons are used to help draw the eye to the three key sections.
 - Three key sections enlarged to show the additional added features of the website.
 - Two images clearly showing the different types of Fox Terrier.
+- Update!!! After some consideration I added a call to action to Register. To make it more user friendly.
+![Call to action](documentation/readme_images/register.png)
 
 - **About Page**
 ![About Page](documentation/readme_images/about.png)
